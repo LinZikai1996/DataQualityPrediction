@@ -9,4 +9,6 @@ public interface UserService {
     List<User> findAll(int pageNum, int pageSize);
 
     User findUserById(String id);
+
+    int addUser(User user);
 }
