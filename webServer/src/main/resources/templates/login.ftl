@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <title>Animated Login and Sign up</title>
 
-
-<link rel="stylesheet" href="css/reset.min.css">
-<link rel="stylesheet" href="css/style.css">
+  <link href="./images/SystemLogo.png" rel="icon">
+  <link rel="stylesheet" href="css/reset.min.css">
+  <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
