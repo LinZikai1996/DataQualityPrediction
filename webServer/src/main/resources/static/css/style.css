@@ -140,7 +140,7 @@ input::placeholder {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  background-color: rgba(34, 34, 34, 0.85);
+  background-color: #4650dd;
   border-radius: 10px;
 }
 
@@ -211,7 +211,7 @@ input::placeholder {
   font-weight: 500;
   line-height: 1em;
   text-transform: uppercase;
-  color: #FE634E;
+  color: #4650dd;
   letter-spacing: 0.1rem;
 }
 .user_options-forms .forms_field:not(:last-of-type) {
@@ -248,7 +248,7 @@ input::placeholder {
   color: #b3b3b3;
 }
 .user_options-forms .forms_buttons-action {
-  background-color: #FE634E;
+  background-color: #4650dd;
   border-radius: 10px;
   padding: 10px 35px;
   font-size: 1rem;
@@ -260,7 +260,7 @@ input::placeholder {
   transition: background-color 0.2s ease-in-out;
 }
 .user_options-forms .forms_buttons-action:hover {
-  background-color: #e14641;
+  background-color: #4650dd;
 }
 .user_options-forms .user_forms-signup,
 .user_options-forms .user_forms-login {

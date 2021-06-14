@@ -24,7 +24,7 @@
   <nav class="navbar navbar-expand-lg px-4 py-2 bg-white shadow">
     <a class="sidebar-toggler text-gray-500 me-4 me-lg-5 lead" href="#"><i class="fas fa-align-left"></i></a>
     <a class="navbar-brand fw-bold text-uppercase text-base" href="#">
-      <span class="d-none d-brand-partial">Bubbly </span><span class="d-none d-sm-inline">Dashboard</span></a>
+      <span class="d-none d-brand-partial">BJTU System </span><span class="d-none d-sm-inline">Dashboard</span></a>
     <ul class="ms-auto d-flex align-items-center list-unstyled mb-0">
       <li class="nav-item dropdown">
         <form class="ms-auto me-4 d-none d-lg-block" id="searchForm">
@@ -41,10 +41,7 @@
           <h6 class="dropdown-header text-uppercase fw-normal">Filters</h6><a class="dropdown-item py-1" href="#!"> <span class="badge me-2 badge-success-light">Posts</span><span class="text-xs">Search all posts</span></a><a class="dropdown-item py-1" href="#!"> <span class="badge me-2 badge-danger-light">Users</span><span class="text-xs">Only in users</span></a><a class="dropdown-item py-1" href="#!"> <span class="badge me-2 badge-warning-light">Campaigns</span><span class="text-xs">Only in campaigns</span></a>
         </div>
       </li>
-      <li class="nav-item dropdown me-2"><a class="nav-link nav-link-icon text-gray-400 px-1" id="notifications" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <svg class="svg-icon svg-icon-md svg-icon-heavy">
-            <use xlink:href="icons/orion-svg-sprite.57a86639.svg#sales-up-1"> </use>
-          </svg><span class="notification-badge bg-green"></span></a>
+      <li class="nav-item dropdown me-2">
         <div class="dropdown-menu dropdown-menu-end dropdown-menu-animated text-sm" aria-labelledby="notifications"><a class="dropdown-item" href="#">
             <div class="d-flex align-items-center">
               <div class="icon icon-sm bg-indigo text-white"><i class="fab fa-twitter"></i></div>
@@ -75,9 +72,6 @@
       </li>
       <!-- Messages                        -->
       <li class="nav-item dropdown me-2 me-lg-3"> <a class="nav-link nav-link-icon text-gray-400 px-1" id="messages" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <svg class="svg-icon svg-icon-md svg-icon-heavy">
-            <use xlink:href="icons/orion-svg-sprite.57a86639.svg#paper-plane-1"> </use>
-          </svg><span class="notification-badge notification-badge-number bg-primary">10</span></a>
         <div class="dropdown-menu dropdown-menu-end dropdown-menu-animated text-sm" aria-labelledby="messages"><a class="dropdown-item d-flex align-items-center p-3" href="#"> <img class="avatar avatar-sm p-1 me-2" src="https://d19m59y37dris4.cloudfront.net/bubbly/1-1/img/avatar-0.jpg" alt="Jason Doe">
             <div class="pt-1">
               <h6 class="fw-bold mb-0">Jason Doe</h6><span class="text-muted text-sm">Sent you a message</span>
@@ -107,7 +101,7 @@
   <div class="sidebar py-3" id="sidebar">
     <h6 class="sidebar-heading">Main</h6>
     <ul class="list-unstyled">
-      <li class="sidebar-list-item"><a class="sidebar-link text-muted active" href="index.ftl">
+      <li class="sidebar-list-item"><a class="sidebar-link text-muted active" href="#">
           <svg class="svg-icon svg-icon-md me-3">
             <use xlink:href="icons/orion-svg-sprite.57a86639.svg#real-estate-1"> </use>
           </svg>
@@ -200,15 +194,15 @@
         </div>
       </section>
       <section class="mb-4 mb-lg-5">
-        <h2 class="section-heading section-heading-ms mb-4 mb-lg-5">Finances 💰</h2>
+        <h2 class="section-heading section-heading-ms">Dashboard 📈 </h2>
         <div class="col-lg-7 mb-4 mb-lg-0">
           <div class="card h-100">
             <div class="card-header">
-              <h4 class="card-heading">Your Account Balance</h4>
+              <h4 class="card-heading">Trade&ensp;Info</h4>
             </div>
             <div class="card-body">
               <div class="chart-holder w-100">
-                <canvas id="lineChart1"></canvas>
+
               </div>
             </div>
           </div>
