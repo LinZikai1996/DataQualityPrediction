@@ -102,97 +102,11 @@
     <h6 class="sidebar-heading">Main</h6>
     <ul class="list-unstyled">
       <li class="sidebar-list-item"><a class="sidebar-link text-muted active" href="#">
-          <svg class="svg-icon svg-icon-md me-3">
-            <use xlink:href="icons/orion-svg-sprite.57a86639.svg#real-estate-1"> </use>
-          </svg>
           <span class="sidebar-link-title">Dashboard</span></a></li>
-      <li class="sidebar-list-item"><a class="sidebar-link text-muted " href="#" data-bs-target="#cmsDropdown" role="button" aria-expanded="false" data-bs-toggle="collapse">
-          <svg class="svg-icon svg-icon-md me-3">
-            <use xlink:href="icons/orion-svg-sprite.57a86639.svg#reading-1"> </use>
-          </svg><span class="sidebar-link-title">CMS </span></a>
-      </li>
-      <li class="sidebar-list-item"><a class="sidebar-link text-muted " href="#" data-bs-target="#widgetsDropdown" role="button" aria-expanded="false" data-bs-toggle="collapse">
-          <svg class="svg-icon svg-icon-md me-3">
-            <use xlink:href="icons/orion-svg-sprite.57a86639.svg#statistic-1"> </use>
-          </svg><span class="sidebar-link-title">Widgets </span></a>
-      </li>
-      <li class="sidebar-list-item"><a class="sidebar-link text-muted " href="#" data-bs-target="#pagesDropdown" role="button" aria-expanded="false" data-bs-toggle="collapse">
-          <svg class="svg-icon svg-icon-md me-3">
-            <use xlink:href="icons/orion-svg-sprite.57a86639.svg#paper-stack-1"> </use>
-          </svg><span class="sidebar-link-title">Pages </span></a>
-      </li>
-      <li class="sidebar-list-item"><a class="sidebar-link text-muted " href="#" data-bs-target="#componentsDropdown" role="button" aria-expanded="false" data-bs-toggle="collapse">
-          <svg class="svg-icon svg-icon-md me-3">
-            <use xlink:href="icons/orion-svg-sprite.57a86639.svg#sorting-1"> </use>
-          </svg><span class="sidebar-link-title">Components </span></a>
-      </li>
-      <li class="sidebar-list-item"><a class="sidebar-link text-muted " href="#" data-bs-target="#chartsDropdown" role="button" aria-expanded="false" data-bs-toggle="collapse">
-          <svg class="svg-icon svg-icon-md me-3">
-            <use xlink:href="icons/orion-svg-sprite.57a86639.svg#pie-chart-1"> </use>
-          </svg><span class="sidebar-link-title">Charts </span></a>
-      </li>
-      <li class="sidebar-list-item"><a class="sidebar-link text-muted " href="#" data-bs-target="#formsDropdown" role="button" aria-expanded="false" data-bs-toggle="collapse">
-          <svg class="svg-icon svg-icon-md me-3">
-            <use xlink:href="icons/orion-svg-sprite.57a86639.svg#file-storage-1"> </use>
-          </svg><span class="sidebar-link-title">Forms </span></a>
-      </li>
-      <li class="sidebar-list-item"><a class="sidebar-link text-muted " href="#" data-bs-target="#tablesDropdown" role="button" aria-expanded="false" data-bs-toggle="collapse">
-          <svg class="svg-icon svg-icon-md me-3">
-            <use xlink:href="icons/orion-svg-sprite.57a86639.svg#grid-1"> </use>
-          </svg><span class="sidebar-link-title">Tables </span></a>
-      </li>
     </ul>
   </div>
   <div class="page-holder bg-gray-100">
     <div class="container-fluid px-lg-4 px-xl-5">
-      <section class="mb-3 mb-lg-5">
-        <div class="row">
-          <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card-widget h-100">
-              <div class="card-widget-body">
-                <div class="dot me-3 bg-indigo"></div>
-                <div class="text">
-                  <h6 class="mb-0">Data consumed</h6><span class="text-gray-500">145,14 GB</span>
-                </div>
-              </div>
-              <div class="icon text-white bg-indigo"><i class="fas fa-server"></i></div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card-widget h-100">
-              <div class="card-widget-body">
-                <div class="dot me-3 bg-green"></div>
-                <div class="text">
-                  <h6 class="mb-0">Open cases</h6><span class="text-gray-500">32</span>
-                </div>
-              </div>
-              <div class="icon text-white bg-green"><i class="far fa-clipboard"></i></div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card-widget h-100">
-              <div class="card-widget-body">
-                <div class="dot me-3 bg-blue"></div>
-                <div class="text">
-                  <h6 class="mb-0">Work orders</h6><span class="text-gray-500">400</span>
-                </div>
-              </div>
-              <div class="icon text-white bg-blue"><i class="fa fa-dolly-flatbed"></i></div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card-widget h-100">
-              <div class="card-widget-body">
-                <div class="dot me-3 bg-red"></div>
-                <div class="text">
-                  <h6 class="mb-0">New invoices</h6><span class="text-gray-500">123</span>
-                </div>
-              </div>
-              <div class="icon text-white bg-red"><i class="fas fa-receipt"></i></div>
-            </div>
-          </div>
-        </div>
-      </section>
       <section class="mb-4 mb-lg-5">
         <h2 class="section-heading section-heading-ms">Dashboard 📈 </h2>
         <div class="col-lg-7 mb-4 mb-lg-0">
@@ -201,9 +115,57 @@
               <h4 class="card-heading">Trade&ensp;Info</h4>
             </div>
             <div class="card-body">
-              <div class="chart-holder w-100">
-
-              </div>
+              <form class="row g-3 needs-validation" novalidate="">
+                <div class="col-md-4">
+                  <label class="form-label" for="validationCustom01">First name</label>
+                  <input class="form-control" id="validationCustom01" type="text" value="Mark" required="">
+                  <div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">Please enter your first name.</div>
+                </div>
+                <div class="col-md-4">
+                  <label class="form-label" for="validationCustom02">Last name</label>
+                  <input class="form-control" id="validationCustom02" type="text" value="Otto" required="">
+                  <div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">Please enter your last name.</div>
+                </div>
+                <div class="col-md-4">
+                  <label class="form-label" for="validationCustomUsername">Username</label>
+                  <div class="input-group has-validation"><span class="input-group-text" id="inputGroupPrepend">@</span>
+                    <input class="form-control" id="validationCustomUsername" type="text" aria-describedby="inputGroupPrepend" required="">
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please choose a username.</div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="validationCustom03">City</label>
+                  <input class="form-control" id="validationCustom03" type="text" required="">
+                  <div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">Please provide a valid city.</div>
+                </div>
+                <div class="col-md-3">
+                  <label class="form-label" for="validationCustom04">Country</label>
+                  <select class="form-select" id="validationCustom04" required="">
+                    <option selected="" disabled="" value="">Choose...</option>
+                    <option value="AF">Afghanistan</option>
+                  </select>
+                  <div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">Please select a country.</div>
+                </div>
+                <div class="col-md-3">
+                  <label class="form-label" for="validationCustom05">Zip</label>
+                  <input class="form-control" id="validationCustom05" type="text" required="">
+                  <div class="invalid-feedback">Please provide a valid zip.</div>
+                </div>
+                <div class="col-12">
+                  <div class="form-check"></div>
+                  <input class="form-check-input" id="invalidCheck" type="checkbox" value="" required="">
+                  <label class="form-check-label" for="invalidCheck">Agree to terms and conditions</label>
+                  <div class="invalid-feedback">You must agree before submitting.</div>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary" type="submit">Submit form</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
