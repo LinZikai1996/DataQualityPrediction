@@ -70,21 +70,6 @@
           <div class="dropdown-divider"></div><a class="dropdown-item text-center" href="#"><small class="fw-bold text-uppercase">View all notifications</small></a>
         </div>
       </li>
-      <!-- Messages                        -->
-      <li class="nav-item dropdown me-2 me-lg-3"> <a class="nav-link nav-link-icon text-gray-400 px-1" id="messages" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <div class="dropdown-menu dropdown-menu-end dropdown-menu-animated text-sm" aria-labelledby="messages"><a class="dropdown-item d-flex align-items-center p-3" href="#"> <img class="avatar avatar-sm p-1 me-2" src="https://d19m59y37dris4.cloudfront.net/bubbly/1-1/img/avatar-0.jpg" alt="Jason Doe">
-            <div class="pt-1">
-              <h6 class="fw-bold mb-0">Jason Doe</h6><span class="text-muted text-sm">Sent you a message</span>
-            </div></a><a class="dropdown-item d-flex align-items-center p-3" href="#"> <img class="avatar avatar-sm p-1 me-2" src="https://d19m59y37dris4.cloudfront.net/bubbly/1-1/img/avatar-1.jpg" alt="Frank Williams">
-            <div class="pt-1">
-              <h6 class="fw-bold mb-0">Frank Williams</h6><span class="text-muted text-sm">Sent you a message</span>
-            </div></a><a class="dropdown-item d-flex align-items-center p-3" href="#"> <img class="avatar avatar-sm p-1 me-2" src="https://d19m59y37dris4.cloudfront.net/bubbly/1-1/img/avatar-2.jpg" alt="Ashley Wood">
-            <div class="pt-1">
-              <h6 class="fw-bold mb-0">Ashley Wood</h6><span class="text-muted text-sm">Sent you a message</span>
-            </div></a>
-          <div class="dropdown-divider"></div><a class="dropdown-item text-center" href="#"> <small class="fw-bold text-uppercase">View all messages                          </small></a>
-        </div>
-      </li>
       <li class="nav-item dropdown ms-auto"><a class="nav-link pe-0" id="userInfo" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="avatar p-1" src="https://d19m59y37dris4.cloudfront.net/bubbly/1-1/img/avatar-6.jpg" alt="Jason Doe"></a>
         <div class="dropdown-menu dropdown-menu-end dropdown-menu-animated" aria-labelledby="userInfo">
           <div class="dropdown-header text-gray-700">
@@ -117,32 +102,6 @@
             <div class="card-body">
               <form class="row g-3 needs-validation" novalidate="">
                 <div class="col-md-4">
-                  <label class="form-label" for="validationCustom01">First name</label>
-                  <input class="form-control" id="validationCustom01" type="text" value="Mark" required="">
-                  <div class="valid-feedback">Looks good!</div>
-                  <div class="invalid-feedback">Please enter your first name.</div>
-                </div>
-                <div class="col-md-4">
-                  <label class="form-label" for="validationCustom02">Last name</label>
-                  <input class="form-control" id="validationCustom02" type="text" value="Otto" required="">
-                  <div class="valid-feedback">Looks good!</div>
-                  <div class="invalid-feedback">Please enter your last name.</div>
-                </div>
-                <div class="col-md-4">
-                  <label class="form-label" for="validationCustomUsername">Username</label>
-                  <div class="input-group has-validation"><span class="input-group-text" id="inputGroupPrepend">@</span>
-                    <input class="form-control" id="validationCustomUsername" type="text" aria-describedby="inputGroupPrepend" required="">
-                    <div class="valid-feedback">Looks good!</div>
-                    <div class="invalid-feedback">Please choose a username.</div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <label class="form-label" for="validationCustom03">City</label>
-                  <input class="form-control" id="validationCustom03" type="text" required="">
-                  <div class="valid-feedback">Looks good!</div>
-                  <div class="invalid-feedback">Please provide a valid city.</div>
-                </div>
-                <div class="col-md-3">
                   <label class="form-label" for="validationCustom04">Country</label>
                   <select class="form-select" id="validationCustom04" required="">
                     <option selected="" disabled="" value="">Choose...</option>
@@ -151,16 +110,122 @@
                   <div class="valid-feedback">Looks good!</div>
                   <div class="invalid-feedback">Please select a country.</div>
                 </div>
-                <div class="col-md-3">
-                  <label class="form-label" for="validationCustom05">Zip</label>
-                  <input class="form-control" id="validationCustom05" type="text" required="">
-                  <div class="invalid-feedback">Please provide a valid zip.</div>
+                <div class="col-md-4">
+                  <label class="form-label" for="validationCustom04">Country</label>
+                  <select class="form-select" id="validationCustom04" required="">
+                    <option selected="" disabled="" value="">Choose...</option>
+                    <option value="AF">Afghanistan</option>
+                  </select>
+                  <div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">Please select a country.</div>
                 </div>
-                <div class="col-12">
-                  <div class="form-check"></div>
-                  <input class="form-check-input" id="invalidCheck" type="checkbox" value="" required="">
-                  <label class="form-check-label" for="invalidCheck">Agree to terms and conditions</label>
-                  <div class="invalid-feedback">You must agree before submitting.</div>
+                <div class="col-md-4">
+                  <label class="form-label" for="validationCustom04">Country</label>
+                  <select class="form-select" id="validationCustom04" required="">
+                    <option selected="" disabled="" value="">Choose...</option>
+                    <option value="AF">Afghanistan</option>
+                  </select>
+                  <div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">Please select a country.</div>
+                </div>
+                <div class="col-md-4">
+                  <label class="form-label" for="validationCustom04">Country</label>
+                  <select class="form-select" id="validationCustom04" required="">
+                    <option selected="" disabled="" value="">Choose...</option>
+                    <option value="AF">Afghanistan</option>
+                  </select>
+                  <div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">Please select a country.</div>
+                </div>
+                <div class="col-md-4">
+                  <label class="form-label" for="validationCustom04">Country</label>
+                  <select class="form-select" id="validationCustom04" required="">
+                    <option selected="" disabled="" value="">Choose...</option>
+                    <option value="AF">Afghanistan</option>
+                  </select>
+                  <div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">Please select a country.</div>
+                </div>
+                <div class="col-md-4">
+                  <label class="form-label" for="validationCustom04">Country</label>
+                  <select class="form-select" id="validationCustom04" required="">
+                    <option selected="" disabled="" value="">Choose...</option>
+                    <option value="AF">Afghanistan</option>
+                  </select>
+                  <div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">Please select a country.</div>
+                </div>
+                <div class="col-md-4">
+                  <label class="form-label" for="validationCustom04">Country</label>
+                  <select class="form-select" id="validationCustom04" required="">
+                    <option selected="" disabled="" value="">Choose...</option>
+                    <option value="AF">Afghanistan</option>
+                  </select>
+                  <div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">Please select a country.</div>
+                </div>
+                <div class="col-md-4">
+                  <label class="form-label" for="validationCustom04">Country</label>
+                  <select class="form-select" id="validationCustom04" required="">
+                    <option selected="" disabled="" value="">Choose...</option>
+                    <option value="AF">Afghanistan</option>
+                  </select>
+                  <div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">Please select a country.</div>
+                </div>
+                <div class="col-md-4">
+                  <label class="form-label" for="validationCustom04">Country</label>
+                  <select class="form-select" id="validationCustom04" required="">
+                    <option selected="" disabled="" value="">Choose...</option>
+                    <option value="AF">Afghanistan</option>
+                  </select>
+                  <div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">Please select a country.</div>
+                </div>
+                <div class="col-md-4">
+                  <label class="form-label" for="validationCustom04">Country</label>
+                  <select class="form-select" id="validationCustom04" required="">
+                    <option selected="" disabled="" value="">Choose...</option>
+                    <option value="AF">Afghanistan</option>
+                  </select>
+                  <div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">Please select a country.</div>
+                </div>
+                <div class="col-md-4">
+                  <label class="form-label" for="validationCustom04">Country</label>
+                  <select class="form-select" id="validationCustom04" required="">
+                    <option selected="" disabled="" value="">Choose...</option>
+                    <option value="AF">Afghanistan</option>
+                  </select>
+                  <div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">Please select a country.</div>
+                </div>
+                <div class="col-md-4">
+                  <label class="form-label" for="validationCustom04">Country</label>
+                  <select class="form-select" id="validationCustom04" required="">
+                    <option selected="" disabled="" value="">Choose...</option>
+                    <option value="AF">Afghanistan</option>
+                  </select>
+                  <div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">Please select a country.</div>
+                </div>
+                <div class="col-md-4">
+                  <label class="form-label" for="validationCustom04">Country</label>
+                  <select class="form-select" id="validationCustom04" required="">
+                    <option selected="" disabled="" value="">Choose...</option>
+                    <option value="AF">Afghanistan</option>
+                  </select>
+                  <div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">Please select a country.</div>
+                </div>
+                <div class="col-md-4">
+                  <label class="form-label" for="validationCustom04">Country</label>
+                  <select class="form-select" id="validationCustom04" required="">
+                    <option selected="" disabled="" value="">Choose...</option>
+                    <option value="AF">Afghanistan</option>
+                  </select>
+                  <div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">Please select a country.</div>
                 </div>
                 <div class="col-12">
                   <button class="btn btn-primary" type="submit">Submit form</button>
