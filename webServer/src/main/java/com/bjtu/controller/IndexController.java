@@ -10,4 +10,10 @@ public class IndexController {
         System.out.println("===== Server start =====");
         return "login";
     }
+
+    @RequestMapping(value = {"/toIndexWithoutUser.do"})
+    public String toIndexWithoutUser(){
+        System.out.println("===== Server start =====");
+        return "index";
+    }
 }

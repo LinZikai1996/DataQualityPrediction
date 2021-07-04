@@ -100,10 +100,10 @@
               <h4 class="card-heading">Trade&ensp;Info</h4>
             </div>
             <div class="card-body">
-              <form class="row g-3 needs-validation" novalidate="">
+              <form class="row g-3 needs-validation" novalidate="" action="/tradeSubmit.do">
                 <div class="col-md-4">
-                  <label class="form-label" for="validationCustom04">Country</label>
-                  <select class="form-select" id="validationCustom04" required="">
+                  <label class="form-label" for="validationCustom04" >Parameter_1</label>
+                  <select class="form-select" id="validationCustom04" required="" name = "parameter_1">
                     <option selected="" disabled="" value="">Choose...</option>
                     <option value="AF">Afghanistan</option>
                   </select>
@@ -111,8 +111,8 @@
                   <div class="invalid-feedback">Please select a country.</div>
                 </div>
                 <div class="col-md-4">
-                  <label class="form-label" for="validationCustom04">Country</label>
-                  <select class="form-select" id="validationCustom04" required="">
+                  <label class="form-label" for="validationCustom04">Parameter_2</label>
+                  <select class="form-select" id="validationCustom04" required="" name="parameter_2">
                     <option selected="" disabled="" value="">Choose...</option>
                     <option value="AF">Afghanistan</option>
                   </select>
@@ -120,8 +120,8 @@
                   <div class="invalid-feedback">Please select a country.</div>
                 </div>
                 <div class="col-md-4">
-                  <label class="form-label" for="validationCustom04">Country</label>
-                  <select class="form-select" id="validationCustom04" required="">
+                  <label class="form-label" for="validationCustom04">Parameter_3</label>
+                  <select class="form-select" id="validationCustom04" required="" name="parameter_3">
                     <option selected="" disabled="" value="">Choose...</option>
                     <option value="AF">Afghanistan</option>
                   </select>
@@ -129,8 +129,8 @@
                   <div class="invalid-feedback">Please select a country.</div>
                 </div>
                 <div class="col-md-4">
-                  <label class="form-label" for="validationCustom04">Country</label>
-                  <select class="form-select" id="validationCustom04" required="">
+                  <label class="form-label" for="validationCustom04">Parameter_4</label>
+                  <select class="form-select" id="validationCustom04" required="" name="parameter_4">
                     <option selected="" disabled="" value="">Choose...</option>
                     <option value="AF">Afghanistan</option>
                   </select>
@@ -138,8 +138,8 @@
                   <div class="invalid-feedback">Please select a country.</div>
                 </div>
                 <div class="col-md-4">
-                  <label class="form-label" for="validationCustom04">Country</label>
-                  <select class="form-select" id="validationCustom04" required="">
+                  <label class="form-label" for="validationCustom04">Parameter_5</label>
+                  <select class="form-select" id="validationCustom04" required="" name="parameter_5">
                     <option selected="" disabled="" value="">Choose...</option>
                     <option value="AF">Afghanistan</option>
                   </select>
@@ -147,8 +147,8 @@
                   <div class="invalid-feedback">Please select a country.</div>
                 </div>
                 <div class="col-md-4">
-                  <label class="form-label" for="validationCustom04">Country</label>
-                  <select class="form-select" id="validationCustom04" required="">
+                  <label class="form-label" for="validationCustom04">Parameter_6</label>
+                  <select class="form-select" id="validationCustom04" required="" name="parameter_6">
                     <option selected="" disabled="" value="">Choose...</option>
                     <option value="AF">Afghanistan</option>
                   </select>
@@ -156,8 +156,8 @@
                   <div class="invalid-feedback">Please select a country.</div>
                 </div>
                 <div class="col-md-4">
-                  <label class="form-label" for="validationCustom04">Country</label>
-                  <select class="form-select" id="validationCustom04" required="">
+                  <label class="form-label" for="validationCustom04">Parameter_7</label>
+                  <select class="form-select" id="validationCustom04" required="" name="parameter_7">
                     <option selected="" disabled="" value="">Choose...</option>
                     <option value="AF">Afghanistan</option>
                   </select>
@@ -165,8 +165,8 @@
                   <div class="invalid-feedback">Please select a country.</div>
                 </div>
                 <div class="col-md-4">
-                  <label class="form-label" for="validationCustom04">Country</label>
-                  <select class="form-select" id="validationCustom04" required="">
+                  <label class="form-label" for="validationCustom04">Parameter_8</label>
+                  <select class="form-select" id="validationCustom04" required="" name="parameter_8">
                     <option selected="" disabled="" value="">Choose...</option>
                     <option value="AF">Afghanistan</option>
                   </select>
@@ -174,8 +174,8 @@
                   <div class="invalid-feedback">Please select a country.</div>
                 </div>
                 <div class="col-md-4">
-                  <label class="form-label" for="validationCustom04">Country</label>
-                  <select class="form-select" id="validationCustom04" required="">
+                  <label class="form-label" for="validationCustom04">parameter_9</label>
+                  <select class="form-select" id="validationCustom04" required="" name="parameter_9">
                     <option selected="" disabled="" value="">Choose...</option>
                     <option value="AF">Afghanistan</option>
                   </select>
