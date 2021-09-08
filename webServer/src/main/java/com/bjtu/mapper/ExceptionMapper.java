@@ -14,5 +14,5 @@ public interface ExceptionMapper {
     List<Exception> selectAll();
 
     @Select("select * from exception where userId = #{userId}")
-    Exception selctExceptionByUserId(@Param("userId") String userId);
+    Exception selectExceptionByUserId(@Param("userId") String userId);
 }

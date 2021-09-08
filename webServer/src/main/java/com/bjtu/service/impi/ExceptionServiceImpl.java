@@ -23,6 +23,6 @@ public class ExceptionServiceImpl implements ExceptionService {
 
     @Override
     public Exception selectExceptionByUserId(String userId) {
-        return exceptionMapper.selctExceptionByUserId(userId);
+        return exceptionMapper.selectExceptionByUserId(userId);
     }
 }

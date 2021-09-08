@@ -13,12 +13,10 @@ public class TradeController {
     TradeService tradeService;
 
     @RequestMapping(value ="/tradeSubmit.do")
-    public String newTrade(@RequestParam(name="Parameter_1") String Parameter_1,
-                           @RequestParam(name="Parameter_2") String Parameter_2,
-                           @RequestParam(name="Parameter_3") String Parameter_3,
-                           @RequestParam(name="Parameter_4") String Parameter_4
+    public String newTrade(@RequestParam(name="trade_type") String trade_type
                         ){
         System.out.println("===== Submit Trade =====");
+        System.out.println(trade_type);
         return "index";
     }
 }

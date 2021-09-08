@@ -100,129 +100,54 @@
               <h4 class="card-heading">Trade&ensp;Info</h4>
             </div>
             <div class="card-body">
-              <form class="row g-3 needs-validation" novalidate="" action="/tradeSubmit.do">
+              <form class="row g-3 needs-validation" action="/tradeSubmit.do">
                 <div class="col-md-4">
-                  <label class="form-label" for="validationCustom04" >Parameter_1</label>
-                  <select class="form-select" id="validationCustom04" required="" name = "parameter_1">
+                  <label class="form-label" for="validationCustom04" >Primary Asset Class</label>
+                  <select class="form-select" id="validationCustom04" name = "primary_asset_class">
                     <option selected="" disabled="" value="">Choose...</option>
-                    <option value="AF">Afghanistan</option>
+                    <option value="1">Commodity</option>
+                    <option value="2">Credit</option>
+                    <option value="3">CrossAsset</option>
+                    <option value="4">Equity</option>
+                    <option value="5">ExchangeTraded</option>
+                    <option value="6">FixedIncome</option>
+                    <option value="7">ForeignExchange</option>
+                    <option value="8">InterestRate</option>
+                    <option value="9">MoneyMarket</option>
+                    <option value="10">SecuritiesFinance</option>
                   </select>
                   <div class="valid-feedback">Looks good!</div>
                   <div class="invalid-feedback">Please select a country.</div>
                 </div>
                 <div class="col-md-4">
-                  <label class="form-label" for="validationCustom04">Parameter_2</label>
-                  <select class="form-select" id="validationCustom04" required="" name="parameter_2">
+                  <label class="form-label" for="validationCustom04" >Prodict Value</label>
+                  <select class="form-select" id="validationCustom04" name = "prodict_value">
                     <option selected="" disabled="" value="">Choose...</option>
-                    <option value="AF">Afghanistan</option>
-                  </select>
-                  <div class="valid-feedback">Looks good!</div>
-                  <div class="invalid-feedback">Please select a country.</div>
-                </div>
-                <div class="col-md-4">
-                  <label class="form-label" for="validationCustom04">Parameter_3</label>
-                  <select class="form-select" id="validationCustom04" required="" name="parameter_3">
-                    <option selected="" disabled="" value="">Choose...</option>
-                    <option value="AF">Afghanistan</option>
-                  </select>
-                  <div class="valid-feedback">Looks good!</div>
-                  <div class="invalid-feedback">Please select a country.</div>
-                </div>
-                <div class="col-md-4">
-                  <label class="form-label" for="validationCustom04">Parameter_4</label>
-                  <select class="form-select" id="validationCustom04" required="" name="parameter_4">
-                    <option selected="" disabled="" value="">Choose...</option>
-                    <option value="AF">Afghanistan</option>
-                  </select>
-                  <div class="valid-feedback">Looks good!</div>
-                  <div class="invalid-feedback">Please select a country.</div>
-                </div>
-                <div class="col-md-4">
-                  <label class="form-label" for="validationCustom04">Parameter_5</label>
-                  <select class="form-select" id="validationCustom04" required="" name="parameter_5">
-                    <option selected="" disabled="" value="">Choose...</option>
-                    <option value="AF">Afghanistan</option>
-                  </select>
-                  <div class="valid-feedback">Looks good!</div>
-                  <div class="invalid-feedback">Please select a country.</div>
-                </div>
-                <div class="col-md-4">
-                  <label class="form-label" for="validationCustom04">Parameter_6</label>
-                  <select class="form-select" id="validationCustom04" required="" name="parameter_6">
-                    <option selected="" disabled="" value="">Choose...</option>
-                    <option value="AF">Afghanistan</option>
-                  </select>
-                  <div class="valid-feedback">Looks good!</div>
-                  <div class="invalid-feedback">Please select a country.</div>
-                </div>
-                <div class="col-md-4">
-                  <label class="form-label" for="validationCustom04">Parameter_7</label>
-                  <select class="form-select" id="validationCustom04" required="" name="parameter_7">
-                    <option selected="" disabled="" value="">Choose...</option>
-                    <option value="AF">Afghanistan</option>
-                  </select>
-                  <div class="valid-feedback">Looks good!</div>
-                  <div class="invalid-feedback">Please select a country.</div>
-                </div>
-                <div class="col-md-4">
-                  <label class="form-label" for="validationCustom04">Parameter_8</label>
-                  <select class="form-select" id="validationCustom04" required="" name="parameter_8">
-                    <option selected="" disabled="" value="">Choose...</option>
-                    <option value="AF">Afghanistan</option>
-                  </select>
-                  <div class="valid-feedback">Looks good!</div>
-                  <div class="invalid-feedback">Please select a country.</div>
-                </div>
-                <div class="col-md-4">
-                  <label class="form-label" for="validationCustom04">parameter_9</label>
-                  <select class="form-select" id="validationCustom04" required="" name="parameter_9">
-                    <option selected="" disabled="" value="">Choose...</option>
-                    <option value="AF">Afghanistan</option>
-                  </select>
-                  <div class="valid-feedback">Looks good!</div>
-                  <div class="invalid-feedback">Please select a country.</div>
-                </div>
-                <div class="col-md-4">
-                  <label class="form-label" for="validationCustom04">Country</label>
-                  <select class="form-select" id="validationCustom04" required="">
-                    <option selected="" disabled="" value="">Choose...</option>
-                    <option value="AF">Afghanistan</option>
-                  </select>
-                  <div class="valid-feedback">Looks good!</div>
-                  <div class="invalid-feedback">Please select a country.</div>
-                </div>
-                <div class="col-md-4">
-                  <label class="form-label" for="validationCustom04">Country</label>
-                  <select class="form-select" id="validationCustom04" required="">
-                    <option selected="" disabled="" value="">Choose...</option>
-                    <option value="AF">Afghanistan</option>
-                  </select>
-                  <div class="valid-feedback">Looks good!</div>
-                  <div class="invalid-feedback">Please select a country.</div>
-                </div>
-                <div class="col-md-4">
-                  <label class="form-label" for="validationCustom04">Country</label>
-                  <select class="form-select" id="validationCustom04" required="">
-                    <option selected="" disabled="" value="">Choose...</option>
-                    <option value="AF">Afghanistan</option>
-                  </select>
-                  <div class="valid-feedback">Looks good!</div>
-                  <div class="invalid-feedback">Please select a country.</div>
-                </div>
-                <div class="col-md-4">
-                  <label class="form-label" for="validationCustom04">Country</label>
-                  <select class="form-select" id="validationCustom04" required="">
-                    <option selected="" disabled="" value="">Choose...</option>
-                    <option value="AF">Afghanistan</option>
-                  </select>
-                  <div class="valid-feedback">Looks good!</div>
-                  <div class="invalid-feedback">Please select a country.</div>
-                </div>
-                <div class="col-md-4">
-                  <label class="form-label" for="validationCustom04">Country</label>
-                  <select class="form-select" id="validationCustom04" required="">
-                    <option selected="" disabled="" value="">Choose...</option>
-                    <option value="AF">Afghanistan</option>
+                    <option value="Commodity:Metals:NonPrecious:Option:Cash">Commodity:Metals:NonPrecious:Option:Cash</option>
+                    <option value="Commodity:Metals:Precious:Option:Physical">Commodity:Metals:Precious:Option:Physical</option>
+                    <option value="Commodity:Metals:Precious:SpotFwd:Physical">Commodity:Metals:Precious:SpotFwd:Physical</option>
+                    <option value="Credit:SingleName:Sovereign:StandardAsiaSovereign">Credit:SingleName:Sovereign:StandardAsiaSovereign</option>
+                    <option value="Credit:TotalReturnSwap">Credit:TotalReturnSwap</option>
+                    <option value="Equity:Cash">Equity:Cash</option>
+                    <option value="Equity:Option:PriceReturnBasicPerformanceSingleName">Equity:Option:PriceReturnBasicPerformanceSingleName</option>
+                    <option value="Equity:Other">Equity:Other</option>
+                    <option value="Equty:Swap:PriceReturnBasicPerformance:SingleIndex">Equty:Swap:PriceReturnBasicPerformance:SingleIndex</option>
+                    <option value="Equty:Swap:PriceReturBasicPerformance:SingleName">Equty:Swap:PriceReturBasicPerformance:SingleName</option>
+                    <option value="ExchangeTraded:Future:Commodity">ExchangeTraded:Future:Commodity</option>
+                    <option value="ExchangeTraded:Future:Commodity">ExchangeTraded:Future:Commodity</option>
+                    <option value="ExchangeTraded:Future:FX">ExchangeTraded:Future:FX</option>
+                    <option value="ExchangeTraded:Future:lnterestRate">ExchangeTraded:Future:lnterestRate</option>
+                    <option value="FixedIncome:Bond">FixedIncome:Bond</option>
+                    <option value="ForeignExchange:ComplexExotic">ForeignExchange:ComplexExotic</option>
+                    <option value="ForeignExchange:Forward">ForeignExchange:Forward</option>
+                    <option value="ForeignExchange:NDF">ForeignExchange:NDF</option>
+                    <option value="ForeignExchange:NDO">ForeignExchange:NDO</option>
+                    <option value="ForeignExchange:SimpleExoticDigital">ForeignExchange:SimpleExoticDigital</option>
+                    <option value="ForeignExchange:VanillaOption">ForeignExchange:VanillaOption</option>
+                    <option value="InterestRate:CrossCurrency:Basis">InterestRate:CrossCurrency:Basis</option>
+                    <option value="InterestRate:CrossCurrency:FixedFloat">InterestRate:CrossCurrency:FixedFloat</option>
+                    <option value="InterestRate:Exotic">InterestRate:Exotic</option>
+                    <option value="InterestRate:lRSwap:Basis">InterestRate:lRSwap:Basis</option>
                   </select>
                   <div class="valid-feedback">Looks good!</div>
                   <div class="invalid-feedback">Please select a country.</div>
