@@ -136,7 +136,7 @@
             <span class="nav-text">Dashboard</span>
           </a>
           <ul aria-expanded="false">
-            <li><a href="/toIndex.do">Dashboard Light</a></li>
+            <li><a href="/toIndex.do">Trade Dashboard</a></li>
           </ul>
         </li>
       </ul>
@@ -160,151 +160,149 @@
             </div>
             <div class="card-body">
               <div class="form-validation">
-                <form class="needs-validation" novalidate="">
+                <form class="needs-validation" action="/tradeSubmit.do">
                   <div class="row">
                     <div class="col-xl-6">
                       <div class="mb-3 row">
-                        <label class="col-lg-4 col-form-label" for="validationCustom01">Username
-                          <span class="text-danger">*</span>
-                        </label>
+                        <label class="col-lg-4 col-form-label" for="trade_info_01">Primary Asset Class</label>
                         <div class="col-lg-6">
-                          <input type="text" class="form-control" id="validationCustom01" placeholder="Enter a username.." required="">
-                          <div class="invalid-feedback">
-                            Please enter a username.
-                          </div>
+                          <select class="default-select wide form-control" id="trade_info_01" name = "primary_asset_class">
+                            <option value="1.1">1.1</option>
+                            <option value="1.2">1.2</option>
+                            <option value="1.3">1.3</option>
+                          </select>
                         </div>
                       </div>
                       <div class="mb-3 row">
-                        <label class="col-lg-4 col-form-label" for="validationCustom02">Email <span class="text-danger">*</span>
-                        </label>
+                        <label class="col-lg-4 col-form-label" for="trade_info_02">Product</label>
                         <div class="col-lg-6">
-                          <input type="text" class="form-control" id="validationCustom02" placeholder="Your valid email.." required="">
-                          <div class="invalid-feedback">
-                            Please enter a Email.
-                          </div>
+                          <select class="default-select wide form-control" id="trade_info_02" name = "product">
+                            <option value="2.1">2.1</option>
+                            <option value="2.2">2.2</option>
+                            <option value="2.3">2.3</option>
+                          </select>
                         </div>
                       </div>
                       <div class="mb-3 row">
-                        <label class="col-lg-4 col-form-label" for="validationCustom03">Password
-                          <span class="text-danger">*</span>
-                        </label>
+                        <label class="col-lg-4 col-form-label" for="trade_info_03">Originating Event</label>
                         <div class="col-lg-6">
-                          <input type="password" class="form-control" id="validationCustom03" placeholder="Choose a safe one.." required="">
-                          <div class="invalid-feedback">
-                            Please enter a password.
-                          </div>
+                          <select class="default-select wide form-control" id="trade_info_03" name = "originating_event">
+                            <option value="3.1">3.1</option>
+                            <option value="3.2">3.2</option>
+                            <option value="3.3">3.3</option>
+                          </select>
                         </div>
                       </div>
                       <div class="mb-3 row">
-                        <label class="col-lg-4 col-form-label" for="validationCustom04">Suggestions <span class="text-danger">*</span>
-                        </label>
+                        <label class="col-lg-4 col-form-label" for="trade_info_04">Reporting Regime</label>
                         <div class="col-lg-6">
-                          <textarea class="form-control" id="validationCustom04" rows="5" placeholder="What would you like to see?" required=""></textarea>
-                          <div class="invalid-feedback">
-                            Please enter a Suggestions.
-                          </div>
+                          <select class="default-select wide form-control" id="trade_info_04" name = "reporting_regime">
+                            <option value="4.1">4.1</option>
+                            <option value="4.2">4.2</option>
+                            <option value="4.3">4.3</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="mb-3 row">
+                        <label class="col-lg-4 col-form-label" for="trade_info_05">USI Issuer</label>
+                        <div class="col-lg-6">
+                          <select class="default-select wide form-control" id="trade_info_05" name = "usi_issuer">
+                            <option value="5.1">5.1</option>
+                            <option value="5.2">5.2</option>
+                            <option value="5.3">5.3</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="mb-3 row">
+                        <label class="col-lg-4 col-form-label" for="trade_info_06">USI Value</label>
+                        <div class="col-lg-6">
+                          <select class="default-select wide form-control" id="trade_info_06" name = "usi_value">
+                            <option value="6.1">6.1</option>
+                            <option value="6.2">6.2</option>
+                            <option value="6.3">6.3</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="mb-3 row">
+                        <label class="col-lg-4 col-form-label" for="trade_info_07">UTI Originator</label>
+                        <div class="col-lg-6">
+                          <select class="default-select wide form-control" id="trade_info_07" name = "uti_originator">
+                            <option value="7.1">7.1</option>
+                            <option value="7.2">7.2</option>
+                            <option value="7.3">7.3</option>
+                          </select>
                         </div>
                       </div>
                     </div>
                     <div class="col-xl-6">
                       <div class="mb-3 row">
-                        <label class="col-lg-4 col-form-label" for="validationCustom05">Best Skill
-                          <span class="text-danger">*</span>
-                        </label>
+                        <label class="col-lg-4 col-form-label" for="trade_info_01">Primary Asset Class</label>
                         <div class="col-lg-6">
-                          <select class="default-select wide form-control" id="validationCustom05" style="display: none;">
-                            <option data-display="Select">Please select</option>
-                            <option value="html">HTML</option>
-                            <option value="css">CSS</option>
-                            <option value="javascript">JavaScript</option>
-                            <option value="angular">Angular</option>
-                            <option value="angular">React</option>
-                            <option value="vuejs">Vue.js</option>
-                            <option value="ruby">Ruby</option>
-                            <option value="php">PHP</option>
-                            <option value="asp">ASP.NET</option>
-                            <option value="python">Python</option>
-                            <option value="mysql">MySQL</option>
-                          </select><div class="nice-select default-select wide form-control" tabindex="0"><span class="current">Select</span><ul class="list"><li data-value="Please select" data-display="Select" class="option selected">Please select</li><li data-value="html" class="option">HTML</li><li data-value="css" class="option">CSS</li><li data-value="javascript" class="option">JavaScript</li><li data-value="angular" class="option">Angular</li><li data-value="angular" class="option">React</li><li data-value="vuejs" class="option">Vue.js</li><li data-value="ruby" class="option">Ruby</li><li data-value="php" class="option">PHP</li><li data-value="asp" class="option">ASP.NET</li><li data-value="python" class="option">Python</li><li data-value="mysql" class="option">MySQL</li></ul></div>
-                          <div class="invalid-feedback">
-                            Please select a one.
-                          </div>
+                          <select class="default-select wide form-control" id="trade_info_01" name = "primary_asset_class">
+                            <option value="1.1">1.1</option>
+                            <option value="1.2">1.2</option>
+                            <option value="1.3">1.3</option>
+                          </select>
                         </div>
                       </div>
                       <div class="mb-3 row">
-                        <label class="col-lg-4 col-form-label" for="validationCustom06">Currency
-                          <span class="text-danger">*</span>
-                        </label>
+                        <label class="col-lg-4 col-form-label" for="trade_info_02">Product</label>
                         <div class="col-lg-6">
-                          <input type="text" class="form-control" id="validationCustom06" placeholder="$21.60" required="">
-                          <div class="invalid-feedback">
-                            Please enter a Currency.
-                          </div>
+                          <select class="default-select wide form-control" id="trade_info_02" name = "product">
+                            <option value="2.1">2.1</option>
+                            <option value="2.2">2.2</option>
+                            <option value="2.3">2.3</option>
+                          </select>
                         </div>
                       </div>
                       <div class="mb-3 row">
-                        <label class="col-lg-4 col-form-label" for="validationCustom07">Website
-                          <span class="text-danger">*</span>
-                        </label>
+                        <label class="col-lg-4 col-form-label" for="trade_info_03">Originating Event</label>
                         <div class="col-lg-6">
-                          <input type="text" class="form-control" id="validationCustom07" placeholder="http://example.com" required="">
-                          <div class="invalid-feedback">
-                            Please enter a url.
-                          </div>
+                          <select class="default-select wide form-control" id="trade_info_03" name = "originating_event">
+                            <option value="3.1">3.1</option>
+                            <option value="3.2">3.2</option>
+                            <option value="3.3">3.3</option>
+                          </select>
                         </div>
                       </div>
                       <div class="mb-3 row">
-                        <label class="col-lg-4 col-form-label" for="validationCustom08">Phone (US)
-                          <span class="text-danger">*</span>
-                        </label>
+                        <label class="col-lg-4 col-form-label" for="trade_info_04">Reporting Regime</label>
                         <div class="col-lg-6">
-                          <input type="text" class="form-control" id="validationCustom08" placeholder="212-999-0000" required="">
-                          <div class="invalid-feedback">
-                            Please enter a phone no.
-                          </div>
+                          <select class="default-select wide form-control" id="trade_info_04" name = "reporting_regime">
+                            <option value="4.1">4.1</option>
+                            <option value="4.2">4.2</option>
+                            <option value="4.3">4.3</option>
+                          </select>
                         </div>
                       </div>
                       <div class="mb-3 row">
-                        <label class="col-lg-4 col-form-label" for="validationCustom09">Digits <span class="text-danger">*</span>
-                        </label>
+                        <label class="col-lg-4 col-form-label" for="trade_info_05">USI Issuer</label>
                         <div class="col-lg-6">
-                          <input type="text" class="form-control" id="validationCustom09" placeholder="5" required="">
-                          <div class="invalid-feedback">
-                            Please enter a digits.
-                          </div>
+                          <select class="default-select wide form-control" id="trade_info_05" name = "usi_issuer">
+                            <option value="5.1">5.1</option>
+                            <option value="5.2">5.2</option>
+                            <option value="5.3">5.3</option>
+                          </select>
                         </div>
                       </div>
                       <div class="mb-3 row">
-                        <label class="col-lg-4 col-form-label" for="validationCustom10">Number <span class="text-danger">*</span>
-                        </label>
+                        <label class="col-lg-4 col-form-label" for="trade_info_06">USI Value</label>
                         <div class="col-lg-6">
-                          <input type="text" class="form-control" id="validationCustom10" placeholder="5.0" required="">
-                          <div class="invalid-feedback">
-                            Please enter a num.
-                          </div>
+                          <select class="default-select wide form-control" id="trade_info_06" name = "usi_value">
+                            <option value="6.1">6.1</option>
+                            <option value="6.2">6.2</option>
+                            <option value="6.3">6.3</option>
+                          </select>
                         </div>
                       </div>
                       <div class="mb-3 row">
-                        <label class="col-lg-4 col-form-label" for="validationCustom11">Range [1, 5]
-                          <span class="text-danger">*</span>
-                        </label>
+                        <label class="col-lg-4 col-form-label" for="trade_info_07">UTI Originator</label>
                         <div class="col-lg-6">
-                          <input type="text" class="form-control" id="validationCustom11" placeholder="4" required="">
-                          <div class="invalid-feedback">
-                            Please select a range.
-                          </div>
-                        </div>
-                      </div>
-                      <div class="mb-3 row">
-                        <label class="col-lg-4 col-form-label"><a href="javascript:void(0)">Terms &amp; Conditions</a> <span class="text-danger">*</span>
-                        </label>
-                        <div class="col-lg-8">
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="validationCustom12" required="">
-                            <label class="form-check-label" for="validationCustom12">
-                              Agree to terms and conditions
-                            </label>
-                          </div>
+                          <select class="default-select wide form-control" id="trade_info_07" name = "uti_originator">
+                            <option value="7.1">7.1</option>
+                            <option value="7.2">7.2</option>
+                            <option value="7.3">7.3</option>
+                          </select>
                         </div>
                       </div>
                       <div class="mb-3 row">
