@@ -2,6 +2,7 @@ package com.dqp.controller;
 
 import com.dqp.pojo.Trade;
 import com.dqp.service.TradeService;
+import com.dqp.util.CreateTradeId;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,10 +13,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 import java.sql.Date;
 import java.text.SimpleDateFormat;
 
+import static com.dqp.util.GetSubmittedValue.getValue;
+
 @Controller
 public class TradeController {
 
-    private static Logger logger = LoggerFactory.getLogger(TradeController.class);
+    private static final Logger logger = LoggerFactory.getLogger(TradeController.class);
 
     @Autowired
     TradeService tradeService;
@@ -79,19 +82,28 @@ public class TradeController {
 
         SimpleDateFormat formatter= new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         Date date = new Date(System.currentTimeMillis());
-        logger.info("===== Submit Trade =====");
-        Trade trade = new Trade(primary_asset_class,product,originating_event,reporting_regime,usi_issuer,
-                                usi_value,uti_originator,outgoing,has_ack_nack,tr_determined_rep_role,src_determined_rep_role,
-                                ma_determined_rep_role,wack_regimes,confirmation_method,intent_to_clear,execution_venue,
-                                reported_by,allocation_status,system_trade_source,notional_ccy_1,notional_ccy_2,quantity,
-                                net_amount,price,option_type,strike_price,option_exercise_style,delivery_type,deriv_notional_change,
-                                upfront_payment,executing_entity,price_multiplier,underlyer,sftr_ind,waiver_ind,short_selling_ind,
-                                otc_post_trade_ind,commodity_deriv_ind,manual_ignore_status,manual_action_status,manual_replay_status,
-                                routing_to,routing_to_purpose,reason_code,reason_category,enum_value,sequence,wm_flag,
-                                reg_rules_response,arm_eligible_flag,arm_eligibility_reg_rules,
-                                apa_eligible_flag,apa_eligibility_reg_rules,rts23_eligible_flag,rts23_eligibility_reg_rules,
+        String trade_id = CreateTradeId.getTradeId();
+        logger.info("=====> Submit Trade : {}", trade_id);
+        Trade trade = new Trade(trade_id,
+                                getValue(primary_asset_class),getValue(product),getValue(originating_event),
+                                getValue(reporting_regime),getValue(usi_issuer),getValue(usi_value),getValue(uti_originator),
+                                getValue(outgoing),getValue(has_ack_nack),getValue(tr_determined_rep_role),
+                                getValue(src_determined_rep_role),getValue(ma_determined_rep_role),getValue(wack_regimes),
+                                getValue(confirmation_method),getValue(intent_to_clear),getValue(execution_venue),
+                                getValue(reported_by),getValue(allocation_status),getValue(system_trade_source),
+                                getValue(notional_ccy_1),getValue(notional_ccy_2),getValue(quantity),getValue(net_amount),
+                                getValue(price),getValue(option_type),getValue(strike_price),getValue(option_exercise_style),
+                                getValue(delivery_type),getValue(deriv_notional_change),getValue(upfront_payment),
+                                getValue(executing_entity),getValue(price_multiplier),getValue(underlyer),getValue(sftr_ind),
+                                getValue(waiver_ind),getValue(short_selling_ind),getValue(otc_post_trade_ind),
+                                getValue(commodity_deriv_ind),getValue(manual_ignore_status),getValue(manual_action_status),
+                                getValue(manual_replay_status),getValue(routing_to),getValue(routing_to_purpose),
+                                getValue(reason_code),getValue(reason_category),getValue(enum_value),getValue(sequence),
+                                getValue(wm_flag),getValue(reg_rules_response),getValue(arm_eligible_flag),
+                                getValue(arm_eligibility_reg_rules),getValue(apa_eligible_flag),getValue(apa_eligibility_reg_rules),
+                                getValue(rts23_eligible_flag),getValue(rts23_eligibility_reg_rules),
                                 date);
-
+        tradeService.submitTrade(trade);
         return "submit_trade";
     }
 }

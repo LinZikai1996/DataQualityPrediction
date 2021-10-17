@@ -10,6 +10,7 @@ import java.sql.Date;
 @AllArgsConstructor
 @Data
 public class Trade {
+    String trade_id;
     String primary_asset_class;
     String product;
     String originating_event;

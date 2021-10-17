@@ -15,14 +15,12 @@ public class TradeServiceImpl implements TradeService {
     TradeMapper tradeMapper;
 
     @Override
-    public void submitTrade() {
-
+    public void submitTrade(Trade trade) {
+        tradeMapper.addTrade(trade);
     }
 
     @Override
     public List<Trade> showTradeException() {
         return tradeMapper.selectAll();
     }
-
-
 }
