@@ -163,7 +163,7 @@
                               <div class="mb-3 row">
                                 <label class="col-lg-4 col-form-label" for="trade_info_08">Outgoing</label>
                                 <div class="col-lg-6">
-                                  <select class="default-select wide form-control" id="trade_info_08" name = "Outgoing">
+                                  <select class="default-select wide form-control" id="trade_info_08" name = "outgoing">
                                     <option data-display="Select">Please select</option>
                                     <option value="8.1">8.1</option>
                                     <option value="8.2">8.2</option>
@@ -280,7 +280,7 @@
                                 </div>
                               </div>
                               <div class="mb-3 row">
-                                <label class="col-lg-4 col-form-label" for="trade_info_17">Rported by</label>
+                                <label class="col-lg-4 col-form-label" for="trade_info_17">Reported by</label>
                                 <div class="col-lg-6">
                                   <select class="default-select wide form-control" id="trade_info_17" name = "reported_by">
                                     <option data-display="Select">Please select</option>
@@ -340,7 +340,7 @@
                             </div>
                             <div class="col-lg-6 mt-3">
                               <div class="mb-3 row">
-                                <label class="col-lg-4 col-form-label" for="trade_info_22">Qquantity</label>
+                                <label class="col-lg-4 col-form-label" for="trade_info_22">Quantity</label>
                                 <div class="col-lg-6">
                                   <select class="default-select wide form-control" id="trade_info_22" name = "quantity">
                                     <option data-display="Select">Please select</option>
@@ -364,7 +364,7 @@
                               <div class="mb-3 row">
                                 <label class="col-lg-4 col-form-label" for="trade_info_24">Price</label>
                                 <div class="col-lg-6">
-                                  <select class="default-select wide form-control" id="trade_info_24" name = "tr_determined_rep_role">
+                                  <select class="default-select wide form-control" id="trade_info_24" name = "price">
                                     <option data-display="Select">Please select</option>
                                     <option value="10.1">10.1</option>
                                     <option value="10.2">10.2</option>
@@ -445,9 +445,9 @@
                                 </div>
                               </div>
                               <div class="mb-3 row">
-                                <label class="col-lg-4 col-form-label" for="trade_info_30">Upfront_Payment</label>
+                                <label class="col-lg-4 col-form-label" for="trade_info_30">Upfront Payment</label>
                                 <div class="col-lg-6">
-                                  <select class="default-select wide form-control" id="trade_info_30" name = "upfront payment">
+                                  <select class="default-select wide form-control" id="trade_info_30" name = "upfront_payment">
                                     <option data-display="Select">Please select</option>
                                     <option value="30.1">30.1</option>
                                     <option value="30.2">30.2</option>
@@ -459,9 +459,9 @@
                                 </div>
                               </div>
                               <div class="mb-3 row">
-                                <label class="col-lg-4 col-form-label" for="trade_info_31">Instrument Id</label>
+                                <label class="col-lg-4 col-form-label" for="trade_info_31">Executing Entity</label>
                                 <div class="col-lg-6">
-                                  <select class="default-select wide form-control" id="trade_info_31" name = "instrument_id">
+                                  <select class="default-select wide form-control" id="trade_info_31" name = "executing_entity">
                                     <option data-display="Select">Please select</option>
                                     <option value="31.1">31.1</option>
                                     <option value="31.2">31.2</option>
@@ -495,9 +495,9 @@
                                 </div>
                               </div>
                               <div class="mb-3 row">
-                                <label class="col-lg-4 col-form-label" for="trade_info_34">Complex Trade Id</label>
+                                <label class="col-lg-4 col-form-label" for="trade_info_34">Sftr Ind</label>
                                 <div class="col-lg-6">
-                                  <select class="default-select wide form-control" id="trade_info_34" name = "complex_trade_id">
+                                  <select class="default-select wide form-control" id="trade_info_34" name = "sftr_ind">
                                     <option data-display="Select">Please select</option>
                                     <option value="34.1">34.1</option>
                                     <option value="34.2">34.2</option>
@@ -552,9 +552,9 @@
                                 </div>
                               </div>
                               <div class="mb-3 row">
-                                <label class="col-lg-4 col-form-label" for="trade_info_39">Sftr Ind</label>
+                                <label class="col-lg-4 col-form-label" for="trade_info_39">Manual Ignore Status</label>
                                 <div class="col-lg-6">
-                                  <select class="default-select wide form-control" id="trade_info_39" name = "sftr_ind">
+                                  <select class="default-select wide form-control" id="trade_info_39" name = "manual_ignore_status">
                                     <option data-display="Select">Please select</option>
                                     <option value="39.1">39.1</option>
                                     <option value="39.2">39.2</option>
@@ -563,9 +563,9 @@
                                 </div>
                               </div>
                               <div class="mb-3 row">
-                                <label class="col-lg-4 col-form-label" for="trade_info_40">Internal Party Id</label>
+                                <label class="col-lg-4 col-form-label" for="trade_info_40">Manual Action Status</label>
                                 <div class="col-lg-6">
-                                  <select class="default-select wide form-control" id="trade_info_40" name = "internal_party_id">
+                                  <select class="default-select wide form-control" id="trade_info_40" name = "manual_action_status">
                                     <option data-display="Select">Please select</option>
                                     <option value="40.1">40.1</option>
                                     <option value="40.2">40.2</option>
@@ -574,13 +574,192 @@
                                 </div>
                               </div>
                               <div class="mb-3 row">
-                                <label class="col-lg-4 col-form-label" for="trade_info_41">Counterparty Party Id</label>
+                                <label class="col-lg-4 col-form-label" for="trade_info_41">Manual Replay Status</label>
                                 <div class="col-lg-6">
-                                  <select class="default-select wide form-control" id="trade_info_41" name = "counterparty_party_id">
+                                  <select class="default-select wide form-control" id="trade_info_41" name = "manual_replay_status">
                                     <option data-display="Select">Please select</option>
                                     <option value="41.1">41.1</option>
                                     <option value="41.2">41.2</option>
                                     <option value="41.3">41.3</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="mb-3 row">
+                                <label class="col-lg-4 col-form-label" for="trade_info_42">Routing to</label>
+                                <div class="col-lg-6">
+                                  <select class="default-select wide form-control" id="trade_info_42" name = "routing_to">
+                                    <option data-display="Select">Please select</option>
+                                    <option value="42.1">42.1</option>
+                                    <option value="42.2">42.2</option>
+                                    <option value="42.3">42.3</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <div class="accordion-header collapsed rounded-lg" id="trade_page_04" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-controls="collapseFour"  role="button"  aria-expanded="true">
+                        <span class="accordion-header-text">Trade Information - 4</span>
+                        <span class="accordion-header-indicator"></span>
+                      </div>
+                      <div id="collapseFour" class="collapse" aria-labelledby="trade_page_04" data-bs-parent="#accordion-one">
+                        <div class="accordion-body-text">
+                          <div class="row">
+                            <div class="col-lg-6 mt-3">
+                              <div class="mb-3 row">
+                                <label class="col-lg-4 col-form-label" for="trade_info_43">Routing to Purpose</label>
+                                <div class="col-lg-6">
+                                  <select class="default-select wide form-control" id="trade_info_43" name = "routing_to_purpose">
+                                    <option data-display="Select">Please select</option>
+                                    <option value="43.1">43.1</option>
+                                    <option value="43.2">43.2</option>
+                                    <option value="43.3">43.3</option>
+                                  </select>
+                                  <div class="invalid-feedback">
+                                    Please select a one.
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mb-3 row">
+                                <label class="col-lg-4 col-form-label" for="trade_info_44">Reason Code</label>
+                                <div class="col-lg-6">
+                                  <select class="default-select wide form-control" id="trade_info_44" name = "reason_code">
+                                    <option data-display="Select">Please select</option>
+                                    <option value="44.1">44.1</option>
+                                    <option value="44.2">44.2</option>
+                                    <option value="44.3">44.3</option>
+                                  </select>
+                                  <div class="invalid-feedback">
+                                    Please select a one.
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mb-3 row">
+                                <label class="col-lg-4 col-form-label" for="trade_info_45">Reason Category</label>
+                                <div class="col-lg-6">
+                                  <select class="default-select wide form-control" id="trade_info_45" name = "reason_category">
+                                    <option data-display="Select">Please select</option>
+                                    <option value="45.1">45.1</option>
+                                    <option value="45.2">45.2</option>
+                                    <option value="45.3">45.3</option>
+                                  </select>
+                                  <div class="invalid-feedback">
+                                    Please select a one.
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mb-3 row">
+                                <label class="col-lg-4 col-form-label" for="trade_info_46">Emum Value</label>
+                                <div class="col-lg-6">
+                                  <select class="default-select wide form-control" id="trade_info_46" name = "enum_value">
+                                    <option data-display="Select">Please select</option>
+                                    <option value="46.1">46.1</option>
+                                    <option value="46.2">46.2</option>
+                                    <option value="46.3">46.3</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="mb-3 row">
+                                <label class="col-lg-4 col-form-label" for="trade_info_47">Sequence</label>
+                                <div class="col-lg-6">
+                                  <select class="default-select wide form-control" id="trade_info_47" name = "sequence">
+                                    <option data-display="Select">Please select</option>
+                                    <option value="47.1">47.1</option>
+                                    <option value="47.2">47.2</option>
+                                    <option value="47.3">47.3</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="mb-3 row">
+                                <label class="col-lg-4 col-form-label" for="trade_info_48">WM Flag</label>
+                                <div class="col-lg-6">
+                                  <select class="default-select wide form-control" id="trade_info_48" name = "wm_flag">
+                                    <option data-display="Select">Please select</option>
+                                    <option value="48.1">48.1</option>
+                                    <option value="48.2">48.2</option>
+                                    <option value="48.3">48.3</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="mb-3 row">
+                                <label class="col-lg-4 col-form-label" for="trade_info_49">Reg Rules Response</label>
+                                <div class="col-lg-6">
+                                  <select class="default-select wide form-control" id="trade_info_49" name = "reg_rules_response">
+                                    <option data-display="Select">Please select</option>
+                                    <option value="49.1">49.1</option>
+                                    <option value="49.2">49.2</option>
+                                    <option value="49.3">49.3</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-6 mt-3">
+                              <div class="mb-3 row">
+                                <label class="col-lg-4 col-form-label" for="trade_info_50">Arm Eligible Flag</label>
+                                <div class="col-lg-6">
+                                  <select class="default-select wide form-control" id="trade_info_50" name = "arm_eligible_flag">
+                                    <option data-display="Select">Please select</option>
+                                    <option value="50.1">50.1</option>
+                                    <option value="50.2">50.2</option>
+                                    <option value="50.3">50.3</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="mb-3 row">
+                                <label class="col-lg-4 col-form-label" for="trade_info_51">Arm Eligibility Reg Rules</label>
+                                <div class="col-lg-6">
+                                  <select class="default-select wide form-control" id="trade_info_51" name = "arm_eligibility_reg_rules">
+                                    <option data-display="Select">Please select</option>
+                                    <option value="51.1">51.1</option>
+                                    <option value="51.2">51.2</option>
+                                    <option value="51.3">51.3</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="mb-3 row">
+                                <label class="col-lg-4 col-form-label" for="trade_info_52">Apa Eligible Flag</label>
+                                <div class="col-lg-6">
+                                  <select class="default-select wide form-control" id="trade_info_52" name = "apa_eligible_flag">
+                                    <option data-display="Select">Please select</option>
+                                    <option value="52.1">52.1</option>
+                                    <option value="52.2">52.2</option>
+                                    <option value="52.3">52.3</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="mb-3 row">
+                                <label class="col-lg-4 col-form-label" for="trade_info_53">Apa Eligibility Reg Rules</label>
+                                <div class="col-lg-6">
+                                  <select class="default-select wide form-control" id="trade_info_53" name = "apa_eligibility_reg_rules">
+                                    <option data-display="Select">Please select</option>
+                                    <option value="53.1">53.1</option>
+                                    <option value="53.2">53.2</option>
+                                    <option value="53.3">53.3</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="mb-3 row">
+                                <label class="col-lg-4 col-form-label" for="trade_info_54">Rts23 Eligible Flag</label>
+                                <div class="col-lg-6">
+                                  <select class="default-select wide form-control" id="trade_info_54" name = "rts23_eligible_flag">
+                                    <option data-display="Select">Please select</option>
+                                    <option value="54.1">54.1</option>
+                                    <option value="54.2">54.2</option>
+                                    <option value="54.3">54.3</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="mb-3 row">
+                                <label class="col-lg-4 col-form-label" for="trade_info_55">Rts23 Eligibility Reg Rules</label>
+                                <div class="col-lg-6">
+                                  <select class="default-select wide form-control" id="trade_info_55" name = "rts23_eligibility_reg_rules">
+                                    <option data-display="Select">Please select</option>
+                                    <option value="55.1">55.1</option>
+                                    <option value="55.2">55.2</option>
+                                    <option value="55.3">55.3</option>
                                   </select>
                                 </div>
                               </div>
