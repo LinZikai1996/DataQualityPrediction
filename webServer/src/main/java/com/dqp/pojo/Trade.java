@@ -66,5 +66,5 @@ public class Trade {
     String apa_eligibility_reg_rules;
     String rts23_eligible_flag;
     String rts23_eligibility_reg_rules;
-    Date trade_date;
+    String trade_date;
 }

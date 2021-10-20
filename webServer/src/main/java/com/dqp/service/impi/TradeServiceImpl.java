@@ -15,8 +15,9 @@ public class TradeServiceImpl implements TradeService {
     TradeMapper tradeMapper;
 
     @Override
-    public void submitTrade(Trade trade) {
-        tradeMapper.addTrade(trade);
+    public boolean submitTrade(Trade trade) {
+        int result = tradeMapper.addTrade(trade);
+        return result == 1;
     }
 
     @Override

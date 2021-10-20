@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.sql.Date;
 import java.text.SimpleDateFormat;
@@ -24,7 +25,7 @@ public class TradeController {
     TradeService tradeService;
 
     @RequestMapping(value ="/tradeSubmit.do")
-    public String newTrade(@RequestParam(name="primary_asset_class") String primary_asset_class,
+    public ModelAndView newTrade(@RequestParam(name="primary_asset_class") String primary_asset_class,
                            @RequestParam(name="product") String product,
                            @RequestParam(name="originating_event") String originating_event,
                            @RequestParam(name="reporting_regime") String reporting_regime,
@@ -80,8 +81,7 @@ public class TradeController {
                            @RequestParam(name="rts23_eligible_flag") String rts23_eligible_flag,
                            @RequestParam(name="rts23_eligibility_reg_rules") String rts23_eligibility_reg_rules){
 
-        SimpleDateFormat formatter= new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        Date date = new Date(System.currentTimeMillis());
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         String trade_id = CreateTradeId.getTradeId();
         logger.info("=====> Submit Trade : {}", trade_id);
         Trade trade = new Trade(trade_id,
@@ -102,8 +102,15 @@ public class TradeController {
                                 getValue(wm_flag),getValue(reg_rules_response),getValue(arm_eligible_flag),
                                 getValue(arm_eligibility_reg_rules),getValue(apa_eligible_flag),getValue(apa_eligibility_reg_rules),
                                 getValue(rts23_eligible_flag),getValue(rts23_eligibility_reg_rules),
-                                date);
-        tradeService.submitTrade(trade);
-        return "submit_trade";
+                                formatter.format(new Date(System.currentTimeMillis())));
+        ModelAndView modelAndView = new ModelAndView();
+        boolean result = tradeService.submitTrade(trade);
+        if(result){
+            modelAndView.addObject("message", "succeed");
+        } else {
+            modelAndView.addObject("message", "failed");
+        }
+        modelAndView.setViewName("submit_trade_status");
+        return modelAndView;
     }
 }

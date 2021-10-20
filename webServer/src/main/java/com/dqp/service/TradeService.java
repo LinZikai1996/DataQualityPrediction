@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface TradeService {
 
-    void submitTrade(Trade trade);
+    boolean submitTrade(Trade trade);
 
     List<Trade> showTradeException();
 }
