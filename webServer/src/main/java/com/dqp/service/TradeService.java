@@ -8,5 +8,5 @@ public interface TradeService {
 
     boolean submitTrade(Trade trade);
 
-    List<Trade> showTradeException();
+    List<Trade> showAllTradeData();
 }

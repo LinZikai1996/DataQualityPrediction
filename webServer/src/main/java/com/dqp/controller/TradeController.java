@@ -13,6 +13,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import java.sql.Date;
 import java.text.SimpleDateFormat;
+import java.util.List;
 
 import static com.dqp.util.GetSubmittedValue.getValue;
 
@@ -80,7 +81,7 @@ public class TradeController {
                            @RequestParam(name="apa_eligibility_reg_rules") String apa_eligibility_reg_rules,
                            @RequestParam(name="rts23_eligible_flag") String rts23_eligible_flag,
                            @RequestParam(name="rts23_eligibility_reg_rules") String rts23_eligibility_reg_rules){
-
+        ModelAndView modelAndView = new ModelAndView();
         SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         String trade_id = CreateTradeId.getTradeId();
         logger.info("=====> Submit Trade : {}", trade_id);
@@ -103,7 +104,7 @@ public class TradeController {
                                 getValue(arm_eligibility_reg_rules),getValue(apa_eligible_flag),getValue(apa_eligibility_reg_rules),
                                 getValue(rts23_eligible_flag),getValue(rts23_eligibility_reg_rules),
                                 formatter.format(new Date(System.currentTimeMillis())));
-        ModelAndView modelAndView = new ModelAndView();
+
         boolean result = tradeService.submitTrade(trade);
         if(result){
             modelAndView.addObject("message", "succeed");
@@ -111,6 +112,16 @@ public class TradeController {
             modelAndView.addObject("message", "failed");
         }
         modelAndView.setViewName("submit_trade_status");
+        return modelAndView;
+    }
+
+    @RequestMapping(value ="/showAllTradeData.do")
+    public ModelAndView showAllTradeData(){
+        logger.info("Get All Trade Data");
+        ModelAndView modelAndView = new ModelAndView();
+        List<Trade> tradeList = tradeService.showAllTradeData();
+        modelAndView.addObject("tradeList", tradeList);
+        modelAndView.setViewName("show_data");
         return modelAndView;
     }
 }

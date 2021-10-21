@@ -27,7 +27,7 @@
                     </a>
                     <ul aria-expanded="false">
                         <li><a href="/toIndex.do">Trade Dashboard</a></li>
-                        <li><a href="/showData.do">Show Data</a></li>
+                        <li><a href="/showAllTradeData.do">Show Data</a></li>
                     </ul>
                 </li>
             </ul>

@@ -21,7 +21,7 @@ public class TradeServiceImpl implements TradeService {
     }
 
     @Override
-    public List<Trade> showTradeException() {
+    public List<Trade> showAllTradeData() {
         return tradeMapper.selectAll();
     }
 }

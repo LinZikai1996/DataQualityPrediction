@@ -12,10 +12,33 @@ import java.util.List;
 @Component
 public interface TradeMapper {
 
-    @Select("select * from trade")
+    @Select("select " +
+            "trade_id,primary_asset_class,product,originating_event,reporting_regime,usi_issuer," +
+            "usi_value,uti_originator,outgoing,has_ack_nack,tr_determined_rep_role,src_determined_rep_role," +
+            "ma_determined_rep_role,wack_regimes,confirmation_method,intent_to_clear,execution_venue," +
+            "reported_by,allocation_status,system_trade_source,notional_ccy_1,notional_ccy_2,quantity," +
+            "net_amount,price,option_type,strike_price,option_exercise_style,delivery_type,deriv_notional_change," +
+            "upfront_payment,executing_entity,price_multiplier,underlyer,sftr_ind,waiver_ind,short_selling_ind," +
+            "otc_post_trade_ind,commodity_deriv_ind,manual_ignore_status,manual_action_status,manual_replay_status," +
+            "routing_to,routing_to_purpose,reason_code,reason_category,enum_value,sequence,wm_flag," +
+            "reg_rules_response,arm_eligible_flag,arm_eligibility_reg_rules," +
+            "apa_eligible_flag,apa_eligibility_reg_rules,rts23_eligible_flag,rts23_eligibility_reg_rules,trade_date " +
+            "from trade")
     List<Trade> selectAll();
 
-    @Select("select * from trade where trade_Id = #{tradeId}")
+    @Select("select " +
+            "trade_id,primary_asset_class,product,originating_event,reporting_regime,usi_issuer," +
+            "usi_value,uti_originator,outgoing,has_ack_nack,tr_determined_rep_role,src_determined_rep_role," +
+            "ma_determined_rep_role,wack_regimes,confirmation_method,intent_to_clear,execution_venue," +
+            "reported_by,allocation_status,system_trade_source,notional_ccy_1,notional_ccy_2,quantity," +
+            "net_amount,price,option_type,strike_price,option_exercise_style,delivery_type,deriv_notional_change," +
+            "upfront_payment,executing_entity,price_multiplier,underlyer,sftr_ind,waiver_ind,short_selling_ind," +
+            "otc_post_trade_ind,commodity_deriv_ind,manual_ignore_status,manual_action_status,manual_replay_status," +
+            "routing_to,routing_to_purpose,reason_code,reason_category,enum_value,sequence,wm_flag," +
+            "reg_rules_response,arm_eligible_flag,arm_eligibility_reg_rules," +
+            "apa_eligible_flag,apa_eligibility_reg_rules,rts23_eligible_flag,rts23_eligibility_reg_rules,trade_date " +
+            "from trade " +
+            "where trade_Id = #{tradeId}")
     Trade selectTrade(@Param("tradeId") String tradeId);
 
     @Insert("insert into trade (trade_id,primary_asset_class,product,originating_event,reporting_regime,usi_issuer," +
