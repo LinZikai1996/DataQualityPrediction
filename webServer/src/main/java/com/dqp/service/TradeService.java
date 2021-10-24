@@ -9,4 +9,6 @@ public interface TradeService {
     boolean submitTrade(Trade trade);
 
     List<Trade> showAllTradeData();
+
+    Trade selectTradeById(String tradeId);
 }

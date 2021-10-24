@@ -124,4 +124,14 @@ public class TradeController {
         modelAndView.setViewName("show_data");
         return modelAndView;
     }
+
+    @RequestMapping(value ="/selectTradeById.do")
+    public ModelAndView selectTradeById(@RequestParam(name="trade_id") String trade_id){
+        logger.info("Select Trade By Id : " + trade_id);
+        ModelAndView modelAndView = new ModelAndView();
+
+        Trade trade = tradeService.selectTradeById(trade_id);
+        modelAndView.addObject("tradeInfo", trade);
+        return modelAndView;
+    }
 }

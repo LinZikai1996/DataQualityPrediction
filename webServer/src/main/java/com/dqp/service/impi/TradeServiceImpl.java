@@ -24,4 +24,9 @@ public class TradeServiceImpl implements TradeService {
     public List<Trade> showAllTradeData() {
         return tradeMapper.selectAll();
     }
+
+    @Override
+    public Trade selectTradeById(String tradeId) {
+        return tradeMapper.selectTrade(tradeId);
+    }
 }
