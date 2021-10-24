@@ -16,8 +16,7 @@ public class TradeServiceImpl implements TradeService {
 
     @Override
     public boolean submitTrade(Trade trade) {
-        int result = tradeMapper.addTrade(trade);
-        return result == 1;
+        return tradeMapper.addTrade(trade) == 1;
     }
 
     @Override
@@ -28,5 +27,10 @@ public class TradeServiceImpl implements TradeService {
     @Override
     public Trade selectTradeById(String tradeId) {
         return tradeMapper.selectTrade(tradeId);
+    }
+
+    @Override
+    public boolean deleteTradeById(String tradeId) {
+        return tradeMapper.deleteTrade(tradeId) == 1;
     }
 }

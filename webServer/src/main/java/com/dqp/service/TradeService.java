@@ -11,4 +11,6 @@ public interface TradeService {
     List<Trade> showAllTradeData();
 
     Trade selectTradeById(String tradeId);
+
+    boolean deleteTradeById(String tradeId);
 }

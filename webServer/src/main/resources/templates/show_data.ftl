@@ -3,16 +3,6 @@
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="keywords" content="" />
-    <meta name="author" content="" />
-    <meta name="robots" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Invome : Invome Admin  Bootstrap 5 Template" />
-    <meta property="og:title" content="Invome : Invome Admin  Bootstrap 5 Template" />
-    <meta property="og:description" content="Invome : Invome Admin  Bootstrap 5 Template" />
-    <meta property="og:image" content="https://invome.dexignlab.com/xhtml/social-image.png" />
-    <meta name="format-detection" content="telephone=no">
 
     <!-- PAGE TITLE HERE -->
     <title>Data Quality Predict</title>
@@ -100,7 +90,7 @@
                                                 <td>
                                                     <div class="d-flex">
                                                         <a data-bs-toggle="modal" data-bs-target=".bd-example-modal-lg_${trade.trade_id}" type="button" class="btn btn-primary shadow btn-xs sharp me-1"><i class="fas fa-search"></i></a>
-                                                        <a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
+                                                        <a class="btn btn-danger shadow btn-xs sharp btn-warning" href="./deleteTradeById.do?trade_id=${trade.trade_id}"><i class="fa fa-trash"></i></a>
                                                         <div class="modal fade bd-example-modal-lg_${trade.trade_id}" role="dialog" aria-hidden="true">
                                                             <div class="modal-dialog modal-lg">
                                                                 <div class="modal-content">
@@ -486,7 +476,7 @@
     ***********************************-->
     <script src="./vendor/global/global.min.js"></script>
 
-    <!-- Datatable -->
+<!-- Datatable -->
     <script src="./vendor/datatables/js/jquery.dataTables.min.js"></script>
     <script src="./js/plugins-init/datatables.init.js"></script>
     <script src="./vendor/jquery-nice-select/js/jquery.nice-select.min.js"></script>

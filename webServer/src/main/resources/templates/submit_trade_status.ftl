@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="refresh" content="5;url=/toIndex.do">
+    <meta http-equiv="refresh" content="5;url=/showAllTradeData.do">
 
     <!-- PAGE TITLE HERE -->
     <title>Data Quality Predict</title>
@@ -23,10 +23,10 @@
                 <div class="form-input-content text-center error-page">
                     <h2 class="error-text fw-bold">${message}</h2>
                     <#if (message=="succeed")>
-                        <h4>The trade was submitted successfully!</h4>
+                        <h4>${action} the trade successfully!</h4>
                     </#if>
                     <#if (message=="failed")>
-                        <h4>The trade was submitted failed!</h4>
+                        <h4>${action} the trade failed!</h4>
                     </#if>
                     <p>Automatically jump after 5 seconds.</p>
                     <div>

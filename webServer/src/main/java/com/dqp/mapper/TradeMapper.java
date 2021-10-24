@@ -2,6 +2,7 @@ package com.dqp.mapper;
 
 
 import com.dqp.pojo.Trade;
+import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
@@ -65,4 +66,7 @@ public interface TradeMapper {
                     "#{trade.reg_rules_response},#{trade.arm_eligible_flag},#{trade.arm_eligibility_reg_rules},#{trade.apa_eligible_flag}," +
                     "#{trade.apa_eligibility_reg_rules},#{trade.rts23_eligible_flag},#{trade.rts23_eligibility_reg_rules},#{trade.trade_date})")
     int addTrade(@Param("trade") Trade trade);
+
+    @Delete("delete from trade where trade_Id = #{tradeId}")
+    int deleteTrade(@Param("tradeId") String tradeId);
 }

@@ -107,10 +107,11 @@ public class TradeController {
 
         boolean result = tradeService.submitTrade(trade);
         if(result){
-            modelAndView.addObject("message", "succeed");
+            modelAndView.addObject("message", "Succeed");
         } else {
-            modelAndView.addObject("message", "failed");
+            modelAndView.addObject("message", "Failed");
         }
+        modelAndView.addObject("action", "Submit");
         modelAndView.setViewName("submit_trade_status");
         return modelAndView;
     }
@@ -129,9 +130,23 @@ public class TradeController {
     public ModelAndView selectTradeById(@RequestParam(name="trade_id") String trade_id){
         logger.info("Select Trade By Id : " + trade_id);
         ModelAndView modelAndView = new ModelAndView();
-
         Trade trade = tradeService.selectTradeById(trade_id);
         modelAndView.addObject("tradeInfo", trade);
+        return modelAndView;
+    }
+
+    @RequestMapping(value ="/deleteTradeById.do")
+    public ModelAndView deleteTradeById(@RequestParam(name="trade_id") String trade_id){
+        logger.info("Delete Trade By Id : " + trade_id);
+        ModelAndView modelAndView = new ModelAndView();
+        boolean result = tradeService.deleteTradeById(trade_id);
+        if(result){
+            modelAndView.addObject("message", "Succeed");
+        } else {
+            modelAndView.addObject("message", "Failed");
+        }
+        modelAndView.addObject("action", "Delete");
+        modelAndView.setViewName("submit_trade_status");
         return modelAndView;
     }
 }
