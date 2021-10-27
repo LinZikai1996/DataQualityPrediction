@@ -534,17 +534,15 @@
 	var chartBar = function(){
 		
 		var options = {
-			  series: [
+			series: [
 				{
-					name: 'Running',
-					data: [50, 18, 70, 40, 90, 70, 20],
-					//radius: 12,	
-				}, 
+					name: 'Trade',
+					data: [1105, 1008, 715, 840, 994, 757, 1770],
+				},
 				{
-				  name: 'Cycling',
-				  data: [80, 40, 55, 20, 45, 30, 80]
-				}, 
-				
+					name: 'Trade Exception',
+					data: [80, 49, 55, 28, 45, 35, 82]
+				},
 			],
 				chart: {
 				type: 'bar',

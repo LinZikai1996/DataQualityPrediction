@@ -26,8 +26,9 @@
                         <span class="nav-text">Dashboard</span>
                     </a>
                     <ul aria-expanded="false">
-                        <li><a href="/toIndex.do">Trade Dashboard</a></li>
+                        <li><a href="/toIndex.do">Trade</a></li>
                         <li><a href="/showAllTradeData.do">Show Data</a></li>
+                        <li><a href="/toReportPage.do">Report</a></li>
                     </ul>
                 </li>
             </ul>
