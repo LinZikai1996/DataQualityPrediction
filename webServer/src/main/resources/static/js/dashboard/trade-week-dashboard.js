@@ -97,7 +97,7 @@ var options = {
     },
     fill: {
         opacity: 1,
-        colors:['var(--primary)', '#FD5353'],
+        colors:['var(--primary)', 'rgb(255, 92, 0)'],
     },
     tooltip: {
         y: {

@@ -10,7 +10,7 @@ Morris.Donut({
     }],
     resize: true,
     redraw: true,
-    colors: ['#44814e', 'rgb(255, 92, 0)', '#ffaa2b'],
+    colors: ['#44814e', 'rgb(255, 92, 0)'],
     //responsive:true,
 
 });
