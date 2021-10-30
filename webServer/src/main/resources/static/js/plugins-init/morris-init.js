@@ -98,7 +98,8 @@
 			//Area chart
 			Morris.Area({
 				element: 'line_chart_2',
-				data: [{
+				data: [
+					{
 						period: '2001',
 						smartphone: 0,
 						windows: 0,

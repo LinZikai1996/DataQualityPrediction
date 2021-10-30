@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 
     <!-- PAGE TITLE HERE -->
-    <title>Invome Admin Dashboard</title>
+    <title>Data Quality Predict</title>
 
     <!-- FAVICONS ICON -->
     <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
@@ -113,6 +113,17 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="col-xl-12 col-lg-12  col-sm-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Yearly Trade Report</h4>
+                        </div>
+                        <div class="card-body">
+                            <div id="line_chart_2"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -146,9 +157,13 @@
 <script src="./vendor/raphael/raphael.min.js"></script>
 <script src="./vendor/morris/morris.min.js"></script>
 
-<!-- Dashboard 1 -->
+<!-- Dashboard-->
 <script src="./js/dashboard/trade-week-dashboard.js"></script>
 <script src="./js/dashboard/trade-month-dashboard.js"></script>
+<script src="./js/dashboard/trade-year-dashboard.js"></script>
+
+
+
 
 <!-- Daterangepicker -->
 <!-- momment js is must -->
