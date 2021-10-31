@@ -32,3 +32,7 @@ out
 
 # ignore log files
 *.log
+
+.DS_Store
+.DS_Store?
+/.DS_Store
