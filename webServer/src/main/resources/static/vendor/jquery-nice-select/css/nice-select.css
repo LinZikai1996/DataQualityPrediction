@@ -58,6 +58,8 @@
   .nice-select.open .list {
     opacity: 1;
     pointer-events: auto;
+    max-height:400px;
+    overflow-y:scroll;
     -webkit-transform: scale(1) translateY(0);
         -ms-transform: scale(1) translateY(0);
             transform: scale(1) translateY(0); }
@@ -73,7 +75,9 @@
 	}
     .nice-select.wide .list {
       left: 0 !important;
-      right: 0 !important; }
+      right: auto !important;
+      min-width: 100%;
+    }
   .nice-select.right {
     float: right; }
     .nice-select.right .list {

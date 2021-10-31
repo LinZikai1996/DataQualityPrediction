@@ -87,7 +87,9 @@ public class TradeController {
         logger.info("=====> Submit Trade : {}", trade_id);
         Trade trade = new Trade(trade_id,
                                 getValue(primary_asset_class),getValue(product),getValue(originating_event),
-                                getValue(reporting_regime),getValue(usi_issuer),getValue(usi_value),getValue(uti_originator),
+                                getValue(reporting_regime),getValue(usi_issuer),
+                                getValue(usi_value.equals("NA") || usi_value.equals("Please select") ? usi_value : usi_value + trade_id),
+                                getValue(uti_originator),
                                 getValue(outgoing),getValue(has_ack_nack),getValue(tr_determined_rep_role),
                                 getValue(src_determined_rep_role),getValue(ma_determined_rep_role),getValue(wack_regimes),
                                 getValue(confirmation_method),getValue(intent_to_clear),getValue(execution_venue),

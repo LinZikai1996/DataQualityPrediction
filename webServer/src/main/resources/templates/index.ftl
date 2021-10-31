@@ -77,9 +77,18 @@
                                 <div class="col-lg-6">
                                   <select class="default-select wide form-control" id="trade_info_01" name = "primary_asset_class">
                                     <option data-display="Select">Please select</option>
-                                    <option value="1.1">1.1</option>
-                                    <option value="1.2">1.2</option>
-                                    <option value="1.3">1.3</option>
+                                    <option value="Equity">Equity</option>
+                                    <option value="FixedIncome">Fixed Income</option>
+                                    <option value="Credit">Credit</option>
+                                    <option value="MoneyMarket">Money Market</option>
+                                    <option value="InterestRate">Interest Rate</option>
+                                    <option value="ForeignExchange">Foreign Exchange</option>
+                                    <option value="Unclassified">Unclassified</option>
+                                    <option value="Commodity">Commodity</option>
+                                    <option value="SecuritiesFinance">Securities Finance</option>
+                                    <option value="ExchangeTraded">Exchange Traded</option>
+                                    <option value="CrossAsset">Cross Asset</option>
+                                    <option value="NA">NA</option>
                                   </select>
                                   <div class="invalid-feedback">
                                     Please select a one.
@@ -89,11 +98,119 @@
                               <div class="mb-3 row">
                                 <label class="col-lg-4 col-form-label" for="trade_info_02">Product</label>
                                 <div class="col-lg-6">
-                                  <select class="default-select wide form-control" id="trade_info_02" name = "product">
+                                  <select class="form-control default-select wide" id="trade_info_02" name = "product" >
                                     <option data-display="Select">Please select</option>
-                                    <option value="2.1">2.1</option>
-                                    <option value="2.2">2.2</option>
-                                    <option value="2.3">2.3</option>
+                                    <option value="CRDI_USD_3M">CRDI USD 3M</option>
+                                    <option value="CRDI_USD_3M_V2">CRDI USD 3M V2</option>
+                                    <option value="Commodity::Swap:Cash">Commodity : : Swap : Cash</option>
+                                    <option value="Commodity:Agricultural:Softs:Exotic">Commodity : Agricultural : Softs : Exotic</option>
+                                    <option value="Commodity:Agricultural:Softs:Option:Cash">Commodity : Agricultural : Softs : Option : Cash</option>
+                                    <option value="Commodity:Agricultural:Softs:Option:Cash:Cleared">Commodity : Agricultural : Softs : Option : Cash : Cleared</option>
+                                    <option value="Commodity:Agricultural:Softs:SpotFwd:Cash">Commodity : Agricultural : Softs : SpotFwd : Cash</option>
+                                    <option value="Commodity:Agricultural:Softs:Swap:Cash">Commodity : Agricultural : Softs : Swap : Cash</option>
+                                    <option value="Commodity:Agricultural:Softs:Swap:Physical">Commodity : Agricultural : Softs : Swap : Physical</option>
+                                    <option value="Commodity:Energy:InterEnergy:Option:Cash">Commodity : Energy : InterEnergy : Option : Cash</option>
+                                    <option value="Commodity:Energy:NatGas:Option:Cash">Commodity : Energy : NatGas : Option : Cash</option>
+                                    <option value="Commodity:Energy:NatGas:Swap:Cash">Commodity : Energy : NatGas : Swap : Cash</option>
+                                    <option value="Commodity:Energy:NatGas:SpotFwd:Cash">Commodity : Energy : NatGas : SpotFwd : Cash</option>
+                                    <option value="Commodity:Energy:Oil:Exotic">Commodity : Energy : Oil : Exotic</option>
+                                    <option value="Commodity:Energy:Oil:Option:Cash">Commodity : Energy : Oil : Option : Cash</option>
+                                    <option value="Commodity:Energy:Oil:Option:Cash:Cleared">Commodity : Energy : Oil : Option : Cash : Cleared</option>
+                                    <option value="Commodity:Energy:Oil:SpotFwd:Cash">Commodity : EnergyOil : SpotFwd : Cash</option>
+                                    <option value="Commodity:Energy:Oil:Swap:Cash">Commodity : Energy : Oil : Swap : Cash</option>
+                                    <option value="Commodity:Environmental:Emissions:SpotFwd:Cash">Commodity : Environmental : Emissions : SpotFwd : Cash</option>
+                                    <option value="Commodity:Environmental:Emissions:SpotFwd:Physical">Commodity : Environmental : Emissions : SpotFwd : Physical</option>
+                                    <option value="Commodity:Environmental:Emissions:Swap:Cash">Commodity : Environmental : Emissions : Swap : Cash</option>
+                                    <option value="Commodity:Environmental:Emissions:Swap:Physical">Commodity : Environmental : Emissions : Swap : Physical</option>
+                                    <option value="Commodity:Metals:NonPrecious:Exotic">Commodity : Metals : NonPrecious : Exotic</option>
+                                    <option value="Commodity:Metals:NonPrecious:Option:Cash">Commodity : Metals : NonPrecious : Option : Cash</option>
+                                    <option value="Commodity:Metals:NonPrecious:Option:Cash:Cleared">Commodity : Metals : NonPrecious : Option : Cash : Cleared</option>
+                                    <option value="Commodity:Metals:NonPrecious:SpotFwd:Cash">Commodity : Metals : NonPrecious : SpotFwd : Cash</option>
+                                    <option value="Commodity:Metals:NonPrecious:Swap:Cash">Commodity : Metals : NonPrecious : Swap : Cash</option>
+                                    <option value="Commodity:Metals:Precious:Exotic">Commodity : Metals : Precious : Exotic</option>
+                                    <option value="Commodity:Metals:Precious:Option:Cash">Commodity : Metals : Precious : Option : Cash</option>
+                                    <option value="Commodity:Metals:Precious:Option:Physical">Commodity : Metals : Precious : Option : Physical</option>
+                                    <option value="Commodity:Metals:Precious:SpotFwd:Cash">Commodity : Metals : Precious : SpotFwd : Cash</option>
+                                    <option value="Commodity:Metals:Precious:SpotFwd:Physical">Commodity : Metals : Precious : SpotFwd : Physical</option>
+                                    <option value="Commodity:Metals:Precious:Swap:Cash">Commodity : Metals : Precious : Swap : Cash</option>
+                                    <option value="Commodity:Metals:Precious:Swap:Physical">Commodity : Metals : Precious : Swap : Physical</option>
+                                    <option value="Commodity:MultiCommodityExotic">Commodity : MultiCommodityExotic</option>
+                                    <option value="Commodity:undefined:Swap:Cash">Commodity : undefined : Swap : Cash</option>
+                                    <option value="Credit:Exotic:Other">Credit : Exotic : Other</option>
+                                    <option value="Credit:Index:CDX:CDXEmergingMarkets">Credit : Index : CDX : CDXEmergingMarkets</option>
+                                    <option value="Credit:Index:CDX:CDXIG">Credit : Index : CDX : CDXIG</option>
+                                    <option value="Credit:Index:LCDX:LCDX">Credit : Index : LCDX : LCDX</option>
+                                    <option value="Credit:Index:iTraxx:iTraxxAsiaExJapan">Credit : Index : iTraxx : iTraxxAsiaExJapan</option>
+                                    <option value="Credit:Index:iTraxxAustralia">Credit : Index : iTraxxAustralia</option>
+                                    <option value="Credit:Index:iTraxx:iTraxxEurope">Credit : Index : iTraxx : iTraxxEurope</option>
+                                    <option value="Credit:Index:iTraxx:iTraxxSovX">Credit : Index : iTraxx : iTraxxSovX</option>
+                                    <option value="Credit:SingleName:Corporate:NorthAmericanCorporate">SingleName : Corporate : NorthAmericanCorporate</option>
+                                    <option value="Credit:SingleName:Corporate:StandardAsiaCorporate">Credit : SingleName : Corporate : StandardAsiaCorporate</option>
+                                    <option value="Credit:SingleNameCorporate:StandardAustraliaCorporate">Credit : SingleNameCorporate : StandardAustraliaCorporate</option>
+                                    <option value="Credit:SingleName:Corporate:StandardEmergingEuropeanCorporate">Credit : SingleName : Corporate : StandardEmergingEuropeanCorporate</option>
+                                    <option value="Credit:SingleName:Corporate:StandardEuropeanCorporate">Credit : SingleName : Corporate : StandardEuropeanCorporate</option>
+                                    <option value="Credit:SingleName:Corporate:StandardJapanCorporate">Credit : SingleName : Corporate : StandardJapanCorporate</option>
+                                    <option value="Credit:SingleName:Corporate:StandardNorthAmericanCorporate">Credit : SingleName : Corporate : StandardNorthAmericanCorporate</option>
+                                    <option value="Credit:SingleName:Corporate:StandardSingaporeCorporate">Credit : SingleName : Corporate : StandardSingaporeCorporate</option>
+                                    <option value="Credit:SingleName:Loans:LCDS">Credit : SingleName : Loans : LCDS</option>
+                                    <option value="Credit:SingleName:Sovereign:AsiaSovereign">Credit : SingleName : Sovereign : AsiaSovereign</option>
+                                    <option value="Credit:SingleName:Sovereign:EmergingEuropeanAndMiddleEasternSovereign">Credit : SingleName : Sovereign : EmergingEuropeanAndMiddleEasternSovereign</option>
+                                    <option value="Credit:SingleName:Sovereign:LatinAmericaSovereign">Credit : SingleName : Sovereign : LatinAmericaSovereign</option>
+                                    <option value="Credit:SingleName:Sovereign:StandardAsiaSovereign">Credit : SingleName : Sovereign : StandardAsiaSovereign</option>
+                                    <option value="Credit:SingleName:Sovereign:StandardAustraliaSovereign">Credit : SingleName : Sovereign : StandardAustraliaSovereign</option>
+                                    <option value="Credit:SingleName:Sovereign:StandardEmergingEuropeanAndMiddleEasternSovereign">Credit : SingleName : Sovereign : StandardEmergingEuropeanAndMiddleEasternSovereign</option>
+                                    <option value="Credit:SingleName:Sovereign:StandardLatinAmericaSovereign">Credit : SingleName : Sovereign : StandardLatinAmericaSovereign</option>
+                                    <option value="Credit:SingleName:Sovereign:StandardWesternEuropeanSovereign">Credit : SingleName : Sovereign : StandardWesternEuropeanSovereign</option>
+                                    <option value="Credit:Swaptions:Corporate:CDSSwaption">Credit : Swaptions : Corporate : CDSSwaption</option>
+                                    <option value="Credit:TotalReturnSwap">Credit : TotalReturnSwap</option>
+                                    <option value="Equity:Cash">Equity : Cash</option>
+                                    <option value="Equity:Option:PriceReturnBasicPerformance:SingleIndex">Equity : Option : PriceReturnBasicPerformance : SingleIndex</option>
+                                    <option value="Equity:Option:PriceReturnBasicPerformance:SingleName">Equity : Option : PriceReturnBasicPerformance : SingleName</option>
+                                    <option value="Equity:Other">Equity : Other</option>
+                                    <option value="Equity:Swap:PriceReturnBasicPerformance:Basket">Equity : Swap : PriceReturnBasicPerformance : Basket</option>
+                                    <option value="Equity:Swap:PriceReturnBasicPerformance:SingleIndex">Equity : Swap : PriceReturnBasicPerformance : SingleIndex</option>
+                                    <option value="Equity:Swap:PriceReturnBasicPerformance:SingleName">Equity : Swap : PriceReturnBasicPerformance : SingleName</option>
+                                    <option value="ExchangeTraded:Future:Commodit">ExchangeTraded : Future : Commodit</option>
+                                    <option value="ExchangeTraded:Future:Equity">ExchangeTraded : Future : Equity</option>
+                                    <option value="ExchangeTraded:Future:FX">ExchangeTraded : Future : FX</option>
+                                    <option value="ExchangeTraded:Future:InterestRate">ExchangeTraded : Future : InterestRate</option>
+                                    <option value="ExchangeTraded:Option:Commodity">ExchangeTraded : Option : Commodity</option>
+                                    <option value="ExchangeTraded:Option:FX">ExchangeTraded : Option : FX</option>
+                                    <option value="ExchangeTraded:Option:InterestRate">ExchangeTraded : Option : InterestRate</option>
+                                    <option value="FixedIncome:Bond">FixedIncome : Bond</option>
+                                    <option value="ForeignExchange:ComplexExotic">ForeignExchange : ComplexExotic</option>
+                                    <option value="ForeignExchange:DualCurrencyDeposit">ForeignExchange : DualCurrencyDeposit</option>
+                                    <option value="ForeignExchange:Forward">ForeignExchange : Forward</option>
+                                    <option value="ForeignExchange:NDF">ForeignExchange : NDF</option>
+                                    <option value="ForeignExchange:NDO">ForeignExchange : NDO</option>
+                                    <option value="ForeignExchange:SimpleExotic:Barrier">ForeignExchange : SimpleExotic : Barrier</option>
+                                    <option value="ForeignExchange:SimpleExotic:Digital">ForeignExchange : SimpleExotic : Digital</option>
+                                    <option value="ForeignExchange:Spot">ForeignExchange : Spot</option>
+                                    <option value="ForeignExchange:VanillaOption">ForeignExchange : VanillaOption</option>
+                                    <option value="InterestRate:CapFloor">InterestRate : CapFloor</option>
+                                    <option value="InterestRate:CrossCurrency:Basis">InterestRate : CrossCurrency : Basis</option>
+                                    <option value="InterestRate:CrossCurrency:FixedFixed">InterestRate : CrossCurrency : FixedFixed</option>
+                                    <option value="InterestRate:CrossCurrency:FixedFloat">InterestRate : CrossCurrency : FixedFloat</option>
+                                    <option value="InterestRate:Exotic">InterestRate : Exotic</option>
+                                    <option value="InterestRate:FRA">InterestRate : FRA</option>
+                                    <option value="InterestRate:IRSwap:Basis">InterestRate : IRSwap : Basis</option>
+                                    <option value="InterestRate:IRSwap:FixedFixed">InterestRate : IRSwap : FixedFixed</option>
+                                    <option value="InterestRate:IRSwap:FixedFloat">InterestRate : IRSwap : FixedFloat</option>
+                                    <option value="InterestRate:IRSwap:OIS">InterestRate : IRSwap : OIS</option>
+                                    <option value="InterestRate:Option:Debtoption">InterestRate : Option : Debtoption</option>
+                                    <option value="InterestRate:Option:Swaption">InterestRate : Option : Swaption</option>
+                                    <option value="LoanDeposit">LoanDeposit</option>
+                                    <option value="MoneyMarket">MoneyMarket</option>
+                                    <option value="Securitiesfinance">Securitiesfinance</option>
+                                    <option value="SecuritiesFinance:BuySellBack">SecuritiesFinance : BuySellBack</option>
+                                    <option value="SecuritiesFinance:RepurchaseAgreement">SecuritiesFinance : RepurchaseAgreement</option>
+                                    <option value="SecuritiesFinance:RepurchaseAgreement:Evergreen">SecuritiesFinance : RepurchaseAgreement : Evergreen</option>
+                                    <option value="SecuritiesFinance:RepurchaseAgreement:Extendible">SecuritiesFinance : RepurchaseAgreement : Extendible</option>
+                                    <option value="SecuritiesFinance:SecuritiesLending">SecuritiesFinance : SecuritiesLending</option>
+                                    <option value="SecuritiesFinance:SecuritiesLending::Evergreen">SecuritiesFinance : SecuritiesLending :  : Evergreen</option>
+                                    <option value="SecuritiesFinance:SecuritiesLending::Extendible">SecuritiesFinance : SecuritiesLending :  : Extendible</option>
+                                    <option value="SecuritiesFinance:SecuritiesLending:CashDriven">SecuritiesFinance : SecuritiesLending : CashDriven</option>
+                                    <option value="undefined">undefined</option>
                                   </select>
                                   <div class="invalid-feedback">
                                     Please select a one.
@@ -105,9 +222,124 @@
                                 <div class="col-lg-6">
                                   <select class="default-select wide form-control" id="trade_info_03" name = "originating_event">
                                     <option data-display="Select">Please select</option>
-                                    <option value="3.1">3.1</option>
-                                    <option value="3.2">3.2</option>
-                                    <option value="3.3">3.3</option>
+                                    <option value="Cancel:Amendment:Retracted">Cancel : Amendment : Retracted</option>
+                                    <option value="Cancel:Amendment:TradeAffirmed:Validated">Cancel : Amendment : TradeAffirmed : Validated</option>
+                                    <option value="Cancel:Termination:Retracted">Cancel : Termination : Retracted</option>
+                                    <option value="Cancel:Termination:TradeAffirmed">Cancel : Termination : TradeAffirmed</option>
+                                    <option value="Cancel:Termination:TradeAffirmed:Validated">Cancel : Termination : TradeAffirmed : Validated</option>
+                                    <option value="Cancel:Trade:ClearingCompletedNotification">Cancel : Trade : ClearingCompletedNotification</option>
+                                    <option value="Cancel:Trade:ClearingCompletedNotificat:Validated">Cancel : Trade : ClearingCompletedNotificat : Validated</option>
+                                    <option value="Cancel:Trade:Retracted">Cancel : Trade : Retracted</option>
+                                    <option value="Cancel:Trade:Retracted:Validated">Cancel : Trade : Retracted : Validated</option>
+                                    <option value="Cancel:Trade:TradeAffirmed">Cancel : Trade : TradeAffirmed</option>
+                                    <option value="Cancel:Trade:TradeAffirmed:BOCheck">Cancel : Trade : TradeAffirmed : BOCheck</option>
+                                    <option value="Cancel:Trade:TradeAffirmed:BOCheck|CLIENT">Cancel : Trade : TradeAffirmed : BOCheck|CLIENT</option>
+                                    <option value="Cancel:Trade:TradeAffirmed:BOCheck|MARKETSINGLECLIENT">Cancel : Trade : TradeAffirmed : BOCheck|MARKETSINGLECLIENT</option>
+                                    <option value="Cancel:Trade:TradeAffirmed:BORejected">Cancel : Trade : TradeAffirmed : BORejected</option>
+                                    <option value="Cancel:Trade:TradeAffirmed:BORejected|CLIENT">Cancel : Trade : TradeAffirmed : BORejected|CLIENT</option>
+                                    <option value="Cancel:Trade:TradeAffirmed:BORejected|MARKET_MULTIPLE_CLIENT">CancelITrade : TradeAffirmed : BORejected|MARKET_MULTIPLE_CLIENT</option>
+                                    <option value="Cancel:Trade:TradeAffirmed:BORejected|MARKET_SINGLE_CLIENT">Cancel : Trade : TradeAffirmed : BORejected|MARKET_SINGLE_CLIENT</option>
+                                    <option value="Cancel:Trade:TradeAffirmed:CHKP">Cancel : Trade : TradeAffirmed : CHKP</option>
+                                    <option value="Cancel:Trade:TradeAffirmed:CancelledFO/RefusedMO">Cancel : Trade : TradeAffirmed : Cancelled FO / Refused MO</option>
+                                    <option value="Cancel:Trade:TradeAffirmed:FODiscarded">Cancel : Trade : TradeAffirmed : FODiscarded</option>
+                                    <option value="Cancel:Trade:TradeAffirmed:INPT">Cancel : Trade : TradeAffirmed : INPT</option>
+                                    <option value="Cancel:Trade:TradeAffirmed:InitialState">Cancel : Trade : TradeAffirmed : InitialState</option>
+                                    <option value="Cancel:Trade:TradeAffirmed:MO_Peding">Cancel : Trade : TradeAffirmed : MO_Peding</option>
+                                    <option value="Cancel:Trade:TradeAffirmed:ModifiedFO/RefusedMO">Cancel : Trade : TradeAffirmed : Modified FO /Refused MO</option>
+                                    <option value="Cancel:Trade:TradeAffirmed:ModifiedFO/RefusedMO|CLIENT">Cancel : Trade : TradeAffirmed : Modified FO /Refused MO|CLIENT</option>
+                                    <option value="Cancel:Trade:TradeAffirmed:ModifiedFORefusedMO|MARKET_SINGLE_CLIENT">Cancel : Trade : TradeAffirmed : ModifiedFORefused MO|MARKET_SINGLE_CLIENT</option>
+                                    <option value="Cancel:Trade:TradeAffirmed:Validated">Cancel : Trade : TradeAffirmed : Validated</option>
+                                    <option value="Cancel:Trade:TradeAffirmed:Validated|CLIENT">Cancel : Trade : TradeAffirmed : Validated|CLIENT</option>
+                                    <option value="Cancel:Trade:TradeAffirmed:Validated|MARKET_MULTIPLE_CLIENT">Cancel : Trade : TradeAffirmed : Validated|MARKET_MULTIPLE_CLIENT</option>
+                                    <option value="Cancel:Trade:TradeAffirmed:Validated|MARKET_SINGLE_CLIENT">Cancel : Trade : TradeAffirmed : Validated|MARKET_SINGLE_CLIENT</option>
+                                    <option value="Cancel:Trade:TradeAffirmed|CLIENT">Cancel : Trade : TradeAffirmed|CLIENT</option>
+                                    <option value="Cancel:Trade:TradeAffirmed|MARKET__CLIENT">Cancel : Trade : TradeAffirmed|MARKET__CLIENT</option>
+                                    <option value="Cancel:Trade:TradeAffirmed|MARKET_MULTIPLE_CLIENT">Cancel : Trade : TradeAffirmed|MARKET_MULTIPLE_CLIENT</option>
+                                    <option value="Cancel:Trade:TradeAffirmed|MARKET_SINGLE_CLIENT">Cancel : Trade : TradeAffirmed|MARKET_SINGLE_CLIENT</option>
+                                    <option value="Cancel:drawdown:Retracted">Cancel : drawdown : Retracted</option>
+                                    <option value="Cancel:drawdown:TradeAffirmed">Cancel : drawdown : TradeAffirmed</option>
+                                    <option value="Cancel:drawdown:TradeAffirmed:Validated">Cancel : drawdown : TradeAffirmed : Validated</option>
+                                    <option value="Cancel:expiry:TradeAffirmed:Validated">Cancel : expiry : TradeAffirmed : Validated</option>
+                                    <option value="Margin:New:MarginReporting">Margin : New : MarginReporting</option>
+                                    <option value="New:Amendment:ClearingCompletedNotification">New : Amendment : ClearingCompletedNotification</option>
+                                    <option value="New:Amendment:ClearingCompletedNotification:Validated">New : Amendment : ClearingCompletedNotification : Validated</option>
+                                    <option value="New:Amendment:TradeAffirmed">New : Amendment : TradeAffirmed</option>
+                                    <option value="New:Amendment:TradeAffirmed:BOCheck">New : Amendment : TradeAffirmed : BOCheck</option>
+                                    <option value="New:Amendment:TradeAffirmed:BOCheck|CLIENT">New : Amendment : TradeAffirmed : BOCheck|CLIENT</option>
+                                    <option value="New:Amendment:TradeAffirmed:BOCheck|MARKET_MULTIPLE_CLIENT">New : Amendment : TradeAffirmed : BOCheck|MARKET_MULTIPLE_CLIENT</option>
+                                    <option value="New:Amendment:TradeAffirmed:BOCheck|MARKET_SINGLE_CLIENT">New : Amendment : TradeAffirmed : BOCheck|MARKET_SINGLE_CLIENT</option>
+                                    <option value="New:Amendment:TradeAffirmed:BORejected">New : Amendment : TradeAffirmed : BORejected</option>
+                                    <option value="New:Amendment:TradeAffirmed:FO_Discarded">New : Amendment : TradeAffirmed : FO_Discarded</option>
+                                    <option value="New:Amendment:TradeAffirmed:INPT">New : Amendment : TradeAffirmed : INPT</option>
+                                    <option value="New:Amendment:TradeAffirmed:InitialState">New : Amendment : TradeAffirmed : InitialState</option>
+                                    <option value="New:Amendment:TradeAffirmed:InitialState|CLIENT">New : Amendment : TradeAffirmed : InitialState|CLIENT</option>
+                                    <option value="New:Amendment:TradeAffirmed:ModifiedFO/RefusedMO">New : Amendment : TradeAffirmed : Modified FO / Refused MO</option>
+                                    <option value="New:Amendment:TradeAffirmed:ModifiedFO/RefusedMO|CLIENT">New : Amendment : TradeAffirmed : Modified FO / Refused MO|CLIENT</option>
+                                    <option value="New:Amendment:TradeAffirmed:ModifiedFO/RefusedMO|MARKET_SINGLE_CLIENT">New : Amendment : TradeAffirmed : Modified FO / Refused MO|MARKET_SINGLE_CLIENT</option>
+                                    <option value="New:Amendment:TradeAffirmed:Validated">New : Amendment : TradeAffirmed : Validated</option>
+                                    <option value="New:Amendment:TradeAffirmed:Validated|CLIENT">New : Amendment : TradeAffirmed : Validated|CLIENT</option>
+                                    <option value="New:Amendment:TradeAffirmed:Validated|MARKET_MULTIPLE_CLIENT">New : Amendment : TradeAffirmed : Validated|MARKET_MULTIPLE_CLIENT</option>
+                                    <option value="New:Amendment:TradeAffirmed:Validated|MARKET_SINGLE_CLIENT">New : Amendment : TradeAffirmed : Validated|MARKET_SINGLE_CLIENT</option>
+                                    <option value="New:Amendment:TradeAffirmed">New : Amendment : TradeAffirmed</option>
+                                    <option value="New:Amendment:TradeAffirmed|CLIENT">New : Amendment : TradeAffirmed|CLIENT</option>
+                                    <option value="New:Amendment:TradeAffirmed|MARKET_MULTIPLE_CLIENT">New : Amendment : TradeAffirmed|MARKET_MULTIPLE_CLIENT</option>
+                                    <option value="New:Amendment:TradeAffirmed|MARKET_SINGLE_CLIENT">New : Amendment : TradeAffirmed|MARKET_SINGLE_CLIENT</option>
+                                    <option value="New:Exercise:TradeAffirmed">New : Exercise : TradeAffirmed</option>
+                                    <option value="New:Exercise:TradeAffirmed:BOCheck">New : Exercise : TradeAffirmed : BOCheck</option>
+                                    <option value="New:Exercise:TradeAffirmed:BOCheck|CLIENT">New : Exercise : TradeAffirmed : BOCheck|CLIENT</option>
+                                    <option value="New:Exercise:TradeAffirmed:BOCheck|MARKET_SINGLE_CLIENT">New : Exercise : TradeAffirmed : BOCheck|MARKET_SINGLE_CLIENT</option>
+                                    <option value="New:Exercise:TradeAffirmed:InitialState">New : Exercise : TradeAffirmed : InitialState</option>
+                                    <option value="New:Exercise:TradeAffirmed:Validated">New : Exercise : TradeAffirmed : Validated</option>
+                                    <option value="New:Exercise:TradeAffirmed:Validated|CLIENT">New : Exercise : TradeAffirmed : Validated|CLIENT</option>
+                                    <option value="New:Exercise:TradeAffirmed:Validated|MARKET_SINGLE_CLIENT">New : Exercise : TradeAffirmed : Validated|MARKET_SINGLE_CLIENT</option>
+                                    <option value="New:Termination:ClearingCompletedNotification:Validated">New : Termination : ClearingCompletedNotification : Validated</option>
+                                    <option value="New:Termination:TradeAffirmed">New : Termination : TradeAffirmed</option>
+                                    <option value="New:Termination:TradeAffirmed:BOChecl">New : Termination : TradeAffirmed : BOChecl</option>
+                                    <option value="New:Termination:TradeAffirmed:Initialstate">New : Termination : TradeAffirmed : Initialstate</option>
+                                    <option value="New:Termination:TradeAffirmed:Validated">New : Termination : TradeAffirmed : Validated</option>
+                                    <option value="lew:Termination:TradeAffirmed:Validated|CLIENT">lew : Termination : TradeAffirmed : Validated|CLIENT</option>
+                                    <option value="New:Termination:TradeAffirmed:Validated|MARKET_SINGLEC_LIENT">New : Termination : TradeAffirmed : Validated|MARKET_SINGLE_CLIENT</option>
+                                    <option value="New:Trade:ClearingCompletedNotification">New : Trade : ClearingCompletedNotification</option>
+                                    <option value="New:Trade:CollateralPosting">New : Trade : CollateralPosting</option>
+                                    <option value="New:Trade:TradeAffirmed">New : Trade : TradeAffirmed</option>
+                                    <option value="New:Trade:TradeAffirmed:BOCheck">New : Trade : TradeAffirmed : BOCheck</option>
+                                    <option value="New:Trade:TradeAffirmed:BOCheck|CLIENT">New : Trade : TradeAffirmed : BOCheck|CLIENT</option>
+                                    <option value="New:Trade:TradeAffirmed:BOCheck|MARKET_MULTIPLE_CLIENT">New : Trade : TradeAffirmed : BOCheck|MARKET_MULTIPLE_CLIENT</option>
+                                    <option value="New:Trade:TradeAffirmed:BOCheck|MARKET_SINGLE_CLIENT">New : Trade : TradeAffirmed : BOCheck|MARKET_SINGLE_CLIENT</option>
+                                    <option value="New:Trade:TradeAffirmed:BORejected">New : Trade : TradeAffirmed : BORejected</option>
+                                    <option value="New:Trade:TradeAffirmed:BORejected|CLIENT">New : Trade : TradeAffirmed : BORejected|CLIENT</option>
+                                    <option value="New:Trade:TradeAffirmed:BORejected|MARKET_MULTIPLE_CLIENT">New : Trade : TradeAffirmed : BORejected|MARKET_MULTIPLE_CLIENT</option>
+                                    <option value="New:Trade:TradeAffirmed:CHKP">New : Trade : TradeAffirmed : CHKP</option>
+                                    <option value="New:Trade:TradeAffirmed:Fo_Discarded">New : Trade : TradeAffirmed : Fo_Discarded</option>
+                                    <option value="New:Trade:TradeAffirmed:INPT">New : Trade : TradeAffirmed : INPT</option>
+                                    <option value="New:Trade:TradeAffirmed:Initialstate">New : Trade : TradeAffirmed : Initialstate</option>
+                                    <option value="New:Trade:TradeAffirmed:InitialState|CLIENT">New : Trade : TradeAffirmed : InitialState|CLIENT</option>
+                                    <option value="New:Trade:TradeAffirmed:InitialState|MARKET_MULTIPLE_CLIENT">New : Trade : TradeAffirmed : InitialState|MARKET_MULTIPLE_CLIENT</option>
+                                    <option value="New:Trade:TradeAffirmed:InitialState|MARKET_SINGLE_CLIENT">New : Trade : TradeAffirmed : InitialState|MARKET_SINGLE_CLIENT</option>
+                                    <option value="New:Trade:TradeAffirmed:Validated">New : Trade : TradeAffirmed : Validated</option>
+                                    <option value="New:Trade:TradeAffirmed:Validated|CLIENT">New : Trade : TradeAffirmed : Validated|CLIENT</option>
+                                    <option value="New:Trade:TradeAffirmed:Validated|MARKET_MULTIPLE_CLIENT">New : Trade : TradeAffirmed : Validated|MARKET_MULTIPLE_CLIENT</option>
+                                    <option value="New:Trade:TradeAffirmed:Validated|MARKET_SINGLE_CLIENT">New : Trade : TradeAffirmed : Validated|MARKET_SINGLE_CLIENT</option>
+                                    <option value="New:Trade:TradeAffirmed|CLIENT">New : Trade : TradeAffirmedCLIENT</option>
+                                    <option value="New:Trade:TradeAffirmed|MARKET_MULTIPLE_CLIENT">New : Trade : TradeAffirmed|MARKET_MULTIPLE_CLIENT</option>
+                                    <option value="New:Trade:TradeAffirmed|MARKET_SINGLE_CLIENT">New : Trade : TradeAffirmed|MARKET_SINGLE_CLIENT</option>
+                                    <option value="New:Trade:TradeAffirmed|MARKET_ALL_CLIENT">New : Trade : TradeAffirmed|MARKET_ALL_CLIENT</option>
+                                    <option value="New:Trade:ValuationReference">New : Trade : ValuationReference</option>
+                                    <option value="New:drawdown:TradeAffirmed">New : drawdown : TradeAffirmed</option>
+                                    <option value="New:drawdown:TradeAffirmed:BOCheck">New : drawdown : TradeAffirmed : BOCheck</option>
+                                    <option value="New:drawdown:TradeAffirmed:Validated">New : drawdown : TradeAffirmed : Validated</option>
+                                    <option value="New:expiry:TradeAffirmed:BOCheck">New : expiry : TradeAffirmed : BOCheck</option>
+                                    <option value="New:expiry:TradeAffirmed:Validated">New : expiry : TradeAffirmed : Validated</option>
+                                    <option value="New:expiry:TradeAffirmed:Validated|CLIENT">New : expiry : TradeAffirmed : Validated|CLIENT</option>
+                                    <option value="New:expiry:TradeAffirmed:Validated|MARKET_SINGLE_CLIENT">New : expiry : TradeAffirmed : Validated|MARKET_SINGLE_CLIENT</option>
+                                    <option value="New:optionEvent:TradeAffirmed">New : optionEvent : TradeAffirmed</option>
+                                    <option value="New:optionEvent:TradeAffirmed:BOCheck">New : optionEvent : TradeAffirmed : BOCheck</option>
+                                    <option value="New:optionEvent:TradeAffirmed:InitialState">New : optionEvent : TradeAffirmed : InitialState</option>
+                                    <option value="New:optionEvent:TradeAffirmed:Validated">New : optionEvent : TradeAffirmed : Validated</option>
+                                    <option value="New:optionEvent:TradeAffirmed:Validated|CLIENT">New : optionEvent : TradeAffirmed : Validated|CLIENT</option>
+                                    <option value="New:optionEvent:TradeAffirmed:Validated|MARKET_MULTIPLE_CLIENT">New : optionEvent : TradeAffirmed : Validated|MARKET_MULTIPLE_CLIENT</option>
+                                    <option value="New:optionEvent:TradeAffirmed:Validated|MARKET_SINGLE_CLIENT">New : optionEvent : TradeAffirmed : Validated|MARKET_SINGLE_CLIENT</option>
+                                    <option value="Reuse:New:ReuseReporting">Reuse : New : ReuseReporting</option>
                                   </select>
                                   <div class="invalid-feedback">
                                     Please select a one.
@@ -119,9 +351,16 @@
                                 <div class="col-lg-6">
                                   <select class="default-select wide form-control" id="trade_info_04" name = "reporting_regime">
                                     <option data-display="Select">Please select</option>
-                                    <option value="4.1">4.1</option>
-                                    <option value="4.2">4.2</option>
-                                    <option value="4.3">4.3</option>
+                                    <option value="NA">NA</option>
+                                    <option value="MiFIR-ARM,MiFIR-APA">MiFIR-ARM,MiFIR-APA</option>
+                                    <option value="MiFIR-ARM,MiFIR-RTS23">MiFIR-ARM,MiFIR-RTS23</option>
+                                    <option value="FCA-SFTR">FCA-SFTR</option>
+                                    <option value="MiFIR-ARM,SFTR">MiFIR-ARM,SFTR</option>
+                                    <option value="SFTR">SFTR</option>
+                                    <option value="MiFIR-APA">MiFIR-APA</option>
+                                    <option value="MiFIR-RTS23">MiFIR-RTS23</option>
+                                    <option value="MiFIR-ARM">MiFIR-ARM</option>
+                                    <option value="MiFIR-ARM,MiFIR-APA,SFTR">MiFIR-ARM,MiFIR-APA,SFTR</option>
                                   </select>
                                 </div>
                               </div>
@@ -130,9 +369,9 @@
                                 <div class="col-lg-6">
                                   <select class="default-select wide form-control" id="trade_info_05" name = "usi_issuer">
                                     <option data-display="Select">Please select</option>
-                                    <option value="5.1">5.1</option>
-                                    <option value="5.2">5.2</option>
-                                    <option value="5.3">5.3</option>
+                                    <option value="NA">NA</option>
+                                    <option value="YCDYZNMZ3J">YCDYZNMZ3J</option>
+                                    <option value="1N6DM40ZPS">1N6DM40ZPS</option>
                                   </select>
                                 </div>
                               </div>
@@ -141,9 +380,13 @@
                                 <div class="col-lg-6">
                                   <select class="default-select wide form-control" id="trade_info_06" name = "usi_value">
                                     <option data-display="Select">Please select</option>
-                                    <option value="6.1">6.1</option>
-                                    <option value="6.2">6.2</option>
-                                    <option value="6.3">6.3</option>
+                                    <option value="1KJTIIGC8YBBG">1KJTIIGC8YBBG</option>
+                                    <option value="1SAICMBREPOD">1SAICMBREPOD</option>
+                                    <option value="F2KUVLIFOY">F2KUVLIFOY</option>
+                                    <option value="GLMXD">GLMXD</option>
+                                    <option value="LCHCSDE">LCHCSDE</option>
+                                    <option value="XLCHRDSCR">XLCHRDSCR</option>
+                                    <option value="NA">NA</option>
                                   </select>
                                 </div>
                               </div>
@@ -152,9 +395,15 @@
                                 <div class="col-lg-6">
                                   <select class="default-select wide form-control" id="trade_info_07" name = "uti_originator">
                                     <option data-display="Select">Please select</option>
-                                    <option value="7.1">7.1</option>
-                                    <option value="7.2">7.2</option>
-                                    <option value="7.3">7.3</option>
+                                    <option value="INTERNAL_UTI">INTERNAL_UTI</option>
+                                    <option value="ISDA">ISDA</option>
+                                    <option value="UNCLASSIFIED_UTI">UNCLASSIFIED_UTI</option>
+                                    <option value="CONFIRMATION_PLATFORM_UTI">CONFIRMATION_PLATFORM_UTI</option>
+                                    <option value="VENUE_UTI">VENUE_UTI</option>
+                                    <option value="NO_UTI">NO_UTI</option>
+                                    <option value="CCP_UTI">CCP_UTI</option>
+                                    <option value="CPTY_UTI">CPTY_UTI</option>
+                                    <option value="NA">NA</option>
                                   </select>
                                 </div>
                               </div>
@@ -164,10 +413,8 @@
                                 <label class="col-lg-4 col-form-label" for="trade_info_08">Outgoing</label>
                                 <div class="col-lg-6">
                                   <select class="default-select wide form-control" id="trade_info_08" name = "outgoing">
-                                    <option data-display="Select">Please select</option>
-                                    <option value="8.1">8.1</option>
-                                    <option value="8.2">8.2</option>
-                                    <option value="8.3">8.3</option>
+                                    <option value="1" selected="selected">1</option>
+                                    <option value="0">0</option>
                                   </select>
                                 </div>
                               </div>

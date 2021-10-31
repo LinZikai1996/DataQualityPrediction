@@ -65,6 +65,7 @@
                                         <tr>
                                             <th>Trade Id</th>
                                             <th>Trade Date</th>
+                                            <th>Primary Asset Class</th>
                                             <th>Product</th>
                                             <th>Originating Event</th>
                                             <th>Reporting Regime</th>
@@ -80,6 +81,7 @@
                                             <tr>
                                                 <td>${trade.trade_id}</td>
                                                 <td>${trade.trade_date}</td>
+                                                <td>${trade.primary_asset_class}</td>
                                                 <td>${trade.product}</td>
                                                 <td>${trade.originating_event}</td>
                                                 <td>${trade.reporting_regime}</td>
