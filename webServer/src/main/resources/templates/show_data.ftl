@@ -177,30 +177,6 @@
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="mb-3 row">
-                                                                                    <label class="col-lg-4 col-form-label">Src Determined Rep Role</label>
-                                                                                    <div class="col-lg-6">
-                                                                                        <input type="text" class="form-control" value="${trade.src_determined_rep_role}" disabled>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="mb-3 row">
-                                                                                    <label class="col-lg-4 col-form-label">Ma Determined Rep Role</label>
-                                                                                    <div class="col-lg-6">
-                                                                                        <input type="text" class="form-control" value="${trade.ma_determined_rep_role}" disabled>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="mb-3 row">
-                                                                                    <label class="col-lg-4 col-form-label">Wack Regimes</label>
-                                                                                    <div class="col-lg-6">
-                                                                                        <input type="text" class="form-control" value="${trade.wack_regimes}" disabled>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="mb-3 row">
-                                                                                    <label class="col-lg-4 col-form-label">Confirmation method</label>
-                                                                                    <div class="col-lg-6">
-                                                                                        <input type="text" class="form-control" value="${trade.confirmation_method}" disabled>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="mb-3 row">
                                                                                     <label class="col-lg-4 col-form-label">Intent To Clear</label>
                                                                                     <div class="col-lg-6">
                                                                                         <input type="text" class="form-control" value="${trade.intent_to_clear}" disabled>
@@ -210,18 +186,6 @@
                                                                                     <label class="col-lg-4 col-form-label">Execution Venue</label>
                                                                                     <div class="col-lg-6">
                                                                                         <input type="text" class="form-control" value="${trade.execution_venue}" disabled>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="mb-3 row">
-                                                                                    <label class="col-lg-4 col-form-label">Reported By</label>
-                                                                                    <div class="col-lg-6">
-                                                                                        <input type="text" class="form-control" value="${trade.reported_by}" disabled>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="mb-3 row">
-                                                                                    <label class="col-lg-4 col-form-label">Allocation Status</label>
-                                                                                    <div class="col-lg-6">
-                                                                                        <input type="text" class="form-control" value="${trade.allocation_status}" disabled>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="mb-3 row">

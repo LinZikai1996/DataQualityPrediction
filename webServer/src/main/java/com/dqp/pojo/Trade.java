@@ -21,14 +21,8 @@ public class Trade {
     String outgoing;
     String has_ack_nack;
     String tr_determined_rep_role;
-    String src_determined_rep_role;
-    String ma_determined_rep_role;
-    String wack_regimes;
-    String confirmation_method;
     String intent_to_clear;
     String execution_venue;
-    String reported_by;
-    String allocation_status;
     String system_trade_source;
     String notional_ccy_1;
     String notional_ccy_2;

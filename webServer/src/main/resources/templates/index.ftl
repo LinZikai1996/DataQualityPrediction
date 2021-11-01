@@ -422,10 +422,8 @@
                                 <label class="col-lg-4 col-form-label" for="trade_info_09">Has Ack Nack</label>
                                 <div class="col-lg-6">
                                   <select class="default-select wide form-control" id="trade_info_09" name = "has_ack_nack">
-                                    <option data-display="Select">Please select</option>
-                                    <option value="9.1">9.1</option>
-                                    <option value="9.2">9.2</option>
-                                    <option value="9.3">9.3</option>
+                                    <option value="1">1</option>
+                                    <option value="0" selected="selected">0</option>
                                   </select>
                                 </div>
                               </div>
@@ -433,54 +431,185 @@
                                 <label class="col-lg-4 col-form-label" for="trade_info_10">Tr Determined Rep Role</label>
                                 <div class="col-lg-6">
                                   <select class="default-select wide form-control" id="trade_info_10" name = "tr_determined_rep_role">
-                                    <option data-display="Select">Please select</option>
-                                    <option value="10.1">10.1</option>
-                                    <option value="10.2">10.2</option>
-                                    <option value="10.3">10.3</option>
+                                    <option value="ReportingParty">Reporting Party</option>
+                                    <option value="NA" selected="selected">NA</option>
                                   </select>
                                 </div>
                               </div>
                               <div class="mb-3 row">
-                                <label class="col-lg-4 col-form-label" for="trade_info_11">Src Determined Rep role</label>
+                                <label class="col-lg-4 col-form-label" for="trade_info_11">Intent to Clear</label>
                                 <div class="col-lg-6">
-                                  <select class="default-select wide form-control" id="trade_info_11" name = "src_determined_rep_role">
+                                  <select class="default-select wide form-control" id="trade_info_11" name = "intent_to_clear">
+                                    <option value="N" selected="selected">N</option>
+                                    <option value="Y">Y</option>
+                                    <option value="NA">NA</option>
+                                  </select>
+                                  <div class="invalid-feedback">
+                                    Please select a one.
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mb-3 row">
+                                <label class="col-lg-4 col-form-label" for="trade_info_12">Execution Venue</label>
+                                <div class="col-lg-6">
+                                  <select class="default-select wide form-control" id="trade_info_12" name = "execution_venue">
+                                    <option value="NA" selected="selected">NA</option>
+                                    <option value="RILFO74P1CM8P6PCT96">RILFO74P1CM8P6PCT96</option>
+                                    <option value="54930MDYVVHJ8D1DW28">54930MDYVVHJ8D1DW28</option>
+                                  </select>
+                                  <div class="invalid-feedback">
+                                    Please select a one.
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mb-3 row">
+                                <label class="col-lg-4 col-form-label" for="trade_info_13">System Trade Source</label>
+                                <div class="col-lg-6">
+                                  <select class="default-select wide form-control" id="trade_info_13" name = "system_trade_source">
                                     <option data-display="Select">Please select</option>
-                                    <option value="11.1">11.1</option>
-                                    <option value="11.2">11.2</option>
-                                    <option value="11.3">11.3</option>
+                                    <option value="UTS">UTS</option>
+                                    <option value="FEDS">FEDS</option>
+                                    <option value="CIS">CIS</option>
+                                    <option value="Murex">Murex</option>
+                                    <option value="MxCMS">MxCMS</option>
+                                    <option value="VELOCITY">VELOCITY</option>
+                                    <option value="DZH">DZH</option>
+                                    <option value="MARTINI">MARTINI</option>
+                                    <option value="EINVESTMENT">EINVESTMENT</option>
+                                    <option value="EQCONNECT">EQCONNECT</option>
+                                    <option value="OPICS">OPICS</option>
+                                    <option value="S2BX">S2BX</option>
+                                    <option value="Velocity">Velocity</option>
+                                    <option value="EDR">EDR</option>
+                                    <option value="Blade">Blade</option>
+                                    <option value="SABRE">SABRE</option>
+                                    <option value="Martini">Martini</option>
+                                    <option value="GLTRADE">GLTRADE</option>
+                                    <option value="RiskRunnerSTP">RiskRunnerSTP</option>
+                                    <option value="FICONNECT">FICONNECT</option>
+                                    <option value="MX_FXCASH">MX_FXCASH</option>
+                                    <option value="BCSSTELLA">BCSSTELLA</option>
+                                    <option value="BTS">BTS</option>
+                                    <option value="Sophis">Sophis</option>
+                                    <option value="WSD">WSD</option>
+                                    <option value="FIConnect">FIConnect</option>
+                                    <option value="T24">T24</option>
+                                    <option value="NA">NA</option>
                                   </select>
                                 </div>
                               </div>
                               <div class="mb-3 row">
-                                <label class="col-lg-4 col-form-label" for="trade_info_12">Ma Determined Rep Role</label>
+                                <label class="col-lg-4 col-form-label" for="trade_info_14">Notional ccy_1</label>
                                 <div class="col-lg-6">
-                                  <select class="default-select wide form-control" id="trade_info_12" name = "ma_determined_rep_role">
+                                  <select class="default-select wide form-control" id="trade_info_14" name = "notional_ccy_1">
                                     <option data-display="Select">Please select</option>
-                                    <option value="12.1">12.1</option>
-                                    <option value="12.2">12.2</option>
-                                    <option value="12.3">12.3</option>
-                                  </select>
-                                </div>
-                              </div>
-                              <div class="mb-3 row">
-                                <label class="col-lg-4 col-form-label" for="trade_info_13">Wack Regimes</label>
-                                <div class="col-lg-6">
-                                  <select class="default-select wide form-control" id="trade_info_13" name = "wack_regimes">
-                                    <option data-display="Select">Please select</option>
-                                    <option value="13.1">13.1</option>
-                                    <option value="13.2">13.2</option>
-                                    <option value="13.3">13.3</option>
-                                  </select>
-                                </div>
-                              </div>
-                              <div class="mb-3 row">
-                                <label class="col-lg-4 col-form-label" for="trade_info_14">Confirmation Method</label>
-                                <div class="col-lg-6">
-                                  <select class="default-select wide form-control" id="trade_info_14" name = "confirmation_method">
-                                    <option data-display="Select">Please select</option>
-                                    <option value="14.1">14.1</option>
-                                    <option value="14.2">14.2</option>
-                                    <option value="14.3">14.3</option>
+                                    <option value="AED">AED</option>
+                                    <option value="AFN">AFN</option>
+                                    <option value="AFI">AFI</option>
+                                    <option value="AOA">AOA</option>
+                                    <option value="ARS">ARS</option>
+                                    <option value="AUD">AUD</option>
+                                    <option value="AZN">AZN</option>
+                                    <option value="BDT">BDT</option>
+                                    <option value="BGN">BGN</option>
+                                    <option value="BHD">BHD</option>
+                                    <option value="BND">BND</option>
+                                    <option value="BOB">BOB</option>
+                                    <option value="BRL">BRL</option>
+                                    <option value="BWP">BWP</option>
+                                    <option value="CAD">CAD</option>
+                                    <option value="CHF">CHF</option>
+                                    <option value="CLF">CLF</option>
+                                    <option value="CLO">CLO</option>
+                                    <option value="CNH">CNH</option>
+                                    <option value="CNO">CNO</option>
+                                    <option value="CNY">CNY</option>
+                                    <option value="COP">COP</option>
+                                    <option value="CZK">CZK</option>
+                                    <option value="DKK">DKK</option>
+                                    <option value="EGP">EGP</option>
+                                    <option value="ETB">ETB</option>
+                                    <option value="ETH">ETH</option>
+                                    <option value="EUR">EUR</option>
+                                    <option value="GBP">GBP</option>
+                                    <option value="GBX">GBX</option>
+                                    <option value="GHS">GHS</option>
+                                    <option value="GMD">GMD</option>
+                                    <option value="GS">GS</option>
+                                    <option value="HKD">HKD</option>
+                                    <option value="HRK">HRK</option>
+                                    <option value="HUF">HUF</option>
+                                    <option value="IDR">IDR</option>
+                                    <option value="IDY">IDY</option>
+                                    <option value="ILS">ILS</option>
+                                    <option value="INR">INR</option>
+                                    <option value="IQD">IQD</option>
+                                    <option value="JOD">JOD</option>
+                                    <option value="JPT">JPT</option>
+                                    <option value="JPY">JPY</option>
+                                    <option value="KES">KES</option>
+                                    <option value="KRO">KRO</option>
+                                    <option value="KRW">KRW</option>
+                                    <option value="KWD">KWD</option>
+                                    <option value="KZT">KZT</option>
+                                    <option value="LKH">LKH</option>
+                                    <option value="LKR">LKR</option>
+                                    <option value="MAD">MAD</option>
+                                    <option value="MOP">MOP</option>
+                                    <option value="MUR">MUR</option>
+                                    <option value="MWK">MWK</option>
+                                    <option value="MXN">MXN</option>
+                                    <option value="MYO">MYO</option>
+                                    <option value="MYR">MYR</option>
+                                    <option value="MYZ">MYZ</option>
+                                    <option value="MZH">MZH</option>
+                                    <option value="MZN">MZN</option>
+                                    <option value="NAD">NAD</option>
+                                    <option value="NGN">NGN</option>
+                                    <option value="NOK">NOK</option>
+                                    <option value="NPR">NPR</option>
+                                    <option value="NZD">NZD</option>
+                                    <option value="OMR">OMR</option>
+                                    <option value="PEN">PEN</option>
+                                    <option value="PEO">PEO</option>
+                                    <option value="PHP">PHP</option>
+                                    <option value="PKH">PKH</option>
+                                    <option value="PKR">PKR</option>
+                                    <option value="PLN">PLN</option>
+                                    <option value="QAR">QAR</option>
+                                    <option value="RON">RON</option>
+                                    <option value="RSD">RSD</option>
+                                    <option value="RUB">RUB</option>
+                                    <option value="RWF">RWF</option>
+                                    <option value="SAR">SAR</option>
+                                    <option value="SEK">SEK</option>
+                                    <option value="SGD">SGD</option>
+                                    <option value="SGO">SGO</option>
+                                    <option value="SLL">SLL</option>
+                                    <option value="SZL">SZL</option>
+                                    <option value="THB">THB</option>
+                                    <option value="TND">TND</option>
+                                    <option value="TRB">TRB</option>
+                                    <option value="TRY">TRY</option>
+                                    <option value="TWD">TWD</option>
+                                    <option value="TZS">TZS</option>
+                                    <option value="UAH">UAH</option>
+                                    <option value="UGX">UGX</option>
+                                    <option value="USD">USD</option>
+                                    <option value="UYU">UYU</option>
+                                    <option value="UZS">UZS</option>
+                                    <option value="VND">VND</option>
+                                    <option value="XAF">XAF</option>
+                                    <option value="XAG">XAG</option>
+                                    <option value="XAU">XAU</option>
+                                    <option value="XOF">XOF</option>
+                                    <option value="XOH">XOH</option>
+                                    <option value="XPD">XPD</option>
+                                    <option value="XPT">XPT</option>
+                                    <option value="XUC">XUC</option>
+                                    <option value="ZAR">ZAR</option>
+                                    <option value="ZMW">ZMW</option>
+                                    <option value="ZWL">ZWL</option>
                                   </select>
                                 </div>
                               </div>
@@ -499,88 +628,99 @@
                           <div class="row">
                             <div class="col-lg-6 mt-3">
                               <div class="mb-3 row">
-                                <label class="col-lg-4 col-form-label" for="trade_info_15">Intent to Clear</label>
+                                <label class="col-lg-4 col-form-label" for="trade_info_15">Notional ccy_2</label>
                                 <div class="col-lg-6">
-                                  <select class="default-select wide form-control" id="trade_info_15" name = "intent_to_clear">
+                                  <select class="default-select wide form-control" id="trade_info_15" name = "notional_ccy_2">
                                     <option data-display="Select">Please select</option>
-                                    <option value="15.1">15.1</option>
-                                    <option value="15.2">15.2</option>
-                                    <option value="15.3">15.3</option>
-                                  </select>
-                                  <div class="invalid-feedback">
-                                    Please select a one.
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="mb-3 row">
-                                <label class="col-lg-4 col-form-label" for="trade_info_16">Execution Venue</label>
-                                <div class="col-lg-6">
-                                  <select class="default-select wide form-control" id="trade_info_16" name = "execution_venue">
-                                    <option data-display="Select">Please select</option>
-                                    <option value="16.1">16.1</option>
-                                    <option value="16.2">16.2</option>
-                                    <option value="16.3">16.3</option>
-                                  </select>
-                                  <div class="invalid-feedback">
-                                    Please select a one.
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="mb-3 row">
-                                <label class="col-lg-4 col-form-label" for="trade_info_17">Reported by</label>
-                                <div class="col-lg-6">
-                                  <select class="default-select wide form-control" id="trade_info_17" name = "reported_by">
-                                    <option data-display="Select">Please select</option>
-                                    <option value="17.1">17.1</option>
-                                    <option value="17.2">17.2</option>
-                                    <option value="17.3">17.3</option>
-                                  </select>
-                                  <div class="invalid-feedback">
-                                    Please select a one.
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="mb-3 row">
-                                <label class="col-lg-4 col-form-label" for="trade_info_18">Allocation Status</label>
-                                <div class="col-lg-6">
-                                  <select class="default-select wide form-control" id="trade_info_18" name = "allocation_status">
-                                    <option data-display="Select">Please select</option>
-                                    <option value="18.1">18.1</option>
-                                    <option value="18.2">18.2</option>
-                                    <option value="18.3">18.3</option>
-                                  </select>
-                                </div>
-                              </div>
-                              <div class="mb-3 row">
-                                <label class="col-lg-4 col-form-label" for="trade_info_19">System Trade Source</label>
-                                <div class="col-lg-6">
-                                  <select class="default-select wide form-control" id="trade_info_19" name = "system_trade_source">
-                                    <option data-display="Select">Please select</option>
-                                    <option value="19.1">19.1</option>
-                                    <option value="19.2">19.2</option>
-                                    <option value="19.3">19.3</option>
-                                  </select>
-                                </div>
-                              </div>
-                              <div class="mb-3 row">
-                                <label class="col-lg-4 col-form-label" for="trade_info_20">Notional ccy_1</label>
-                                <div class="col-lg-6">
-                                  <select class="default-select wide form-control" id="trade_info_20" name = "notional_ccy_1">
-                                    <option data-display="Select">Please select</option>
-                                    <option value="20.1">20.1</option>
-                                    <option value="20.2">20.2</option>
-                                    <option value="20.3">20.3</option>
-                                  </select>
-                                </div>
-                              </div>
-                              <div class="mb-3 row">
-                                <label class="col-lg-4 col-form-label" for="trade_info_21">Notional ccy_2</label>
-                                <div class="col-lg-6">
-                                  <select class="default-select wide form-control" id="trade_info_21" name = "notional_ccy_2">
-                                    <option data-display="Select">Please select</option>
-                                    <option value="21.1">21.1</option>
-                                    <option value="21.2">21.2</option>
-                                    <option value="21.3">21.3</option>
+                                    <option value="AED">AED</option>
+                                    <option value="AOA">AOA</option>
+                                    <option value="ARS">ARS</option>
+                                    <option value="AUD">AUD</option>
+                                    <option value="BDT">BDT</option>
+                                    <option value="BGN">BGN</option>
+                                    <option value="BHD">BHD</option>
+                                    <option value="BND">BND</option>
+                                    <option value="BRL">BRL</option>
+                                    <option value="BWP">BWP</option>
+                                    <option value="CAD">CAD</option>
+                                    <option value="CHE">CHE</option>
+                                    <option value="CLP">CLP</option>
+                                    <option value="CNH">CNH</option>
+                                    <option value="CNY">CNY</option>
+                                    <option value="COP">COP</option>
+                                    <option value="CZK">CZK</option>
+                                    <option value="DKK">DKK</option>
+                                    <option value="EGP">EGP</option>
+                                    <option value="ETB">ETB</option>
+                                    <option value="EUR">EUR</option>
+                                    <option value="GBP">GBP</option>
+                                    <option value="GHS">GHS</option>
+                                    <option value="GMD">GMD</option>
+                                    <option value="HKD">HKD</option>
+                                    <option value="HRK">HRK</option>
+                                    <option value="HUF">HUF</option>
+                                    <option value="IDR">IDR</option>
+                                    <option value="ILS">ILS</option>
+                                    <option value="INR">INR</option>
+                                    <option value="LQD">LQD</option>
+                                    <option value="JOD">JOD</option>
+                                    <option value="JPY">JPY</option>
+                                    <option value="KES">KES</option>
+                                    <option value="KMF">KMF</option>
+                                    <option value="KRW">KRW</option>
+                                    <option value="KWD">KWD</option>
+                                    <option value="KZT">KZT</option>
+                                    <option value="LKR">LKR</option>
+                                    <option value="MAD">MAD</option>
+                                    <option value="MGA">MGA</option>
+                                    <option value="MOP">MOP</option>
+                                    <option value="MUR">MUR</option>
+                                    <option value="MWK">MWK</option>
+                                    <option value="MXN">MXN</option>
+                                    <option value="MYR">MYR</option>
+                                    <option value="MYZ">MYZ</option>
+                                    <option value="MZN">MZN</option>
+                                    <option value="NAD">NAD</option>
+                                    <option value="NGN">NGN</option>
+                                    <option value="NOK">NOK</option>
+                                    <option value="NPR">NPR</option>
+                                    <option value="NZD">NZD</option>
+                                    <option value="OMR">OMR</option>
+                                    <option value="PEN">PEN</option>
+                                    <option value="PHP">PHP</option>
+                                    <option value="PKR">PKR</option>
+                                    <option value="PLN">PLN</option>
+                                    <option value="QAR">QAR</option>
+                                    <option value="RON">RON</option>
+                                    <option value="RSD">RSD</option>
+                                    <option value="RUB">RUB</option>
+                                    <option value="SAR">SAR</option>
+                                    <option value="SEK">SEK</option>
+                                    <option value="SGD">SGD</option>
+                                    <option value="SGO">SGO</option>
+                                    <option value="SLL">SLL</option>
+                                    <option value="SZL">SZL</option>
+                                    <option value="THB">THB</option>
+                                    <option value="TND">TND</option>
+                                    <option value="TRY">TRY</option>
+                                    <option value="TWD">TWD</option>
+                                    <option value="TZS">TZS</option>
+                                    <option value="UAH">UAH</option>
+                                    <option value="UGX">UGX</option>
+                                    <option value="USD">USD</option>
+                                    <option value="VND">VND</option>
+                                    <option value="XAF">XAF</option>
+                                    <option value="XAG">XAG</option>
+                                    <option value="XAU">XAU</option>
+                                    <option value="XG4">XG4</option>
+                                    <option value="XGI">XGI</option>
+                                    <option value="XOF">XOF</option>
+                                    <option value="XOH">XOH</option>
+                                    <option value="XPD">XPD</option>
+                                    <option value="XPT">XPT</option>
+                                    <option value="XRH">XRH</option>
+                                    <option value="ZAR">ZAR</option>
+                                    <option value="ZMW">ZMW</option>
                                   </select>
                                 </div>
                               </div>
