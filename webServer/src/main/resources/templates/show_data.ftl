@@ -261,21 +261,15 @@
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="mb-3 row">
-                                                                                    <label class="col-lg-4 col-form-label">Executing Entity</label>
+                                                                                    <label class="col-lg-4 col-form-label">Upfront Payment Currency</label>
                                                                                     <div class="col-lg-6">
-                                                                                        <input type="text" class="form-control" value="${trade.executing_entity}" disabled>
+                                                                                        <input type="text" class="form-control" value="${trade.upfront_payment_currency}" disabled>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="mb-3 row">
                                                                                     <label class="col-lg-4 col-form-label">Price Multiplier</label>
                                                                                     <div class="col-lg-6">
                                                                                         <input type="text" class="form-control" value="${trade.price_multiplier}" disabled>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="mb-3 row">
-                                                                                    <label class="col-lg-4 col-form-label">Underlyer</label>
-                                                                                    <div class="col-lg-6">
-                                                                                        <input type="text" class="form-control" value="${trade.underlyer}" disabled>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="mb-3 row">
@@ -309,15 +303,9 @@
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="mb-3 row">
-                                                                                    <label class="col-lg-4 col-form-label">Manual Ignore Status</label>
+                                                                                    <label class="col-lg-4 col-form-label">Excuting entity</label>
                                                                                     <div class="col-lg-6">
-                                                                                        <input type="text" class="form-control" value="${trade.manual_ignore_status}" disabled>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="mb-3 row">
-                                                                                    <label class="col-lg-4 col-form-label">Manual Action Status</label>
-                                                                                    <div class="col-lg-6">
-                                                                                        <input type="text" class="form-control" value="${trade.manual_action_status}" disabled>
+                                                                                        <input type="text" class="form-control" value="${trade.excuting_entity}" disabled>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="mb-3 row">

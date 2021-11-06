@@ -498,6 +498,20 @@
                                   </select>
                                 </div>
                               </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <div class="accordion-header collapsed rounded-lg" id="trade_page_02" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-controls="collapseTwo"   role="button" aria-expanded="true">
+                        <span class="accordion-header-text">Trade Information - 2</span>
+                        <span class="accordion-header-indicator"></span>
+                      </div>
+                      <div id="collapseTwo" class="collapse" aria-labelledby="trade_page_02" data-bs-parent="#accordion-one">
+                        <div class="accordion-body-text">
+                          <div class="row">
+                            <div class="col-lg-6 mt-3">
                               <div class="mb-3 row">
                                 <label class="col-lg-4 col-form-label" for="trade_info_14">Notional ccy_1</label>
                                 <div class="col-lg-6">
@@ -613,20 +627,6 @@
                                   </select>
                                 </div>
                               </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <div class="accordion-header collapsed rounded-lg" id="trade_page_02" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-controls="collapseTwo"   role="button" aria-expanded="true">
-                        <span class="accordion-header-text">Trade Information - 2</span>
-                        <span class="accordion-header-indicator"></span>
-                      </div>
-                      <div id="collapseTwo" class="collapse" aria-labelledby="trade_page_02" data-bs-parent="#accordion-one">
-                        <div class="accordion-body-text">
-                          <div class="row">
-                            <div class="col-lg-6 mt-3">
                               <div class="mb-3 row">
                                 <label class="col-lg-4 col-form-label" for="trade_info_15">Notional ccy_2</label>
                                 <div class="col-lg-6">
@@ -724,83 +724,248 @@
                                   </select>
                                 </div>
                               </div>
+                              <div class="mb-3 row">
+                                <label class="col-lg-4 col-form-label" for="trade_info_16">Quantity</label>
+                                <div class="col-lg-6">
+                                  <select class="default-select wide form-control" id="trade_info_16" name = "quantity">
+                                    <option data-display="Select">Please select</option>
+                                    <option value="AED">AED</option>
+                                    <option value="AOA">AOA</option>
+                                    <option value="AUD">AUD</option>
+                                    <option value="AZN">AZN</option>
+                                    <option value="BDT">BDT</option>
+                                    <option value="BGN">BGN</option>
+                                    <option value="BHD">BHD</option>
+                                    <option value="BND">BND</option>
+                                    <option value="BRL">BRL</option>
+                                    <option value="BWP">BWP</option>
+                                    <option value="CAD">CAD</option>
+                                    <option value="CHF">CHF</option>
+                                    <option value="CLF">CLF</option>
+                                    <option value="CLP">CLP</option>
+                                    <option value="CNH">CNH</option>
+                                    <option value="CNY">CNY</option>
+                                    <option value="COP">COP</option>
+                                    <option value="CZK">CZK</option>
+                                    <option value="DKK">DKK</option>
+                                    <option value="DOP">DOP</option>
+                                    <option value="EGP">EGP</option>
+                                    <option value="EUR">EUR</option>
+                                    <option value="GBP">GBP</option>
+                                    <option value="GBX">GBX</option>
+                                    <option value="GHS">GHS</option>
+                                    <option value="GMD">GMD</option>
+                                    <option value="GS">GS</option>
+                                    <option value="HKD">HKD</option>
+                                    <option value="HRK">HRK</option>
+                                    <option value="HUF">HUF</option>
+                                    <option value="IDR">IDR</option>
+                                    <option value="ILS">ILS</option>
+                                    <option value="INR">INR</option>
+                                    <option value="IQD">IQD</option>
+                                    <option value="JOD">JOD</option>
+                                    <option value="JPT">JPT</option>
+                                    <option value="JPY">JPY</option>
+                                    <option value="KES">KES</option>
+                                    <option value="KMF">KMF</option>
+                                    <option value="KRW">KRW</option>
+                                    <option value="KWD">KWD</option>
+                                    <option value="LKR">LKR</option>
+                                    <option value="MAD">MAD</option>
+                                    <option value="MGA">MGA</option>
+                                    <option value="MOP">MOP</option>
+                                    <option value="MUR">MUR</option>
+                                    <option value="MWK">MWK</option>
+                                    <option value="MXN">MXN</option>
+                                    <option value="MYR">MYR</option>
+                                    <option value="MYZ">MYZ</option>
+                                    <option value="MZN">MZN</option>
+                                    <option value="NAD">NAD</option>
+                                    <option value="NGN">NGN</option>
+                                    <option value="NOK">NOK</option>
+                                    <option value="NPR">NPR</option>
+                                    <option value="NZD">NZD</option>
+                                    <option value="OMR">OMR</option>
+                                    <option value="PEN">PEN</option>
+                                    <option value="PHP">PHP</option>
+                                    <option value="PKR">PKR</option>
+                                    <option value="PLN">PLN</option>
+                                    <option value="QAR">QAR</option>
+                                    <option value="RON">RON</option>
+                                    <option value="RSD">RSD</option>
+                                    <option value="RUB">RUB</option>
+                                    <option value="SAR">SAR</option>
+                                    <option value="SEK">SEK</option>
+                                    <option value="SGD">SGD</option>
+                                    <option value="SGO">SGO</option>
+                                    <option value="SLL">SLL</option>
+                                    <option value="SZL">SZL</option>
+                                    <option value="THB">THB</option>
+                                    <option value="TRY">TRY</option>
+                                    <option value="TWD">TWD</option>
+                                    <option value="TZS">TZS</option>
+                                    <option value="UAH">UAH</option>
+                                    <option value="UGX">UGX</option>
+                                    <option value="USD">USD</option>
+                                    <option value="UYU">UYU</option>
+                                    <option value="UZS">UZS</option>
+                                    <option value="VND">VND</option>
+                                    <option value="XAF">XAF</option>
+                                    <option value="XAG">XAG</option>
+                                    <option value="XAU">XAU</option>
+                                    <option value="XG4">XG4</option>
+                                    <option value="XGI">XGI</option>
+                                    <option value="XOF">XOF</option>
+                                    <option value="XOH">XOH</option>
+                                    <option value="XPD">XPD</option>
+                                    <option value="XPT">XPT</option>
+                                    <option value="XRH">XRH</option>
+                                    <option value="XUC">XUC</option>
+                                    <option value="ZAR">ZAR</option>
+                                    <option value="ZMW">ZMW</option>
+                                    <option value="ZWL">ZWL</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="mb-3 row">
+                                <label class="col-lg-4 col-form-label" for="trade_info_17">Net Amount</label>
+                                <div class="col-lg-6">
+                                  <input type="text" name = "net_amount" class="form-control" id="trade_info_17" placeholder="0.00">
+                                </div>
+                              </div>
+                              <div class="mb-3 row">
+                                <label class="col-lg-4 col-form-label" for="trade_info_18">Price</label>
+                                <div class="col-lg-6">
+                                  <input type="text" name = "price" class="form-control" id="trade_info_18" placeholder="0.00000">
+                                </div>
+                              </div>
+                              <div class="mb-3 row">
+                                <label class="col-lg-4 col-form-label" for="trade_info_19">Option Type</label>
+                                <div class="col-lg-6">
+                                  <select class="default-select wide form-control" id="trade_info_19" name = "option_type">
+                                    <option data-display="Select">Please select</option>
+                                    <option value="Call">Call</option>
+                                    <option value="Put">Put</option>
+                                    <option value="Strd">Strd</option>
+                                    <option value="Other">Other</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="mb-3 row">
+                                <label class="col-lg-4 col-form-label" for="trade_info_20">Strike Price</label>
+                                <div class="col-lg-6">
+                                  <select class="default-select wide form-control" id="trade_info_20" name = "strike_price">
+                                    <option data-display="Select">Please select</option>
+                                    <option value="Pending">Pending</option>
+                                    <option value="Percentage">Percentage</option>
+                                    <option value="PendingPercentage">PendingPercentage</option>
+                                    <option value="Monetary">Monetary</option>
+                                    <option value="NoAvailable">NoAvailable</option>
+                                  </select>
+                                </div>
+                              </div>
                             </div>
                             <div class="col-lg-6 mt-3">
                               <div class="mb-3 row">
-                                <label class="col-lg-4 col-form-label" for="trade_info_22">Quantity</label>
+                                <label class="col-lg-4 col-form-label" for="trade_info_21">Option Exercise style</label>
                                 <div class="col-lg-6">
-                                  <select class="default-select wide form-control" id="trade_info_22" name = "quantity">
+                                  <select class="default-select wide form-control" id="trade_info_21" name = "option_exercise_style">
                                     <option data-display="Select">Please select</option>
-                                    <option value="22.1">22.1</option>
-                                    <option value="22.2">22.2</option>
-                                    <option value="22.3">22.3</option>
+                                    <option value="AMER">AMER</option>
+                                    <option value="BERM">BERM</option>
+                                    <option value="EURO">EURO</option>
+                                    <option value="OTHR">OTHR</option>
+                                    <option value="NA">NA</option>
                                   </select>
                                 </div>
                               </div>
                               <div class="mb-3 row">
-                                <label class="col-lg-4 col-form-label" for="trade_info_23">Net Amount</label>
+                                <label class="col-lg-4 col-form-label" for="trade_info_22">Delivery Type</label>
                                 <div class="col-lg-6">
-                                  <select class="default-select wide form-control" id="trade_info_23" name = "net_amount">
+                                  <select class="default-select wide form-control" id="trade_info_22" name = "delivery_type">
                                     <option data-display="Select">Please select</option>
-                                    <option value="23.1">23.1</option>
-                                    <option value="23.2">23.2</option>
-                                    <option value="23.3">23.3</option>
+                                    <option value="CASH">CASH</option>
+                                    <option value="PHYS">PHYS</option>
+                                    <option value="OPTL">OPTL</option>
+                                    <option value="R">R</option>
+                                    <option value="NA">NA</option>
                                   </select>
                                 </div>
                               </div>
                               <div class="mb-3 row">
-                                <label class="col-lg-4 col-form-label" for="trade_info_24">Price</label>
+                                <label class="col-lg-4 col-form-label" for="trade_info_23">Deriv Notional Change</label>
                                 <div class="col-lg-6">
-                                  <select class="default-select wide form-control" id="trade_info_24" name = "price">
+                                  <select class="default-select wide form-control" id="trade_info_23" name = "deriv_notional_change">
                                     <option data-display="Select">Please select</option>
-                                    <option value="10.1">10.1</option>
-                                    <option value="10.2">10.2</option>
-                                    <option value="10.3">10.3</option>
+                                    <option value="Decrease">Decrease</option>
+                                    <option value="Increase">Increase</option>
+                                    <option value="NA">NA</option>
                                   </select>
+                                  <div class="invalid-feedback">
+                                    Please select a one.
+                                  </div>
                                 </div>
                               </div>
                               <div class="mb-3 row">
-                                <label class="col-lg-4 col-form-label" for="trade_info_25">Option Type</label>
+                                <label class="col-lg-4 col-form-label" for="trade_info_24">Upfront Payment</label>
                                 <div class="col-lg-6">
-                                  <select class="default-select wide form-control" id="trade_info_25" name = "option_type">
-                                    <option data-display="Select">Please select</option>
-                                    <option value="25.1">25.1</option>
-                                    <option value="25.2">25.2</option>
-                                    <option value="25.3">25.3</option>
-                                  </select>
+                                  <input type="text" name="upfront_payment" class="form-control" id="trade_info_24" placeholder="0.00">
+                                  <div class="invalid-feedback">
+                                    Please select a one.
+                                  </div>
                                 </div>
                               </div>
                               <div class="mb-3 row">
-                                <label class="col-lg-4 col-form-label" for="trade_info_26">Strike Price</label>
+                                <label class="col-lg-4 col-form-label" for="trade_info_25">Upfront Payment Currency</label>
                                 <div class="col-lg-6">
-                                  <select class="default-select wide form-control" id="trade_info_26" name = "strike_price">
+                                  <select class="default-select wide form-control" id="trade_info_25" name="upfront_payment_currency">
                                     <option data-display="Select">Please select</option>
-                                    <option value="26.1">26.1</option>
-                                    <option value="26.2">26.2</option>
-                                    <option value="26.3">26.3</option>
+                                    <option value="AED">AED</option>
+                                    <option value="AUD">AUD</option>
+                                    <option value="BRL">BRL</option>
+                                    <option value="CAD">CAD</option>
+                                    <option value="CHF">CHF</option>
+                                    <option value="CNY">CNY</option>
+                                    <option value="COP">COP</option>
+                                    <option value="CZK">CZK</option>
+                                    <option value="EUR">EUR</option>
+                                    <option value="GBI">GBI</option>
+                                    <option value="GBP">GBP</option>
+                                    <option value="GHS">GHS</option>
+                                    <option value="HKD">HKD</option>
+                                    <option value="HUF">HUF</option>
+                                    <option value="IDR">IDR</option>
+                                    <option value="INR">INR</option>
+                                    <option value="JPY">JPY</option>
+                                    <option value="KES">KES</option>
+                                    <option value="KRW">KRW</option>
+                                    <option value="MXN">MXN</option>
+                                    <option value="MYR">MYR</option>
+                                    <option value="NOK">NOK</option>
+                                    <option value="NZD">NZD</option>
+                                    <option value="PLN">PLN</option>
+                                    <option value="RUB">RUB</option>
+                                    <option value="SAR">SAR</option>
+                                    <option value="SEK">SEK</option>
+                                    <option value="SGD">SGD</option>
+                                    <option value="TRY">TRY</option>
+                                    <option value="TWD">TWD</option>
+                                    <option value="USD">USD</option>
+                                    <option value="XAG">XAG</option>
+                                    <option value="XAU">XAU</option>
+                                    <option value="XPD">XPD</option>
+                                    <option value="XPT">XPT</option>
+                                    <option value="ZAR">ZAR</option>
                                   </select>
+                                  <div class="invalid-feedback">
+                                    Please select a one.
+                                  </div>
                                 </div>
                               </div>
                               <div class="mb-3 row">
-                                <label class="col-lg-4 col-form-label" for="trade_info_27">Option Exercise style</label>
+                                <label class="col-lg-4 col-form-label" for="trade_info_26">Price Multiplier</label>
                                 <div class="col-lg-6">
-                                  <select class="default-select wide form-control" id="trade_info_27" name = "option_exercise_style">
-                                    <option data-display="Select">Please select</option>
-                                    <option value="27.1">27.1</option>
-                                    <option value="27.2">27.2</option>
-                                    <option value="27.3">27.3</option>
-                                  </select>
-                                </div>
-                              </div>
-                              <div class="mb-3 row">
-                                <label class="col-lg-4 col-form-label" for="trade_info_28">Delivery Type</label>
-                                <div class="col-lg-6">
-                                  <select class="default-select wide form-control" id="trade_info_28" name = "delivery_type">
-                                    <option data-display="Select">Please select</option>
-                                    <option value="28.1">28.1</option>
-                                    <option value="28.2">28.2</option>
-                                    <option value="28.3">28.3</option>
-                                  </select>
+                                  <input type="text" name="price_multiplier" class="form-control" id="trade_info_26" placeholder="100">
                                 </div>
                               </div>
                             </div>
@@ -818,167 +983,297 @@
                           <div class="row">
                             <div class="col-lg-6 mt-3">
                               <div class="mb-3 row">
-                                <label class="col-lg-4 col-form-label" for="trade_info_29">Deriv Notional Change</label>
+                                <label class="col-lg-4 col-form-label" for="trade_info_27">Sftr Ind</label>
                                 <div class="col-lg-6">
-                                  <select class="default-select wide form-control" id="trade_info_29" name = "deriv_notional_change">
+                                  <select class="default-select wide form-control" id="trade_info_27" name = "sftr_ind">
                                     <option data-display="Select">Please select</option>
-                                    <option value="29.1">29.1</option>
-                                    <option value="29.2">29.2</option>
-                                    <option value="29.3">29.3</option>
-                                  </select>
-                                  <div class="invalid-feedback">
-                                    Please select a one.
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="mb-3 row">
-                                <label class="col-lg-4 col-form-label" for="trade_info_30">Upfront Payment</label>
-                                <div class="col-lg-6">
-                                  <select class="default-select wide form-control" id="trade_info_30" name = "upfront_payment">
-                                    <option data-display="Select">Please select</option>
-                                    <option value="30.1">30.1</option>
-                                    <option value="30.2">30.2</option>
-                                    <option value="30.3">30.3</option>
-                                  </select>
-                                  <div class="invalid-feedback">
-                                    Please select a one.
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="mb-3 row">
-                                <label class="col-lg-4 col-form-label" for="trade_info_31">Executing Entity</label>
-                                <div class="col-lg-6">
-                                  <select class="default-select wide form-control" id="trade_info_31" name = "executing_entity">
-                                    <option data-display="Select">Please select</option>
-                                    <option value="31.1">31.1</option>
-                                    <option value="31.2">31.2</option>
-                                    <option value="31.3">31.3</option>
-                                  </select>
-                                  <div class="invalid-feedback">
-                                    Please select a one.
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="mb-3 row">
-                                <label class="col-lg-4 col-form-label" for="trade_info_32">Price Multiplier</label>
-                                <div class="col-lg-6">
-                                  <select class="default-select wide form-control" id="trade_info_32" name = "price_multiplier">
-                                    <option data-display="Select">Please select</option>
-                                    <option value="32.1">32.1</option>
-                                    <option value="32.2">32.2</option>
-                                    <option value="32.3">32.3</option>
+                                    <option value="1">1</option>
+                                    <option value="0" selected="selected">0</option>
                                   </select>
                                 </div>
                               </div>
                               <div class="mb-3 row">
-                                <label class="col-lg-4 col-form-label" for="trade_info_33">Underlyer</label>
+                                <label class="col-lg-4 col-form-label" for="trade_info_28">Waiver Ind</label>
                                 <div class="col-lg-6">
-                                  <select class="default-select wide form-control" id="trade_info_33" name = "underlyer">
+                                  <select class="default-select wide form-control" id="trade_info_28" name = "waiver_ind">
                                     <option data-display="Select">Please select</option>
-                                    <option value="33.1">33.1</option>
-                                    <option value="33.2">33.2</option>
-                                    <option value="33.3">33.3</option>
-                                  </select>
-                                </div>
-                              </div>
-                              <div class="mb-3 row">
-                                <label class="col-lg-4 col-form-label" for="trade_info_34">Sftr Ind</label>
-                                <div class="col-lg-6">
-                                  <select class="default-select wide form-control" id="trade_info_34" name = "sftr_ind">
-                                    <option data-display="Select">Please select</option>
-                                    <option value="34.1">34.1</option>
-                                    <option value="34.2">34.2</option>
-                                    <option value="34.3">34.3</option>
-                                  </select>
-                                </div>
-                              </div>
-                              <div class="mb-3 row">
-                                <label class="col-lg-4 col-form-label" for="trade_info_35">Waiver Ind</label>
-                                <div class="col-lg-6">
-                                  <select class="default-select wide form-control" id="trade_info_35" name = "waiver_ind">
-                                    <option data-display="Select">Please select</option>
-                                    <option value="35.1">35.1</option>
-                                    <option value="35.2">35.2</option>
-                                    <option value="35.3">35.3</option>
+                                    <option value="ILQD">ILQD</option>
+                                    <option value="ILQD,ILQD">ILQD,ILQD</option>
+                                    <option value="ILQD,SIZE">ILQD,SIZE</option>
+                                    <option value="LRGS2">LRGS2</option>
+                                    <option value="LRGS2,ILQD">LRGS2,ILQD</option>
+                                    <option value="LRGS2,SIZE">LRGS2,SIZE</option>
+                                    <option value="RFPT">RFPT</option>
+                                    <option value="RFPT,ILQD">RFPT,ILQD</option>
+                                    <option value="RFPT,SIZE">RFPT,SIZE</option>
+                                    <option value="SIZE">SIZE</option>
                                   </select>
                                 </div>
                               </div>
                             </div>
                             <div class="col-lg-6 mt-3">
                               <div class="mb-3 row">
-                                <label class="col-lg-4 col-form-label" for="trade_info_36">Short Selling Ind</label>
+                                <label class="col-lg-4 col-form-label" for="trade_info_29">Short Selling Ind</label>
                                 <div class="col-lg-6">
-                                  <select class="default-select wide form-control" id="trade_info_36" name = "short_selling_ind">
+                                  <select class="default-select wide form-control" id="trade_info_29" name = "short_selling_ind">
                                     <option data-display="Select">Please select</option>
-                                    <option value="36.1">36.1</option>
-                                    <option value="36.2">36.2</option>
-                                    <option value="36.3">36.3</option>
+                                    <option value="UNDI">UNDI</option>
+                                    <option value="SSEX">SSEX</option>
+                                    <option value="SESH">SESH</option>
+                                    <option value="SELL">SELL</option>
+                                    <option value="NA">NA</option>
                                   </select>
                                 </div>
                               </div>
                               <div class="mb-3 row">
-                                <label class="col-lg-4 col-form-label" for="trade_info_37">Otc Post Trade Ind</label>
+                                <label class="col-lg-4 col-form-label" for="trade_info_30">Otc Post Trade Ind</label>
                                 <div class="col-lg-6">
-                                  <select class="default-select wide form-control" id="trade_info_37" name = "otc_post_trade_ind">
+                                  <select class="default-select wide form-control" id="trade_info_30" name = "otc_post_trade_ind">
                                     <option data-display="Select">Please select</option>
-                                    <option value="37.1">37.1</option>
-                                    <option value="37.2">37.2</option>
-                                    <option value="37.3">37.3</option>
+                                    <option value="AMND">AMND</option>
+                                    <option value="AMND:DECR">AMND : DECR</option>
+                                    <option value="AMND:DECR:ILQD">AMND : DECR : ILQD</option>
+                                    <option value="AMND:DECR:LRGS:ILQD:SIZE">AMND : DECR : LRGS : ILQD : SIZE</option>
+                                    <option value="AMND:DECR:LRGS:SIZE">AMND : DECR : LRGS : SIZE</option>
+                                    <option value="AMND:ILQD">AMND : ILQD</option>
+                                    <option value="AMND:ILQD:SIZE">AMND : ILQD : SIZE</option>
+                                    <option value="AMND:INCR">AMND : INCR</option>
+                                    <option value="AMND:INCR:ILQD">AMND : INCR : ILQD</option>
+                                    <option value="AMND:INCR:ILQD:SIZE">AMND : INCR : ILQD : SIZE</option>
+                                    <option value="AMND:INCR:LRGS:ILQD:SIZE">AMND : INCR : LRGS : ILQD : SIZE</option>
+                                    <option value="AMND:INCR:LRGS:SIZE">AMND : INCR : LRGS : SIZE</option>
+                                    <option value="AMND:LRGS:ILQD:SIZE">AMND : LRGS : ILQD : SIZE</option>
+                                    <option value="AMND:LRGS:SIZE">AMND : LRGS : SIZE</option>
+                                    <option value="AMND:SIZE">AMND : SIZE</option>
+                                    <option value="DECR">DECR</option>
+                                    <option value="DECR:ILQD">DECR : ILQD</option>
+                                    <option value="DECR:LRGS:ILQD:SIZE">DECR : LRGS : ILQD : SIZE</option>
+                                    <option value="DECR:LRGS:SIZE">DECR : LRGS : SIZE</option>
+                                    <option value="ILQD">ILQD</option>
+                                    <option value="ILQD:ACTX">ILQD : ACTX</option>
+                                    <option value="ILQD:SIZE">ILQD : SIZE</option>
+                                    <option value="LRGS">LRGS</option>
+                                    <option value="LRGS:ILQD:SIZE">LRGS : ILQD : SIZE</option>
+                                    <option value="LRGS:ILQD:SIZE:ACTX">LRGS : ILQD : SIZE : ACTX</option>
+                                    <option value="LRGS:SIZE">LRGS : SIZE</option>
+                                    <option value="LRGS:SIZE:ACTX">LRGS : SIZE : ACTX</option>
+                                    <option value="SIZE">SIZE</option>
+                                    <option value="SIZE:ACTX">SIZE : ACTX</option>
                                   </select>
                                 </div>
                               </div>
                               <div class="mb-3 row">
-                                <label class="col-lg-4 col-form-label" for="trade_info_38">Commodity Deriv Ind</label>
+                                <label class="col-lg-4 col-form-label" for="trade_info_31">Commodity Deriv Ind</label>
                                 <div class="col-lg-6">
-                                  <select class="default-select wide form-control" id="trade_info_38" name = "commodity_deriv_ind">
+                                  <select class="default-select wide form-control" id="trade_info_31" name = "commodity_deriv_ind">
                                     <option data-display="Select">Please select</option>
-                                    <option value="38.1">38.1</option>
-                                    <option value="38.2">38.2</option>
-                                    <option value="38.3">38.3</option>
+                                    <option value="1">1</option>
+                                    <option value="0" selected="selected">0</option>
                                   </select>
                                 </div>
                               </div>
                               <div class="mb-3 row">
-                                <label class="col-lg-4 col-form-label" for="trade_info_39">Manual Ignore Status</label>
+                                <label class="col-lg-4 col-form-label" for="trade_info_32">Excuting entity</label>
                                 <div class="col-lg-6">
-                                  <select class="default-select wide form-control" id="trade_info_39" name = "manual_ignore_status">
+                                  <select class="default-select wide form-control" id="trade_info_32" name = "excuting_entity">
                                     <option data-display="Select">Please select</option>
-                                    <option value="39.1">39.1</option>
-                                    <option value="39.2">39.2</option>
-                                    <option value="39.3">39.3</option>
+                                    <option value="213800IZX4SV7RCMNE25">213800IZX4SV7RCMNE25</option>
+                                    <option value="2138007187UGEtOBY710">2138007187UGEtOBY710</option>
+                                    <option value="25490022T8SZMUPAZM15">25490022T8SZMUPAZM15</option>
+                                    <option value="25490030VHP330DMKT69">25490030VHP330DMKT69</option>
+                                    <option value="2549003YGUN/4HYXE454">2549003YGUN/4HYXE454</option>
+                                    <option value="2549007VITN8D0159J38">2549007VITN8D0159J38</option>
+                                    <option value="254900¢XIT0JDKIHU681">254900¢XIT0JDKIHU681</option>
+                                    <option value="254900NZQKE939N6BF95">254900NZQKE939N6BF95</option>
+                                    <option value="254900]4GUMH2X2ZKR94">254900]4GUMH2X2ZKR94</option>
+                                    <option value="2549003XW27PLB87UT53">2549003XW27PLB87UT53</option>
+                                    <option value="254900L0RXIN1D4ZUY76">254900L0RXIN1D4ZUY76</option>
+                                    <option value="254900MLZK6GJCJ7YQ75">254900MLZK6GJCJ7YQ75</option>
+                                    <option value="254900MT7DC77WH5GE51">254900MT7DC77WH5GE51</option>
+                                    <option value="2549000903AU0358LI06">2549000903AU0358LI06</option>
+                                    <option value="254900SA4MUWBPPSVA28">254900SA4MUWBPPSVA28</option>
+                                    <option value="254900WYTOSH5CMVKR91">254900WYTOSH5CMVKR91</option>
+                                    <option value="254900716RVF4Z5V1A58">254900716RVF4Z5V1A58</option>
+                                    <option value="54930016MQBB2N05NB47">54930016MQBB2N05NB47</option>
+                                    <option value="549300247QDZHDI30A83">549300247QDZHDI30A83</option>
+                                    <option value="5493002W420BT9C14552">5493002W420BT9C14552</option>
+                                    <option value="549300440RDPODF3OG15">549300440RDPODF3OG15</option>
+                                    <option value="54930046DYEYLX3RUR52">54930046DYEYLX3RUR52</option>
+                                    <option value="5493004GZFY008YRNS98">5493004GZFY008YRNS98</option>
+                                    <option value="5493007VY27WWF8FF542">5493007VY27WWF8FF542</option>
+                                    <option value="549300CYJBF26U1AR886">549300CYJBF26U1AR886</option>
+                                    <option value="549300DGSLALKOXQ4V30">549300DGSLALKOXQ4V30</option>
+                                    <option value="549300DRD7CCI4121590">549300DRD7CCI4121590</option>
+                                    <option value="5493003778G2QBI8KD48">5493003778G2QBI8KD48</option>
+                                    <option value="549300JUM4009TZRX045">549300JUM4009TZRX045</option>
+                                    <option value="549300LTA4EIL7Q64454">549300LTA4EIL7Q64454</option>
+                                    <option value="549300MDYVVHJ8D1DW28">549300MDYVVHJ8D1DW28</option>
+                                    <option value="549300MDYVVHJ8D1DW29">549300MDYVVHJ8D1DW29</option>
+                                    <option value="549300MDYVVHJ8D1DW30">549300MDYVVHJ8D1DW30</option>
+                                    <option value="549300MDYVVHJ8D1DW31">549300MDYVVHJ8D1DW31</option>
+                                    <option value="549300MDYVVHJ8D1DW32">549300MDYVVHJ8D1DW32</option>
+                                    <option value="549300MDYVVHJ8D1DW33">549300MDYVVHJ8D1DW33</option>
+                                    <option value="549300MDYVVHJ8D1DW34">549300MDYVVHJ8D1DW34</option>
+                                    <option value="549300MDYVVHJ8D1DW35">549300MDYVVHJ8D1DW35</option>
+                                    <option value="549300MDYVVHJ8D1DW36">549300MDYVVHJ8D1DW36</option>
+                                    <option value="549300MDYVVHJ8D1DW37">549300MDYVVHJ8D1DW37</option>
+                                    <option value="549300MDYVVHJ8D1DW38">549300MDYVVHJ8D1DW38</option>
+                                    <option value="549300MDYVVHJ8D1DW39">549300MDYVVHJ8D1DW39</option>
+                                    <option value="549300MDYVVHJ8D1DW40">549300MDYVVHJ8D1DW40</option>
+                                    <option value="549300MDYVVHJ8D1DW41">549300MDYVVHJ8D1DW41</option>
+                                    <option value="549300MDYVVHJ8D1DW42">549300MDYVVHJ8D1DW42</option>
+                                    <option value="549300MDYVVHJ8D1DW43">549300MDYVVHJ8D1DW43</option>
+                                    <option value="549300MDYVVHJ8D1DW44">549300MDYVVHJ8D1DW44</option>
+                                    <option value="549300MDYVVHJ8D1DW45">549300MDYVVHJ8D1DW45</option>
+                                    <option value="549300MDYVVHJ8D1DW46">549300MDYVVHJ8D1DW46</option>
+                                    <option value="549300MDYVVHJ8D1DW47">549300MDYVVHJ8D1DW47</option>
+                                    <option value="549300MDYVVHJ8D1DW48">549300MDYVVHJ8D1DW48</option>
+                                    <option value="549300MDYVVHJ8D1DW49">549300MDYVVHJ8D1DW49</option>
+                                    <option value="549300MDYVVHJ8D1DW50">549300MDYVVHJ8D1DW50</option>
+                                    <option value="549300MDYVVHJ8D1DW51">549300MDYVVHJ8D1DW51</option>
+                                    <option value="549300MDYVVHJ8D1DW52">549300MDYVVHJ8D1DW52</option>
+                                    <option value="549300MDYVVHJ8D1DW53">549300MDYVVHJ8D1DW53</option>
+                                    <option value="549300MDYVVHJ8D1DW54">549300MDYVVHJ8D1DW54</option>
+                                    <option value="549300MDYVVHJ8D1DW55">549300MDYVVHJ8D1DW55</option>
+                                    <option value="549300MDYVVHJ8D1DW56">549300MDYVVHJ8D1DW56</option>
+                                    <option value="549300MDYVVHJ8D1DW57">549300MDYVVHJ8D1DW57</option>
+                                    <option value="549300MDYVVHJ8D1DW58">549300MDYVVHJ8D1DW58</option>
+                                    <option value="549300MDYVVHJ8D1DW59">549300MDYVVHJ8D1DW59</option>
+                                    <option value="549300MDYVVHJ8D1DW60">549300MDYVVHJ8D1DW60</option>
+                                    <option value="549300MDYVVHJ8D1DW61">549300MDYVVHJ8D1DW61</option>
+                                    <option value="549300MDYVVHJ8D1DW62">549300MDYVVHJ8D1DW62</option>
+                                    <option value="549300MDYVVHJ8D1DW63">549300MDYVVHJ8D1DW63</option>
+                                    <option value="549300MDYVVHJ8D1DW64">549300MDYVVHJ8D1DW64</option>
+                                    <option value="549300MDYVVHJ8D1DW65">549300MDYVVHJ8D1DW65</option>
+                                    <option value="549300MDYVVHJ8D1DW66">549300MDYVVHJ8D1DW66</option>
+                                    <option value="549300MDYVVHJ8D1DW67">549300MDYVVHJ8D1DW67</option>
+                                    <option value="549300MDYVVHJ8D1DW68">549300MDYVVHJ8D1DW68</option>
+                                    <option value="549300MDYVVHJ8D1DW69">549300MDYVVHJ8D1DW69</option>
+                                    <option value="549300MDYVVHJ8D1DW70">549300MDYVVHJ8D1DW70</option>
+                                    <option value="549300MDYVVHJ8D1DW71">549300MDYVVHJ8D1DW71</option>
+                                    <option value="549300MDYVVHJ8D1DW72">549300MDYVVHJ8D1DW72</option>
+                                    <option value="549300MDYVVHJ8D1DW73">549300MDYVVHJ8D1DW73</option>
+                                    <option value="549300MDYVVHJ8D1DW74">549300MDYVVHJ8D1DW74</option>
+                                    <option value="549300MDYVVHJ8D1DW75">549300MDYVVHJ8D1DW75</option>
+                                    <option value="549300MDYVVHJ8D1DW76">549300MDYVVHJ8D1DW76</option>
+                                    <option value="549300MDYVVHJ8D1DW77">549300MDYVVHJ8D1DW77</option>
+                                    <option value="549300MDYVVHJ8D1DW78">549300MDYVVHJ8D1DW78</option>
+                                    <option value="549300MDYVVHJ8D1DW79">549300MDYVVHJ8D1DW79</option>
+                                    <option value="549300MDYVVHJ8D1DW80">549300MDYVVHJ8D1DW80</option>
+                                    <option value="549300MDYVVHJ8D1DW81">549300MDYVVHJ8D1DW81</option>
+                                    <option value="549300MDYVVHJ8D1DW82">549300MDYVVHJ8D1DW82</option>
+                                    <option value="549300MDYVVHJ8D1DW83">549300MDYVVHJ8D1DW83</option>
+                                    <option value="549300MDYVVHJ8D1DW84">549300MDYVVHJ8D1DW84</option>
+                                    <option value="549300MDYVVHJ8D1DW85">549300MDYVVHJ8D1DW85</option>
+                                    <option value="549300MDYVVHJ8D1DW86">549300MDYVVHJ8D1DW86</option>
+                                    <option value="549300MDYVVHJ8D1DW87">549300MDYVVHJ8D1DW87</option>
+                                    <option value="549300MDYVVHJ8D1DW88">549300MDYVVHJ8D1DW88</option>
+                                    <option value="549300MDYVVHJ8D1DW89">549300MDYVVHJ8D1DW89</option>
+                                    <option value="549300MDYVVHJ8D1DW90">549300MDYVVHJ8D1DW90</option>
+                                    <option value="549300MDYVVHJ8D1DW91">549300MDYVVHJ8D1DW91</option>
+                                    <option value="549300MDYVVHJ8D1DW92">549300MDYVVHJ8D1DW92</option>
+                                    <option value="549300MDYVVHJ8D1DW93">549300MDYVVHJ8D1DW93</option>
+                                    <option value="549300MDYVVHJ8D1DW94">549300MDYVVHJ8D1DW94</option>
+                                    <option value="549300MDYVVHJ8D1DW95">549300MDYVVHJ8D1DW95</option>
+                                    <option value="549300MDYVVHJ8D1DW96">549300MDYVVHJ8D1DW96</option>
+                                    <option value="549300MDYVVHJ8D1DW97">549300MDYVVHJ8D1DW97</option>
+                                    <option value="549300MDYVVHJ8D1DW98">549300MDYVVHJ8D1DW98</option>
+                                    <option value="549300MDYVVHJ8D1DW99">549300MDYVVHJ8D1DW99</option>
+                                    <option value="549300MDYVVHJ8D1DW100">549300MDYVVHJ8D1DW100</option>
+                                    <option value="549300MDYVVHJ8D1DW101">549300MDYVVHJ8D1DW101</option>
+                                    <option value="549300MDYVVHJ8D1DW102">549300MDYVVHJ8D1DW102</option>
+                                    <option value="549300MDYVVHJ8D1DW103">549300MDYVVHJ8D1DW103</option>
+                                    <option value="549300MDYVVHJ8D1DW104">549300MDYVVHJ8D1DW104</option>
+                                    <option value="549300MDYVVHJ8D1DW105">549300MDYVVHJ8D1DW105</option>
+                                    <option value="549300MDYVVHJ8D1DW106">549300MDYVVHJ8D1DW106</option>
+                                    <option value="549300MDYVVHJ8D1DW107">549300MDYVVHJ8D1DW107</option>
+                                    <option value="549300MDYVVHJ8D1DW108">549300MDYVVHJ8D1DW108</option>
+                                    <option value="549300MDYVVHJ8D1DW109">549300MDYVVHJ8D1DW109</option>
+                                    <option value="549300MDYVVHJ8D1DW110">549300MDYVVHJ8D1DW110</option>
+                                    <option value="549300MDYVVHJ8D1DW111">549300MDYVVHJ8D1DW111</option>
+                                    <option value="549300MDYVVHJ8D1DW112">549300MDYVVHJ8D1DW112</option>
+                                    <option value="549300MDYVVHJ8D1DW113">549300MDYVVHJ8D1DW113</option>
+                                    <option value="549300MDYVVHJ8D1DW114">549300MDYVVHJ8D1DW114</option>
+                                    <option value="549300MDYVVHJ8D1DW115">549300MDYVVHJ8D1DW115</option>
+                                    <option value="549300MDYVVHJ8D1DW116">549300MDYVVHJ8D1DW116</option>
+                                    <option value="549300MDYVVHJ8D1DW117">549300MDYVVHJ8D1DW117</option>
+                                    <option value="549300MDYVVHJ8D1DW118">549300MDYVVHJ8D1DW118</option>
+                                    <option value="549300MDYVVHJ8D1DW119">549300MDYVVHJ8D1DW119</option>
+                                    <option value="549300MDYVVHJ8D1DW120">549300MDYVVHJ8D1DW120</option>
+                                    <option value="549300MDYVVHJ8D1DW121">549300MDYVVHJ8D1DW121</option>
+                                    <option value="549300MDYVVHJ8D1DW122">549300MDYVVHJ8D1DW122</option>
+                                    <option value="549300MDYVVHJ8D1DW123">549300MDYVVHJ8D1DW123</option>
+                                    <option value="549300MDYVVHJ8D1DW124">549300MDYVVHJ8D1DW124</option>
+                                    <option value="549300MDYVVHJ8D1DW125">549300MDYVVHJ8D1DW125</option>
+                                    <option value="549300MDYVVHJ8D1DW126">549300MDYVVHJ8D1DW126</option>
+                                    <option value="549300MDYVVHJ8D1DW127">549300MDYVVHJ8D1DW127</option>
+                                    <option value="549300MDYVVHJ8D1DW128">549300MDYVVHJ8D1DW128</option>
+                                    <option value="549300MDYVVHJ8D1DW129">549300MDYVVHJ8D1DW129</option>
+                                    <option value="549300MDYVVHJ8D1DW130">549300MDYVVHJ8D1DW130</option>
+                                    <option value="549300MDYVVHJ8D1DW131">549300MDYVVHJ8D1DW131</option>
+                                    <option value="549300MDYVVHJ8D1DW132">549300MDYVVHJ8D1DW132</option>
+                                    <option value="549300MDYVVHJ8D1DW133">549300MDYVVHJ8D1DW133</option>
+                                    <option value="549300MDYVVHJ8D1DW134">549300MDYVVHJ8D1DW134</option>
+                                    <option value="549300MDYVVHJ8D1DW135">549300MDYVVHJ8D1DW135</option>
+                                    <option value="549300MDYVVHJ8D1DW136">549300MDYVVHJ8D1DW136</option>
+                                    <option value="54930001LQYCQ7G1IM57">54930001LQYCQ7G1IM57</option>
+                                    <option value="549300P08UORMR8IFS20">549300P08UORMR8IFS20</option>
+                                    <option value="549300Q00QU7BNARF391">549300Q00QU7BNARF391</option>
+                                    <option value="549300Q9EATCGRJBFQ89">549300Q9EATCGRJBFQ89</option>
+                                    <option value="549300QJE01B92LSHZ06">549300QJE01B92LSHZ06</option>
+                                    <option value="549300R0Q58QYRNZLS10">549300R0Q58QYRNZLS10</option>
+                                    <option value="549300RBHWW5EJIRG629">549300RBHWW5EJIRG629</option>
+                                    <option value="549300RBM4G44LYTMM82">549300RBM4G44LYTMM82</option>
+                                    <option value="549300RLNUU3GJS6MK84">549300RLNUU3GJS6MK84</option>
+                                    <option value="549300SU7VZY2XMGCD79">549300SU7VZY2XMGCD79</option>
+                                    <option value="549300U4J5NBE08DCV24">549300U4J5NBE08DCV24</option>
+                                    <option value="549300V1V3MFDTT08Q77">549300V1V3MFDTT08Q77</option>
+                                    <option value="549300VGE7QN15BPTZ72">549300VGE7QN15BPTZ72</option>
+                                    <option value="549300VJGFAO55EWKF41">549300VJGFAO55EWKF41</option>
+                                    <option value="549300W7CNYGJ68XGD27">549300W7CNYGJ68XGD27</option>
+                                    <option value="549300WDT1HWUMTUW770">549300WDT1HWUMTUW770</option>
+                                    <option value="549300WFGKTC3MGDCX95">549300WFGKTC3MGDCX95</option>
+                                    <option value="549300XJESP6341F9L82">549300XJESP6341F9L82</option>
+                                    <option value="549300YTOMKUNPUTB551">549300YTOMKUNPUTB551</option>
+                                    <option value="549300Z02855WTVM0K61">549300Z02855WTVM0K61</option>
+                                    <option value="NUXTG47HHHM1K2LOSG39">NUXTG47HHHM1K2LOSG39</option>
+                                    <option value="RILF074KP1CM8P6PCT96">RILF074KP1CM8P6PCT96</option>
+                                    <option value="U4LOSYZ7VGAW355F2G91">U4LOSYZ7VGAW355F2G91</option>
+                                    <option value="X5AV1MBDXGRPX5UGMX13">X5AV1MBDXGRPX5UGMX13</option>
                                   </select>
                                 </div>
                               </div>
                               <div class="mb-3 row">
-                                <label class="col-lg-4 col-form-label" for="trade_info_40">Manual Action Status</label>
+                                <label class="col-lg-4 col-form-label" for="trade_info_33">Manual Replay Status</label>
                                 <div class="col-lg-6">
-                                  <select class="default-select wide form-control" id="trade_info_40" name = "manual_action_status">
+                                  <select class="default-select wide form-control" id="trade_info_33" name = "manual_replay_status">
                                     <option data-display="Select">Please select</option>
-                                    <option value="40.1">40.1</option>
-                                    <option value="40.2">40.2</option>
-                                    <option value="40.3">40.3</option>
+                                    <option value="1">1</option>
+                                    <option value="0" selected="selected">0</option>
                                   </select>
                                 </div>
                               </div>
                               <div class="mb-3 row">
-                                <label class="col-lg-4 col-form-label" for="trade_info_41">Manual Replay Status</label>
+                                <label class="col-lg-4 col-form-label" for="trade_info_34">Routing to</label>
                                 <div class="col-lg-6">
-                                  <select class="default-select wide form-control" id="trade_info_41" name = "manual_replay_status">
+                                  <select class="default-select wide form-control" id="trade_info_34" name = "routing_to">
                                     <option data-display="Select">Please select</option>
-                                    <option value="41.1">41.1</option>
-                                    <option value="41.2">41.2</option>
-                                    <option value="41.3">41.3</option>
-                                  </select>
-                                </div>
-                              </div>
-                              <div class="mb-3 row">
-                                <label class="col-lg-4 col-form-label" for="trade_info_42">Routing to</label>
-                                <div class="col-lg-6">
-                                  <select class="default-select wide form-control" id="trade_info_42" name = "routing_to">
-                                    <option data-display="Select">Please select</option>
-                                    <option value="42.1">42.1</option>
-                                    <option value="42.2">42.2</option>
-                                    <option value="42.3">42.3</option>
+                                    <option value="Bloomberg-APA">Bloomberg-APA</option>
+                                    <option value="Bloomberg-APA|ORCID">Bloomberg-APA|ORCID</option>
+                                    <option value="Bloomberg-APA|UnaVista">Bloomberg-APA|UnaVista</option>
+                                    <option value="Bloomberg-APA|UnaVista|ORCID">Bloomberg-APA|UnaVista|ORCID</option>
+                                    <option value="Nex-APA">Nex-APA</option>
+                                    <option value="Nex-APA|ORCID">Nex-APA|ORCID</option>
+                                    <option value="Nex-APA|UnaVista">Nex-APA|UnaVista</option>
+                                    <option value="Nex-APA|UnaVista|ORCID">Nex-APA|UnaVista|ORCID</option>
+                                    <option value="ORCID">ORCID</option>
+                                    <option value="Tradeweb-APA-FCA|ORCID">Tradeweb-APA-FCA|ORCID</option>
+                                    <option value="Tradeweb-APA-FCA|UnaVista|ORCID">Tradeweb-APA-FCA|UnaVista|ORCID</option>
+                                    <option value="Tradeweb-APA|UnaVista|ORCID">Tradeweb-APA|UnaVista|ORCID</option>
+                                    <option value="UnaVista">UnaVista</option>
+                                    <option value="UnaVista-FCA|ORCID">UnaVista-FCA|ORCID</option>
+                                    <option value="UnaVista-FCA|UnaVistb|ORCID">UnaVista-FCA|UnaVistb|ORCID</option>
+                                    <option value="UnaVista|ORCID">UnaVista|ORCID</option>
                                   </select>
                                 </div>
                               </div>
@@ -1001,9 +1296,92 @@
                                 <div class="col-lg-6">
                                   <select class="default-select wide form-control" id="trade_info_43" name = "routing_to_purpose">
                                     <option data-display="Select">Please select</option>
-                                    <option value="43.1">43.1</option>
-                                    <option value="43.2">43.2</option>
-                                    <option value="43.3">43.3</option>
+                                    <option value="ACR">ACR</option>
+                                    <option value="BEAM">BEAM</option>
+                                    <option value="BEAM|MiFIRARMReporting|MiFIRAPAReporting">BEAM|MiFIRARMReporting|MiFIRAPAReporting</option>
+                                    <option value="BTS">BTS</option>
+                                    <option value="DQMA">DQMA</option>
+                                    <option value="EXCEPTION_TICKETING">EXCEPTION_TICKETING</option>
+                                    <option value="GPTM">GPTM</option>
+                                    <option value="GPTM|MiFTRARMReporting">GPTM|MiFTRARMReporting</option>
+                                    <option value="GPIM|MiFIRARMReporting|MiFIRAPAReporting">GPIM|MiFIRARMReporting|MiFIRAPAReporting</option>
+                                    <option value="ISIN_SERVICE">ISIN_SERVICE</option>
+                                    <option value="ISIN_SERVICE|MiFIRAPAReporting">ISIN_SERVICE|MiFIRAPAReporting</option>
+                                    <option value="ISIN_SERVICE|MiFIRARMReporting">ISIN_SERVICE|MiFIRARMReporting</option>
+                                    <option value="ISIN_SERVICE|MiFIRARMReporting|MiFIRAPAReporting">ISIN_SERVICE|MiFIRARMReporting|MiFIRAPAReporting</option>
+                                    <option value="ISIN_SERVICE|MiFIRARMReporting|MiFIRRTS23Reporting">ISIN_SERVICE|MiFIRARMReporting|MiFIRRTS23Reporting</option>
+                                    <option value="ISIN_SERVICE|MiFIRRIS23Reporting">ISIN_SERVICE|MiFIRRIS23Reporting</option>
+                                    <option value="ISIN_SERVICE|MiFIRRTS23Reporting|MiFIRARMReporting">ISIN_SERVICE|MiFIRRTS23Reporting|MiFIRARMReporting</option>
+                                    <option value="KOFIA">KOFIA</option>
+                                    <option value="MAR">MAR</option>
+                                    <option value="MARGINMAN">MARGINMAN</option>
+                                    <option value="MiFIRAPAReporting">MiFIRAPAReporting</option>
+                                    <option value="MiFIRAPAReporting|EXCEPTION_TICKETING">MiFIRAPAReporting|EXCEPTION_TICKETING</option>
+                                    <option value="MiFIRAPAReporting|ORCID">MiFIRAPAReporting|ORCID</option>
+                                    <option value="MiFIRARMReporting">MiFIRARMReporting</option>
+                                    <option value="MiFIRARMReporting|ACR">MiFIRARMReporting|ACR</option>
+                                    <option value="MiFIRARMReporting|ACR|MiFIRAPAReporting">MiFIRARMReporting|ACR|MiFIRAPAReporting</option>
+                                    <option value="MiFIRARMReporting|BTS">MiFIRARMReporting|BTS</option>
+                                    <option value="MiFIRARMReporting|BTS|MiFIRAPAReporting">MiFIRARMReporting|BTS|MiFIRAPAReporting</option>
+                                    <option value="MiFIRARMReporting|EXCEPTION_TICKETING">MiFIRARMReporting|EXCEPTION_TICKETING</option>
+                                    <option value="MiFIRARMReporting|ISIN_SERVICE">MiFIRARMReporting|ISIN_SERVICE</option>
+                                    <option value="MiFIRARMReporting|ISIN_SERVICE|MiFIRAPAReporting">MiFIRARMReporting|ISIN_SERVICE|MiFIRAPAReporting</option>
+                                    <option value="MiFIRARMReporting|ISIN_SERVICE|MiEIRRTS23Reporting">MiFIRARMReporting|ISIN_SERVICE|MiEIRRTS23Reporting</option>
+                                    <option value="MiFIRARMReporting|MiFIRAPAReporting">MiFIRARMReporting|MiFIRAPAReporting</option>
+                                    <option value="MiFIRARMReporting|MiFIRAPAReporting|EXCEPTION_TICKETING">MiFIRARMReporting|MiFIRAPAReporting|EXCEPTION_TICKETING</option>
+                                    <option value="MiFIRARMReporting|MiFIRAPAReporting|ORCID">MiFIRARMReporting|MiFIRAPAReporting|ORCID</option>
+                                    <option value="MiFIRARMReporting|MiFIRRTS23Reporting|TL_Remediation">MiFIRARMReporting|MiFIRRTS23Reporting|TL_Remediation</option>
+                                    <option value="MiFIRARMReporting|MiFIRRTS23Reporting|TradeLake">MiFIRARMReporting|MiFIRRTS23Reporting|TradeLake</option>
+                                    <option value="MiFIRARMReporting|ORCID">MiFIRARMReporting|ORCID</option>
+                                    <option value="MiFIRARMReporting|RATAN">MiFIRARMReporting|RATAN</option>
+                                    <option value="MiFIRARMReporting|TL_Remediation">MiFIRARMReporting|TL_Remediation</option>
+                                    <option value="MiFIRARMReporting|TradeLake">MiFIRARMReporting|TradeLake</option>
+                                    <option value="MiFIRARMReporting|TradeLake|MiFIRAPAReporting">MiFIRARMReporting|TradeLake|MiFIRAPAReporting</option>
+                                    <option value="MiFIRRTS23Reporting">MiFIRRTS23Reporting</option>
+                                    <option value="MiFIRRTS23Reporting|ORCID">MiFIRRTS23Reporting|ORCID</option>
+                                    <option value="ORCHID">ORCHID</option>
+                                    <option value="ORCID">ORCID</option>
+                                    <option value="RATAN">RATAN</option>
+                                    <option value="RAZOR">RAZOR</option>
+                                    <option value="RAZOR|MiFIRARMReporting">RAZOR|MiFIRARMReporting</option>
+                                    <option value="RAZOR|MiFIRARMReporting|MiFIRAPAReporting">RAZOR|MiFIRARMReporting|MiFIRAPAReporting</option>
+                                    <option value="SFTRTransactionReporting">SFTRTransactionReporting</option>
+                                    <option value="SFTRTransactionReporting|EXCEPTION_TICKETING">SFTRTransactionReporting|EXCEPTION_TICKETING</option>
+                                    <option value="SFTRTransactionReporting|GPTM">SFTRTransactionReporting|GPTM</option>
+                                    <option value="SFTRTransactionReporting|ISIN_SERVICE">SFTRTransactionReporting|ISIN_SERVICE</option>
+                                    <option value="SFTRTransactionReporting|MARTINI">SFTRTransactionReporting|MARTINI</option>
+                                    <option value="SFTRTransactionReporting|MiFIRARMReporting">SFTRTransactionReporting|MiFIRARMReporting</option>
+                                    <option value="SFTRTransactionReporting|MiFIRARMReporting|MiFIRAPAReporting">SFTRTransactionReporting|MiFIRARMReporting|MiFIRAPAReporting</option>
+                                    <option value="SFTRTransactionReporting|MiFIRARMReporting|MiFIRAPAReporting|EXCEPTION_TICKETIN">SFTRTransactionReporting|MiFIRARMReporting|MiFIRAPAReporting|EXCEPTION_TICKETIN</option>
+                                    <option value="SFTRTransactionReporting|MiFIRARMReporting|MiFIRAPAReporting|ORCID">SFTRTransactionReporting|MiFIRARMReporting|MiFIRAPAReporting|ORCID</option>
+                                    <option value="SFTRTransactionReporting|MiFIRARMReporting|ORCID">SFTRTransactionReporting|MiFIRARMReporting|ORCID</option>
+                                    <option value="SFTRTransactionReporting|ORCID">SFTRTransactionReporting|ORCID</option>
+                                    <option value="SFTRTransactionReporting|TL_SCBML_ENHANCER">SFTRTransactionReporting|TL_SCBML_ENHANCER</option>
+                                    <option value="SFTRTransactionReporting|TL_SCBML_ENHANCER|MiFIRARMReporting">SFTRTransactionReporting|TL_SCBML_ENHANCER|MiFIRARMReporting</option>
+                                    <option value="SFTRTransactionReporting|TL_SCEML_ENHANCER|MiFIRARNReporting|NiFIRAPAReporting">SFTRTransactionReporting|TL_SCEML_ENHANCER|MiFIRARNReporting|NiFIRAPAReporting</option>
+                                    <option value="SHARK">SHARK</option>
+                                    <option value="SHARK|MiFIRAPAReporting">SHARK|MiFIRAPAReporting</option>
+                                    <option value="SHARK|MiFIRARMReporting">SHARK|MiFIRARMReporting</option>
+                                    <option value="SHARK|MiFIRARMReporting|MiFIRAPAReporting">SHARK|MiFIRARMReporting|MiFIRAPAReporting</option>
+                                    <option value="TDS2">TDS2</option>
+                                    <option value="TDS2|MiFIRARMReporting">TDS2|MiFIRARMReporting</option>
+                                    <option value="TDS2|MiFIRARMReporting|MiFIRAPAReporting">TDS2|MiFIRARMReporting|MiFIRAPAReporting</option>
+                                    <option value="TL_REMEDIATION">TL_REMEDIATION</option>
+                                    <option value="TL_REMEDIATION|MiFIRAPAReporting">TL_REMEDIATION|MiFIRAPAReporting</option>
+                                    <option value="TL_REMEDIATION|MiFIRMPAReporting">TL_REMEDIATION|MiFIRMPAReporting</option>
+                                    <option value="TL_REMEDIATION|MiFIRMPAReporting|MiFIRAPAReporting">TL_REMEDIATION|MiFIRMPAReporting|MiFIRAPAReporting</option>
+                                    <option value="TL_REMEDIATION|MiFIRMPAReporting|MiFIRRTS23Reporting">TL_REMEDIATION|MiFIRMPAReporting|MiFIRRTS23Reporting</option>
+                                    <option value="TL_REMEDIATION|MiFIRRTS23Reporting">TL_REMEDIATION|MiFIRRTS23Reporting</option>
+                                    <option value="TL_REMEDIATION|SFTRTransactionReporting">TL_REMEDIATION|SFTRTransactionReporting</option>
+                                    <option value="TL_REMEDIATION|SFTRTransactionReporting|MiFIRARMReporting|MiFIRAPAReporting">TL_REMEDIATION|SFTRTransactionReporting|MiFIRARMReporting|MiFIRAPAReporting</option>
+                                    <option value="TL_SCBML_ENHANCER">TL_SCBML_ENHANCER</option>
+                                    <option value="TL_SCBML_ENHANCER|MiFIRARMReporting">TL_SCBML_ENHANCER|MiFIRARMReporting</option>
+                                    <option value="TL_SCBML_ENHANCER|MiFIRARMReporting|MiFIRAPAReporting">TL_SCBML_ENHANCER|MiFIRARMReporting|MiFIRAPAReporting</option>
+                                    <option value="TRUST">TRUST</option>
+                                    <option value="TRUST2">TRUST2</option>
+                                    <option value="TRUST2|MiFIRARMReporting">TRUST2|MiFIRARMReporting</option>
+                                    <option value="TRUST2|MiFIRARMReporting|MiFIRRTS23Reporting">TRUST2|MiFIRARMReporting|MiFIRRTS23Reporting</option>
+                                    <option value="TradeLake">Trade Lake</option>
                                   </select>
                                   <div class="invalid-feedback">
                                     Please select a one.

@@ -35,16 +35,14 @@ public class Trade {
     String delivery_type;
     String deriv_notional_change;
     String upfront_payment;
-    String executing_entity;
+    String upfront_payment_currency;
     String price_multiplier;
-    String underlyer;
     String sftr_ind;
     String waiver_ind;
     String short_selling_ind;
     String otc_post_trade_ind;
     String commodity_deriv_ind;
-    String manual_ignore_status;
-    String manual_action_status;
+    String excuting_entity;
     String manual_replay_status;
     String routing_to;
     String routing_to_purpose;
