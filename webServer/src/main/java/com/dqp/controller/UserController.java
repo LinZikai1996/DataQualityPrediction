@@ -2,21 +2,21 @@ package com.dqp.controller;
 
 import com.dqp.pojo.User;
 import com.dqp.service.UserService;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @Controller
+@Slf4j
 public class UserController {
 
-    private static final Logger logger = LoggerFactory.getLogger(UserController.class);
+    private final UserService userService;
 
-    @Autowired
-    private UserService userService;
+    public UserController(UserService userService) {
+        this.userService = userService;
+    }
 
     @RequestMapping("/findAllUser.do")
     public List<User> findAllUser(@RequestParam(name="page", defaultValue = "1")int page,
@@ -27,7 +27,7 @@ public class UserController {
     @RequestMapping("/findUserById.do")
     public String findUserById(@RequestParam(name="userId") String userId,
                                @RequestParam(name="password") String password){
-        logger.info("user id : " + userId + " login");
+        log.info("user id : " + userId + " login");
         User user = userService.findUserById(userId);
         if (user != null && password.equals(user.getPassword())){
             return "index";
@@ -37,7 +37,7 @@ public class UserController {
 
     @RequestMapping("/toAddUserPage.do")
     public String toAddUserPage(){
-        logger.info("Add new user");
+        log.info("Add new user");
         return "register";
     }
 
@@ -45,17 +45,17 @@ public class UserController {
     public String addUser(@RequestParam(name="userId") String userId,
                           @RequestParam(name="userName") String userName,
                           @RequestParam(name="password") String password){
-        logger.info(String.format("User id : %s, User name : %s", userId, userName));
+        log.info(String.format("User id : %s, User name : %s", userId, userName));
         User user = new User();
         user.setId(userId);
         user.setName(userName);
         user.setPassword(password);
         int result = userService.addUser(user);
         if (result == 1){
-            logger.info("Succeeded in adding new user : " + user.getName());
+            log.info("Succeeded in adding new user : " + user.getName());
             return "login";
         } else {
-            logger.error("Failed in adding new user : " + user.getName());
+            log.error("Failed in adding new user : " + user.getName());
             return "register";
         }
     }

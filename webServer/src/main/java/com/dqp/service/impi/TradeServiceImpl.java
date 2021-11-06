@@ -11,8 +11,11 @@ import java.util.List;
 @Service
 public class TradeServiceImpl implements TradeService {
 
-    @Autowired
-    TradeMapper tradeMapper;
+    private final TradeMapper tradeMapper;
+
+    public TradeServiceImpl(TradeMapper tradeMapper) {
+        this.tradeMapper = tradeMapper;
+    }
 
     @Override
     public boolean submitTrade(Trade trade) {

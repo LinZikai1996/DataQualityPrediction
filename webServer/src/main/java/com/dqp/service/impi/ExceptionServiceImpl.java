@@ -12,8 +12,11 @@ import java.util.List;
 @Service
 public class ExceptionServiceImpl implements ExceptionService {
 
-    @Autowired
-    ExceptionMapper exceptionMapper;
+    private final ExceptionMapper exceptionMapper;
+
+    public ExceptionServiceImpl(ExceptionMapper exceptionMapper) {
+        this.exceptionMapper = exceptionMapper;
+    }
 
     @Override
     public List<Exception> selectAllException(int pageNum, int pageSize) {

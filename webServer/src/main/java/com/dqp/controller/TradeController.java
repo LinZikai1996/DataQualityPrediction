@@ -3,6 +3,7 @@ package com.dqp.controller;
 import com.dqp.pojo.Trade;
 import com.dqp.service.TradeService;
 import com.dqp.util.CreateTradeId;
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,12 +19,14 @@ import java.util.List;
 import static com.dqp.util.GetSubmittedValue.getValue;
 
 @Controller
+@Slf4j
 public class TradeController {
 
-    private static final Logger logger = LoggerFactory.getLogger(TradeController.class);
+    private final TradeService tradeService;
 
-    @Autowired
-    TradeService tradeService;
+    public TradeController(TradeService tradeService) {
+        this.tradeService = tradeService;
+    }
 
     @RequestMapping(value ="/tradeSubmit.do")
     public ModelAndView newTrade(@RequestParam(name="primary_asset_class") String primary_asset_class,
@@ -76,7 +79,7 @@ public class TradeController {
         ModelAndView modelAndView = new ModelAndView();
         SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         String trade_id = CreateTradeId.getTradeId();
-        logger.info("=====> Submit Trade : {}", trade_id);
+        log.info("=====> Submit Trade : {}", trade_id);
         Trade trade = new Trade(trade_id,
                                 getValue(primary_asset_class),getValue(product),getValue(originating_event),
                                 getValue(reporting_regime),getValue(usi_issuer),
@@ -109,7 +112,7 @@ public class TradeController {
 
     @RequestMapping(value ="/showAllTradeData.do")
     public ModelAndView showAllTradeData(){
-        logger.info("Get All Trade Data");
+        log.info("Get All Trade Data");
         ModelAndView modelAndView = new ModelAndView();
         List<Trade> tradeList = tradeService.showAllTradeData();
         modelAndView.addObject("tradeList", tradeList);
@@ -119,7 +122,7 @@ public class TradeController {
 
     @RequestMapping(value ="/selectTradeById.do")
     public ModelAndView selectTradeById(@RequestParam(name="trade_id") String trade_id){
-        logger.info("Select Trade By Id : " + trade_id);
+        log.info("Select Trade By Id : " + trade_id);
         ModelAndView modelAndView = new ModelAndView();
         Trade trade = tradeService.selectTradeById(trade_id);
         modelAndView.addObject("tradeInfo", trade);
@@ -128,7 +131,7 @@ public class TradeController {
 
     @RequestMapping(value ="/deleteTradeById.do")
     public ModelAndView deleteTradeById(@RequestParam(name="trade_id") String trade_id){
-        logger.info("Delete Trade By Id : " + trade_id);
+        log.info("Delete Trade By Id : " + trade_id);
         ModelAndView modelAndView = new ModelAndView();
         boolean result = tradeService.deleteTradeById(trade_id);
         if(result){
