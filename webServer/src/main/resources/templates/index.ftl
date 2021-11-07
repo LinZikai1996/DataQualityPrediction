@@ -1010,8 +1010,6 @@
                                   </select>
                                 </div>
                               </div>
-                            </div>
-                            <div class="col-lg-6 mt-3">
                               <div class="mb-3 row">
                                 <label class="col-lg-4 col-form-label" for="trade_info_29">Short Selling Ind</label>
                                 <div class="col-lg-6">
@@ -1253,6 +1251,8 @@
                                   </select>
                                 </div>
                               </div>
+                            </div>
+                            <div class="col-lg-6 mt-3">
                               <div class="mb-3 row">
                                 <label class="col-lg-4 col-form-label" for="trade_info_34">Routing to</label>
                                 <div class="col-lg-6">
@@ -1277,20 +1277,6 @@
                                   </select>
                                 </div>
                               </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <div class="accordion-header collapsed rounded-lg" id="trade_page_04" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-controls="collapseFour"  role="button"  aria-expanded="true">
-                        <span class="accordion-header-text">Trade Information - 4</span>
-                        <span class="accordion-header-indicator"></span>
-                      </div>
-                      <div id="collapseFour" class="collapse" aria-labelledby="trade_page_04" data-bs-parent="#accordion-one">
-                        <div class="accordion-body-text">
-                          <div class="row">
-                            <div class="col-lg-6 mt-3">
                               <div class="mb-3 row">
                                 <label class="col-lg-4 col-form-label" for="trade_info_43">Routing to Purpose</label>
                                 <div class="col-lg-6">
@@ -1438,6 +1424,21 @@
                                   </select>
                                 </div>
                               </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <div class="accordion-header collapsed rounded-lg" id="trade_page_04" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-controls="collapseFour"  role="button"  aria-expanded="true">
+                        <span class="accordion-header-text">Trade Information - 4</span>
+                        <span class="accordion-header-indicator"></span>
+                      </div>
+                      <div id="collapseFour" class="collapse" aria-labelledby="trade_page_04" data-bs-parent="#accordion-one">
+                        <div class="accordion-body-text">
+                          <div class="row">
+                            <div class="col-lg-6 mt-3">
+
                               <div class="mb-3 row">
                                 <label class="col-lg-4 col-form-label" for="trade_info_48">WM Flag</label>
                                 <div class="col-lg-6">
