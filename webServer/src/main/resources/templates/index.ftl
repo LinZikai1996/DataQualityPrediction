@@ -76,7 +76,7 @@
                                 <label class="col-lg-4 col-form-label" for="trade_info_01">Primary Asset Class</label>
                                 <div class="col-lg-6">
                                   <select class="default-select wide form-control" id="trade_info_01" name = "primary_asset_class">
-                                    <option data-display="Select">Please select</option>
+                                    <option data-display="NA">NA</option>
                                     <option value="Equity">Equity</option>
                                     <option value="FixedIncome">Fixed Income</option>
                                     <option value="Credit">Credit</option>
@@ -88,7 +88,6 @@
                                     <option value="SecuritiesFinance">Securities Finance</option>
                                     <option value="ExchangeTraded">Exchange Traded</option>
                                     <option value="CrossAsset">Cross Asset</option>
-                                    <option value="NA">NA</option>
                                   </select>
                                   <div class="invalid-feedback">
                                     Please select a one.
@@ -99,7 +98,7 @@
                                 <label class="col-lg-4 col-form-label" for="trade_info_02">Product</label>
                                 <div class="col-lg-6">
                                   <select class="form-control default-select wide" id="trade_info_02" name = "product" >
-                                    <option data-display="Select">Please select</option>
+                                    <option data-display="NA">NA</option>
                                     <option value="CRDI_USD_3M">CRDI USD 3M</option>
                                     <option value="CRDI_USD_3M_V2">CRDI USD 3M V2</option>
                                     <option value="Commodity::Swap:Cash">Commodity : : Swap : Cash</option>
@@ -221,7 +220,7 @@
                                 <label class="col-lg-4 col-form-label" for="trade_info_03">Originating Event</label>
                                 <div class="col-lg-6">
                                   <select class="default-select wide form-control" id="trade_info_03" name = "originating_event">
-                                    <option data-display="Select">Please select</option>
+                                    <option data-display="NA">NA</option>
                                     <option value="Cancel:Amendment:Retracted">Cancel : Amendment : Retracted</option>
                                     <option value="Cancel:Amendment:TradeAffirmed:Validated">Cancel : Amendment : TradeAffirmed : Validated</option>
                                     <option value="Cancel:Termination:Retracted">Cancel : Termination : Retracted</option>
@@ -350,8 +349,7 @@
                                 <label class="col-lg-4 col-form-label" for="trade_info_04">Reporting Regime</label>
                                 <div class="col-lg-6">
                                   <select class="default-select wide form-control" id="trade_info_04" name = "reporting_regime">
-                                    <option data-display="Select">Please select</option>
-                                    <option value="NA">NA</option>
+                                    <option data-display="NA">NA</option>
                                     <option value="MiFIR-ARM,MiFIR-APA">MiFIR-ARM,MiFIR-APA</option>
                                     <option value="MiFIR-ARM,MiFIR-RTS23">MiFIR-ARM,MiFIR-RTS23</option>
                                     <option value="FCA-SFTR">FCA-SFTR</option>
@@ -368,8 +366,7 @@
                                 <label class="col-lg-4 col-form-label" for="trade_info_05">USI Issuer</label>
                                 <div class="col-lg-6">
                                   <select class="default-select wide form-control" id="trade_info_05" name = "usi_issuer">
-                                    <option data-display="Select">Please select</option>
-                                    <option value="NA">NA</option>
+                                    <option data-display="NA">NA</option>
                                     <option value="YCDYZNMZ3J">YCDYZNMZ3J</option>
                                     <option value="1N6DM40ZPS">1N6DM40ZPS</option>
                                   </select>
@@ -379,14 +376,13 @@
                                 <label class="col-lg-4 col-form-label" for="trade_info_06">USI Value</label>
                                 <div class="col-lg-6">
                                   <select class="default-select wide form-control" id="trade_info_06" name = "usi_value">
-                                    <option data-display="Select">Please select</option>
+                                    <option data-display="NA">NA</option>
                                     <option value="1KJTIIGC8YBBG">1KJTIIGC8YBBG</option>
                                     <option value="1SAICMBREPOD">1SAICMBREPOD</option>
                                     <option value="F2KUVLIFOY">F2KUVLIFOY</option>
                                     <option value="GLMXD">GLMXD</option>
                                     <option value="LCHCSDE">LCHCSDE</option>
                                     <option value="XLCHRDSCR">XLCHRDSCR</option>
-                                    <option value="NA">NA</option>
                                   </select>
                                 </div>
                               </div>
@@ -394,7 +390,7 @@
                                 <label class="col-lg-4 col-form-label" for="trade_info_07">UTI Originator</label>
                                 <div class="col-lg-6">
                                   <select class="default-select wide form-control" id="trade_info_07" name = "uti_originator">
-                                    <option data-display="Select">Please select</option>
+                                    <option data-display="NA">NA</option>
                                     <option value="INTERNAL_UTI">INTERNAL_UTI</option>
                                     <option value="ISDA">ISDA</option>
                                     <option value="UNCLASSIFIED_UTI">UNCLASSIFIED_UTI</option>
@@ -403,7 +399,6 @@
                                     <option value="NO_UTI">NO_UTI</option>
                                     <option value="CCP_UTI">CCP_UTI</option>
                                     <option value="CPTY_UTI">CPTY_UTI</option>
-                                    <option value="NA">NA</option>
                                   </select>
                                 </div>
                               </div>
@@ -466,7 +461,7 @@
                                 <label class="col-lg-4 col-form-label" for="trade_info_13">System Trade Source</label>
                                 <div class="col-lg-6">
                                   <select class="default-select wide form-control" id="trade_info_13" name = "system_trade_source">
-                                    <option data-display="Select">Please select</option>
+                                    <option data-display="NA">NA</option>
                                     <option value="UTS">UTS</option>
                                     <option value="FEDS">FEDS</option>
                                     <option value="CIS">CIS</option>
@@ -494,7 +489,6 @@
                                     <option value="WSD">WSD</option>
                                     <option value="FIConnect">FIConnect</option>
                                     <option value="T24">T24</option>
-                                    <option value="NA">NA</option>
                                   </select>
                                 </div>
                               </div>
@@ -516,7 +510,7 @@
                                 <label class="col-lg-4 col-form-label" for="trade_info_14">Notional ccy_1</label>
                                 <div class="col-lg-6">
                                   <select class="default-select wide form-control" id="trade_info_14" name = "notional_ccy_1">
-                                    <option data-display="Select">Please select</option>
+                                    <option data-display="NA">NA</option>
                                     <option value="AED">AED</option>
                                     <option value="AFN">AFN</option>
                                     <option value="AFI">AFI</option>
@@ -631,7 +625,7 @@
                                 <label class="col-lg-4 col-form-label" for="trade_info_15">Notional ccy_2</label>
                                 <div class="col-lg-6">
                                   <select class="default-select wide form-control" id="trade_info_15" name = "notional_ccy_2">
-                                    <option data-display="Select">Please select</option>
+                                    <option data-display="NA">NA</option>
                                     <option value="AED">AED</option>
                                     <option value="AOA">AOA</option>
                                     <option value="ARS">ARS</option>
@@ -728,7 +722,7 @@
                                 <label class="col-lg-4 col-form-label" for="trade_info_16">Quantity</label>
                                 <div class="col-lg-6">
                                   <select class="default-select wide form-control" id="trade_info_16" name = "quantity">
-                                    <option data-display="Select">Please select</option>
+                                    <option data-display="NA">NA</option>
                                     <option value="AED">AED</option>
                                     <option value="AOA">AOA</option>
                                     <option value="AUD">AUD</option>
@@ -830,20 +824,20 @@
                               <div class="mb-3 row">
                                 <label class="col-lg-4 col-form-label" for="trade_info_17">Net Amount</label>
                                 <div class="col-lg-6">
-                                  <input type="text" name = "net_amount" class="form-control" id="trade_info_17" placeholder="0.00">
+                                  <input type="text" name = "net_amount" class="form-control" id="trade_info_17" placeholder="NA">
                                 </div>
                               </div>
                               <div class="mb-3 row">
                                 <label class="col-lg-4 col-form-label" for="trade_info_18">Price</label>
                                 <div class="col-lg-6">
-                                  <input type="text" name = "price" class="form-control" id="trade_info_18" placeholder="0.00000">
+                                  <input type="text" name = "price" class="form-control" id="trade_info_18" placeholder="NA">
                                 </div>
                               </div>
                               <div class="mb-3 row">
                                 <label class="col-lg-4 col-form-label" for="trade_info_19">Option Type</label>
                                 <div class="col-lg-6">
                                   <select class="default-select wide form-control" id="trade_info_19" name = "option_type">
-                                    <option data-display="Select">Please select</option>
+                                    <option data-display="NA">NA</option>
                                     <option value="Call">Call</option>
                                     <option value="Put">Put</option>
                                     <option value="Strd">Strd</option>
@@ -855,7 +849,7 @@
                                 <label class="col-lg-4 col-form-label" for="trade_info_20">Strike Price</label>
                                 <div class="col-lg-6">
                                   <select class="default-select wide form-control" id="trade_info_20" name = "strike_price">
-                                    <option data-display="Select">Please select</option>
+                                    <option data-display="NA">NA</option>
                                     <option value="Pending">Pending</option>
                                     <option value="Percentage">Percentage</option>
                                     <option value="PendingPercentage">PendingPercentage</option>
@@ -870,12 +864,11 @@
                                 <label class="col-lg-4 col-form-label" for="trade_info_21">Option Exercise style</label>
                                 <div class="col-lg-6">
                                   <select class="default-select wide form-control" id="trade_info_21" name = "option_exercise_style">
-                                    <option data-display="Select">Please select</option>
+                                    <option data-display="NA">NA</option>
                                     <option value="AMER">AMER</option>
                                     <option value="BERM">BERM</option>
                                     <option value="EURO">EURO</option>
                                     <option value="OTHR">OTHR</option>
-                                    <option value="NA">NA</option>
                                   </select>
                                 </div>
                               </div>
@@ -883,12 +876,11 @@
                                 <label class="col-lg-4 col-form-label" for="trade_info_22">Delivery Type</label>
                                 <div class="col-lg-6">
                                   <select class="default-select wide form-control" id="trade_info_22" name = "delivery_type">
-                                    <option data-display="Select">Please select</option>
+                                    <option data-display="NA">NA</option>
                                     <option value="CASH">CASH</option>
                                     <option value="PHYS">PHYS</option>
                                     <option value="OPTL">OPTL</option>
                                     <option value="R">R</option>
-                                    <option value="NA">NA</option>
                                   </select>
                                 </div>
                               </div>
@@ -896,10 +888,9 @@
                                 <label class="col-lg-4 col-form-label" for="trade_info_23">Deriv Notional Change</label>
                                 <div class="col-lg-6">
                                   <select class="default-select wide form-control" id="trade_info_23" name = "deriv_notional_change">
-                                    <option data-display="Select">Please select</option>
+                                    <option data-display="NA">NA</option>
                                     <option value="Decrease">Decrease</option>
                                     <option value="Increase">Increase</option>
-                                    <option value="NA">NA</option>
                                   </select>
                                   <div class="invalid-feedback">
                                     Please select a one.
@@ -909,7 +900,7 @@
                               <div class="mb-3 row">
                                 <label class="col-lg-4 col-form-label" for="trade_info_24">Upfront Payment</label>
                                 <div class="col-lg-6">
-                                  <input type="text" name="upfront_payment" class="form-control" id="trade_info_24" placeholder="0.00">
+                                  <input type="text" name="upfront_payment" class="form-control" id="trade_info_24" placeholder="NA">
                                   <div class="invalid-feedback">
                                     Please select a one.
                                   </div>
@@ -919,7 +910,7 @@
                                 <label class="col-lg-4 col-form-label" for="trade_info_25">Upfront Payment Currency</label>
                                 <div class="col-lg-6">
                                   <select class="default-select wide form-control" id="trade_info_25" name="upfront_payment_currency">
-                                    <option data-display="Select">Please select</option>
+                                    <option data-display="NA">NA</option>
                                     <option value="AED">AED</option>
                                     <option value="AUD">AUD</option>
                                     <option value="BRL">BRL</option>
@@ -965,7 +956,7 @@
                               <div class="mb-3 row">
                                 <label class="col-lg-4 col-form-label" for="trade_info_26">Price Multiplier</label>
                                 <div class="col-lg-6">
-                                  <input type="text" name="price_multiplier" class="form-control" id="trade_info_26" placeholder="100">
+                                  <input type="text" name="price_multiplier" class="form-control" id="trade_info_26" placeholder="NA">
                                 </div>
                               </div>
                             </div>
@@ -986,7 +977,7 @@
                                 <label class="col-lg-4 col-form-label" for="trade_info_27">Sftr Ind</label>
                                 <div class="col-lg-6">
                                   <select class="default-select wide form-control" id="trade_info_27" name = "sftr_ind">
-                                    <option data-display="Select">Please select</option>
+                                    <option data-display="NA">NA</option>
                                     <option value="1">1</option>
                                     <option value="0" selected="selected">0</option>
                                   </select>
@@ -996,7 +987,7 @@
                                 <label class="col-lg-4 col-form-label" for="trade_info_28">Waiver Ind</label>
                                 <div class="col-lg-6">
                                   <select class="default-select wide form-control" id="trade_info_28" name = "waiver_ind">
-                                    <option data-display="Select">Please select</option>
+                                    <option data-display="NA">NA</option>
                                     <option value="ILQD">ILQD</option>
                                     <option value="ILQD,ILQD">ILQD,ILQD</option>
                                     <option value="ILQD,SIZE">ILQD,SIZE</option>
@@ -1014,12 +1005,11 @@
                                 <label class="col-lg-4 col-form-label" for="trade_info_29">Short Selling Ind</label>
                                 <div class="col-lg-6">
                                   <select class="default-select wide form-control" id="trade_info_29" name = "short_selling_ind">
-                                    <option data-display="Select">Please select</option>
+                                    <option data-display="NA">NA</option>
                                     <option value="UNDI">UNDI</option>
                                     <option value="SSEX">SSEX</option>
                                     <option value="SESH">SESH</option>
                                     <option value="SELL">SELL</option>
-                                    <option value="NA">NA</option>
                                   </select>
                                 </div>
                               </div>
@@ -1027,7 +1017,7 @@
                                 <label class="col-lg-4 col-form-label" for="trade_info_30">Otc Post Trade Ind</label>
                                 <div class="col-lg-6">
                                   <select class="default-select wide form-control" id="trade_info_30" name = "otc_post_trade_ind">
-                                    <option data-display="Select">Please select</option>
+                                    <option data-display="NA">NA</option>
                                     <option value="AMND">AMND</option>
                                     <option value="AMND:DECR">AMND : DECR</option>
                                     <option value="AMND:DECR:ILQD">AMND : DECR : ILQD</option>
@@ -1074,7 +1064,7 @@
                                 <label class="col-lg-4 col-form-label" for="trade_info_32">Excuting entity</label>
                                 <div class="col-lg-6">
                                   <select class="default-select wide form-control" id="trade_info_32" name = "excuting_entity">
-                                    <option data-display="Select">Please select</option>
+                                    <option data-display="NA">NA</option>
                                     <option value="213800IZX4SV7RCMNE25">213800IZX4SV7RCMNE25</option>
                                     <option value="2138007187UGEtOBY710">2138007187UGEtOBY710</option>
                                     <option value="25490022T8SZMUPAZM15">25490022T8SZMUPAZM15</option>
@@ -1257,7 +1247,7 @@
                                 <label class="col-lg-4 col-form-label" for="trade_info_34">Routing to</label>
                                 <div class="col-lg-6">
                                   <select class="default-select wide form-control" id="trade_info_34" name = "routing_to">
-                                    <option data-display="Select">Please select</option>
+                                    <option data-display="NA">NA</option>
                                     <option value="Bloomberg-APA">Bloomberg-APA</option>
                                     <option value="Bloomberg-APA|ORCID">Bloomberg-APA|ORCID</option>
                                     <option value="Bloomberg-APA|UnaVista">Bloomberg-APA|UnaVista</option>
@@ -1281,7 +1271,7 @@
                                 <label class="col-lg-4 col-form-label" for="trade_info_35">Routing to Purpose</label>
                                 <div class="col-lg-6">
                                   <select class="default-select wide form-control" id="trade_info_43" name = "routing_to_purpose">
-                                    <option data-display="Select">Please select</option>
+                                    <option data-display="NA">NA</option>
                                     <option value="ACR">ACR</option>
                                     <option value="BEAM">BEAM</option>
                                     <option value="BEAM|MiFIRARMReporting|MiFIRAPAReporting">BEAM|MiFIRARMReporting|MiFIRAPAReporting</option>
@@ -1378,34 +1368,24 @@
                                 <label class="col-lg-4 col-form-label" for="trade_info_36">Reason Code</label>
                                 <div class="col-lg-6">
                                   <select class="default-select wide form-control" id="trade_info_36" name = "reason_code">
-                                    <option data-display="Select">Please select</option>
-                                    <option value="CON-023">CON-023</option>
-                                    <option value="CON-024">CON-024</option>
-                                    <option value="CON-025">CON-025</option>
-                                    <option value="CON-030">CON-030</option>
-                                    <option value="CON-040">CON-040</option>
-                                    <option value="CON-070">CON-070</option>
-                                    <option value="CON-160">CON-160</option>
-                                    <option value="CON-210">CON-210</option>
-                                    <option value="CON-280">CON-280</option>
-                                    <option value="CON-331">CON-331</option>
-                                    <option value="CON-351">CON-351</option>
-                                    <option value="CON-361">CON-361</option>
-                                    <option value="CON-370">CON-370</option>
-                                    <option value="CON-381">CON-381</option>
-                                    <option value="CON-411">CON-411</option>
-                                    <option value="CON-412">CON-412</option>
-                                    <option value="CON-471">CON-471</option>
-                                    <option value="CON-472">CON-472</option>
-                                    <option value="CON-473">CON-473</option>
-                                    <option value="CON-640">CON-640</option>
-                                    <option value="CON-999">CON-999</option>
+                                    <option data-display="NA">NA</option>
+                                    <option value="CON">CON</option>
+                                    <option value="fl:FCA:SC:INFO">fl : FCA : SC : INFO</option>
                                     <option value="fl:SFRT:SC:INFO">fl : SFRT : SC : INFO</option>
+                                    <option value="fl:SFRT:SC:NRR">fl : SFRT : SC : NRR</option>
+                                    <option value="fl:SFRT:TR:NRR">fl : SFRT : TR : NRR</option>
                                     <option value="fl:MiFIR:RTS23:SC:NRR">fl : MiFIR : RTS23 : SC : NRR</option>
                                     <option value="fl:MiFIR:CPR:SC:NRR">fl : MiFIR : CPR : SC : NRR</option>
                                     <option value="fl:MiFIR:APA:SC:NRR">fl : MiFIR : APA : SC : NRR</option>
+                                    <option value="fl:MiFIR:APM:SC:NRR">fl : MiFIR : APM : SC : NRR</option>
+                                    <option value="fl:MiFIR:ARM:SC:NRR">fl : MiFIR : ARM : SC : NRR</option>
+                                    <option value="fl:MiFIR:APM:SC:WARN">fl : MiFIR : APM : SC : WARN</option>
+                                    <option value="tl:MiFIR:GEN">tl : MiFIR : GEN</option>
                                     <option value="tl:SFRT:GEN">tl : SFRT : GEN</option>
                                     <option value="tl:SFRT:NRR">tl : SFRT : NRR</option>
+                                    <option value="rr:GEN:WARN">rr : GEN : WARN</option>
+                                    <option value="rr:MiFIR:WARN">rr : MiFIR : WARN</option>
+                                    <option value="cr:MiFIR:ARM">cr : MiFIR : ARM</option>
                                   </select>
                                   <div class="invalid-feedback">
                                     Please select a one.
@@ -1416,7 +1396,7 @@
                                 <label class="col-lg-4 col-form-label" for="trade_info_37">Emum Value</label>
                                 <div class="col-lg-6">
                                   <select class="default-select wide form-control" id="trade_info_37" name = "enum_value">
-                                    <option data-display="Select">Please select</option>
+                                    <option data-display="NA">NA</option>
                                     <option value="AssetControlResult">AssetControlResult</option>
                                     <option value="BloombergResponse">BloombergResponse</option>
                                     <option value="CUPIDResult">CUPIDResult</option>
@@ -1481,10 +1461,9 @@
                                 <label class="col-lg-4 col-form-label" for="trade_info_38">WM Flag</label>
                                 <div class="col-lg-6">
                                   <select class="default-select wide form-control" id="trade_info_38" name = "wm_flag">
-                                    <option data-display="Select">Please select</option>
+                                    <option data-display="NA">NA</option>
                                     <option value="YES">YES</option>
                                     <option value="NO">NO</option>
-                                    <option value="NA">NA</option>
                                   </select>
                                 </div>
                               </div>
@@ -1495,7 +1474,6 @@
                                     <option data-display="Select">Please select</option>
                                     <option value="YES">YES</option>
                                     <option value="NO">NO</option>
-                                    <option value="NA">NA</option>
                                   </select>
                                 </div>
                               </div>
@@ -1517,10 +1495,9 @@
                                 <label class="col-lg-4 col-form-label" for="trade_info_40">Arm Eligible Flag</label>
                                 <div class="col-lg-6">
                                   <select class="default-select wide form-control" id="trade_info_40" name = "arm_eligible_flag">
-                                    <option data-display="Select">Please select</option>
+                                    <option data-display="NA">NA</option>
                                     <option value="YES">YES</option>
                                     <option value="NO">NO</option>
-                                    <option value="NA">NA</option>
                                   </select>
                                 </div>
                               </div>
@@ -1528,10 +1505,9 @@
                                 <label class="col-lg-4 col-form-label" for="trade_info_41">Arm Eligibility Reg Rules</label>
                                 <div class="col-lg-6">
                                   <select class="default-select wide form-control" id="trade_info_41" name = "arm_eligibility_reg_rules">
-                                    <option data-display="Select">Please select</option>
+                                    <option data-display="NA">NA</option>
                                     <option value="YES">YES</option>
                                     <option value="NO">NO</option>
-                                    <option value="NA">NA</option>
                                   </select>
                                 </div>
                               </div>
@@ -1552,10 +1528,9 @@
                                 <label class="col-lg-4 col-form-label" for="trade_info_43">Apa Eligibility Reg Rules</label>
                                 <div class="col-lg-6">
                                   <select class="default-select wide form-control" id="trade_info_43" name = "apa_eligibility_reg_rules">
-                                    <option data-display="Select">Please select</option>
+                                    <option data-display="NA">NA</option>
                                     <option value="YES">YES</option>
                                     <option value="NO">NO</option>
-                                    <option value="NA">NA</option>
                                   </select>
                                 </div>
                               </div>
@@ -1563,10 +1538,9 @@
                                 <label class="col-lg-4 col-form-label" for="trade_info_44">Rts23 Eligible Flag</label>
                                 <div class="col-lg-6">
                                   <select class="default-select wide form-control" id="trade_info_44" name = "rts23_eligible_flag">
-                                    <option data-display="Select">Please select</option>
+                                    <option data-display="NA">NA</option>
                                     <option value="YES">YES</option>
                                     <option value="NO">NO</option>
-                                    <option value="NA">NA</option>
                                   </select>
                                 </div>
                               </div>
@@ -1574,10 +1548,9 @@
                                 <label class="col-lg-4 col-form-label" for="trade_info_45">Rts23 Eligibility Reg Rules</label>
                                 <div class="col-lg-6">
                                   <select class="default-select wide form-control" id="trade_info_45" name = "rts23_eligibility_reg_rules">
-                                    <option data-display="Select">Please select</option>
+                                    <option data-display="NA">NA</option>
                                     <option value="YES">YES</option>
                                     <option value="NO">NO</option>
-                                    <option value="NA">NA</option>
                                   </select>
                                 </div>
                               </div>
