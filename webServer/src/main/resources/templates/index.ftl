@@ -1270,7 +1270,7 @@
                               <div class="mb-3 row">
                                 <label class="col-lg-4 col-form-label" for="trade_info_35">Routing to Purpose</label>
                                 <div class="col-lg-6">
-                                  <select class="default-select wide form-control" id="trade_info_43" name = "routing_to_purpose">
+                                  <select class="default-select wide form-control" id="trade_info_35" name = "routing_to_purpose">
                                     <option data-display="NA">NA</option>
                                     <option value="ACR">ACR</option>
                                     <option value="BEAM">BEAM</option>
@@ -1471,7 +1471,7 @@
                                 <label class="col-lg-4 col-form-label" for="trade_info_39">Reg Rules Response</label>
                                 <div class="col-lg-6">
                                   <select class="default-select wide form-control" id="trade_info_39" name = "reg_rules_response">
-                                    <option data-display="Select">Please select</option>
+                                    <option data-display="NA">NA</option>
                                     <option value="YES">YES</option>
                                     <option value="NO">NO</option>
                                   </select>
@@ -1515,10 +1515,9 @@
                                 <label class="col-lg-4 col-form-label" for="trade_info_42">Apa Eligible Flag</label>
                                 <div class="col-lg-6">
                                   <select class="default-select wide form-control" id="trade_info_42" name = "apa_eligible_flag">
-                                    <option data-display="Select">Please select</option>
+                                    <option data-display="NA">NA</option>
                                     <option value="YES">YES</option>
                                     <option value="NO">NO</option>
-                                    <option value="NA">NA</option>
                                   </select>
                                 </div>
                               </div>

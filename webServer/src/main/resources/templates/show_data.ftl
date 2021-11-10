@@ -1229,7 +1229,7 @@
                                                                                     <div class="mb-3 row">
                                                                                         <label class="col-lg-4 col-form-label">Routing To Purpose</label>
                                                                                         <div class="col-lg-6">
-                                                                                            <select class="default-select wide form-control" id="trade_info_43" name = "routing_to_purpose">
+                                                                                            <select class="default-select wide form-control" id="trade_info_35" name = "routing_to_purpose">
                                                                                                 <option <#if (trade.routing_to_purpose?string == 'ACR')>selected="selected"</#if> value="ACR">ACR</option>
                                                                                                 <option <#if (trade.routing_to_purpose?string == 'BEAM')>selected="selected"</#if> value="BEAM">BEAM</option>
                                                                                                 <option <#if (trade.routing_to_purpose?string == 'BEAM|MiFIRARMReporting|MiFIRAPAReporting')>selected="selected"</#if> value="BEAM|MiFIRARMReporting|MiFIRAPAReporting">BEAM|MiFIRARMReporting|MiFIRAPAReporting</option>
@@ -1322,61 +1322,171 @@
                                                                                     <div class="mb-3 row">
                                                                                         <label class="col-lg-4 col-form-label">Reason Code</label>
                                                                                         <div class="col-lg-6">
-                                                                                            <input type="text" class="form-control" value="${trade.reason_code}" disabled>
+                                                                                            <select class="default-select wide form-control" id="trade_info_36" name = "reason_code">
+                                                                                                <option <#if (trade.reason_code?string == '')>selected="selected"</#if> value="NA">NA</option>
+                                                                                                <option <#if (trade.reason_code?string == 'CON')>selected="selected"</#if> value="CON">CON</option>
+                                                                                                <option <#if (trade.reason_code?string == 'fl:FCA:SC:INFO')>selected="selected"</#if> value="fl:FCA:SC:INFO">fl : FCA : SC : INFO</option>
+                                                                                                <option <#if (trade.reason_code?string == 'fl:SFRT:SC:INFO')>selected="selected"</#if> value="fl:SFRT:SC:INFO">fl : SFRT : SC : INFO</option>
+                                                                                                <option <#if (trade.reason_code?string == 'fl:SFRT:SC:NRR')>selected="selected"</#if> value="fl:SFRT:SC:NRR">fl : SFRT : SC : NRR</option>
+                                                                                                <option <#if (trade.reason_code?string == 'fl:SFRT:TR:NRR')>selected="selected"</#if> value="fl:SFRT:TR:NRR">fl : SFRT : TR : NRR</option>
+                                                                                                <option <#if (trade.reason_code?string == 'fl:MiFIR:RTS23:SC:NRR')>selected="selected"</#if> value="fl:MiFIR:RTS23:SC:NRR">fl : MiFIR : RTS23 : SC : NRR</option>
+                                                                                                <option <#if (trade.reason_code?string == 'fl:MiFIR:CPR:SC:NRR')>selected="selected"</#if> value="fl:MiFIR:CPR:SC:NRR">fl : MiFIR : CPR : SC : NRR</option>
+                                                                                                <option <#if (trade.reason_code?string == 'fl:MiFIR:APA:SC:NRR')>selected="selected"</#if> value="fl:MiFIR:APA:SC:NRR">fl : MiFIR : APA : SC : NRR</option>
+                                                                                                <option <#if (trade.reason_code?string == 'fl:MiFIR:APM:SC:NRR')>selected="selected"</#if> value="fl:MiFIR:APM:SC:NRR">fl : MiFIR : APM : SC : NRR</option>
+                                                                                                <option <#if (trade.reason_code?string == 'fl:MiFIR:ARM:SC:NRR')>selected="selected"</#if> value="fl:MiFIR:ARM:SC:NRR">fl : MiFIR : ARM : SC : NRR</option>
+                                                                                                <option <#if (trade.reason_code?string == 'fl:MiFIR:APM:SC:WARN')>selected="selected"</#if> value="fl:MiFIR:APM:SC:WARN">fl : MiFIR : APM : SC : WARN</option>
+                                                                                                <option <#if (trade.reason_code?string == 'tl:MiFIR:GEN')>selected="selected"</#if> value="tl:MiFIR:GEN">tl : MiFIR : GEN</option>
+                                                                                                <option <#if (trade.reason_code?string == 'tl:SFRT:GEN')>selected="selected"</#if> value="tl:SFRT:GEN">tl : SFRT : GEN</option>
+                                                                                                <option <#if (trade.reason_code?string == 'tl:SFRT:NRR')>selected="selected"</#if> value="tl:SFRT:NRR">tl : SFRT : NRR</option>
+                                                                                                <option <#if (trade.reason_code?string == 'rr:GEN:WARN')>selected="selected"</#if> value="rr:GEN:WARN">rr : GEN : WARN</option>
+                                                                                                <option <#if (trade.reason_code?string == 'rr:MiFIR:WARN')>selected="selected"</#if> value="rr:MiFIR:WARN">rr : MiFIR : WARN</option>
+                                                                                                <option <#if (trade.reason_code?string == 'cr:MiFIR:ARM')>selected="selected"</#if> value="cr:MiFIR:ARM">cr : MiFIR : ARM</option>
+                                                                                            </select>
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="mb-3 row">
                                                                                         <label class="col-lg-4 col-form-label">Enum Value</label>
                                                                                         <div class="col-lg-6">
-                                                                                            <input type="text" class="form-control" value="${trade.enum_value}" disabled>
+                                                                                            <select class="default-select wide form-control" id="trade_info_37" name = "enum_value">
+                                                                                                <option <#if (trade.enum_value?string == '')>selected="selected"</#if> value="NA">NA</option>
+                                                                                                <option <#if (trade.enum_value?string == 'AssetControlResult')>selected="selected"</#if> value="AssetControlResult">AssetControlResult</option>
+                                                                                                <option <#if (trade.enum_value?string == 'BloombergResponse')>selected="selected"</#if> value="BloombergResponse">BloombergResponse</option>
+                                                                                                <option <#if (trade.enum_value?string == 'CUPIDResult')>selected="selected"</#if> value="CUPIDResult">CUPIDResult</option>
+                                                                                                <option <#if (trade.enum_value?string == 'CUPIDResult_ERROR')>selected="selected"</#if> value="CUPIDResult_ERROR">CUPIDResult_ERROR</option>
+                                                                                                <option <#if (trade.enum_value?string == 'CorrectedReporting')>selected="selected"</#if> value="CorrectedReporting">CorrectedReporting</option>
+                                                                                                <option <#if (trade.enum_value?string == 'DefaultReporting')>selected="selected"</#if> value="DefaultReporting">DefaultReporting</option>
+                                                                                                <option <#if (trade.enum_value?string == 'Eligibility_APA')>selected="selected"</#if> value="Eligibility_APA">Eligibility_APA</option>
+                                                                                                <option <#if (trade.enum_value?string == 'Eligibility_ARM')>selected="selected"</#if> value="Eligibility_ARM">Eligibility_ARM</option>
+                                                                                                <option <#if (trade.enum_value?string == 'Eligibility_CPR')>selected="selected"</#if> value="Eligibility_CPR">Eligibility_CPR</option>
+                                                                                                <option <#if (trade.enum_value?string == 'Eligibility_RTS23')>selected="selected"</#if> value="Eligibility_RTS23">Eligibility_RTS23</option>
+                                                                                                <option <#if (trade.enum_value?string == 'Eligibility_SFTR')>selected="selected"</#if> value="Eligibility_SFTR">Eligibility_SFTR</option>
+                                                                                                <option <#if (trade.enum_value?string == 'Information_ARM')>selected="selected"</#if> value="Information_ARM">Information_ARM</option>
+                                                                                                <option <#if (trade.enum_value?string == 'Information_GEN')>selected="selected"</#if> value="Information_GEN">Information_GEN</option>
+                                                                                                <option <#if (trade.enum_value?string == 'Information_SFTR')>selected="selected"</#if> value="Information_SFTR">Information_SFTR</option>
+                                                                                                <option <#if (trade.enum_value?string == 'InsideTrackActionFlag')>selected="selected"</#if> value="InsideTrackActionFlag">InsideTrackActionFlag</option>
+                                                                                                <option <#if (trade.enum_value?string == 'MaskedReporting')>selected="selected"</#if> value="MaskedReporting">MaskedReporting</option>
+                                                                                                <option <#if (trade.enum_value?string == 'NCAResponse')>selected="selected"</#if> value="NCAResponse">NCAResponse</option>
+                                                                                                <option <#if (trade.enum_value?string == 'NexResponse')>selected="selected"</#if> value="NexResponse">NexResponse</option>
+                                                                                                <option <#if (trade.enum_value?string == 'RegRulesResult')>selected="selected"</#if> value="RegRulesResult">RegRulesResult</option>
+                                                                                                <option <#if (trade.enum_value?string == 'RegRulesResult_APA')>selected="selected"</#if> value="RegRulesResult_APA">RegRulesResult_APA</option>
+                                                                                                <option <#if (trade.enum_value?string == 'RegRulesResult_APA_ERROR')>selected="selected"</#if> value="RegRulesResult_APA_ERROR">RegRulesResult_APA_ERROR</option>
+                                                                                                <option <#if (trade.enum_value?string == 'RegRulesResult_ARM')>selected="selected"</#if> value="RegRulesResult_ARM">RegRulesResult_ARM</option>
+                                                                                                <option <#if (trade.enum_value?string == 'RegRulesResult_ARM_ERROR')>selected="selected"</#if> value="RegRulesResult_ARM_ERROR">RegRulesResult_ARM_ERROR</option>
+                                                                                                <option <#if (trade.enum_value?string == 'RegRulesResult_CPR')>selected="selected"</#if> value="RegRulesResult_CPR">RegRulesResult_CPR</option>
+                                                                                                <option <#if (trade.enum_value?string == 'RegRulesResult_CPR_ERROR')>selected="selected"</#if> value="RegRulesResult_CPR_ERROR">RegRulesResult_CPR_ERROR</option>
+                                                                                                <option <#if (trade.enum_value?string == 'RegRulesResult_RTS23')>selected="selected"</#if> value="RegRulesResult_RTS23">RegRulesResult_RTS23</option>
+                                                                                                <option <#if (trade.enum_value?string == 'RegRulesResult_RTS23_ERROR')>selected="selected"</#if> value="RegRulesResult_RTS23_ERROR">RegRulesResult_RTS23_ERROR</option>
+                                                                                                <option <#if (trade.enum_value?string == 'RegRulesResult_Regime')>selected="selected"</#if> value="RegRulesResult_Regime">RegRulesResult_Regime</option>
+                                                                                                <option <#if (trade.enum_value?string == 'RegRulesResult_SFTR_Backloading_Population')>selected="selected"</#if> value="RegRulesResult_SFTR_Backloading_Population">RegRulesResult_SFTR_Backloading_Population</option>
+                                                                                                <option <#if (trade.enum_value?string == 'RegRulesResult_SFTR_Collateral_Update_Reporting_Eligibility')>selected="selected"</#if> value="RegRulesResult_SFTR_Collateral_Update_Reporting_Eligibility">RegRulesResult_SFTR_Collateral_Update_Reporting_Eligibility</option>
+                                                                                                <option <#if (trade.enum_value?string == 'RegRulesResult_SFTR_Data_Masking')>selected="selected"</#if> value="RegRulesResult_SFTR_Data_Masking">RegRulesResult_SFTR_Data_Masking</option>
+                                                                                                <option <#if (trade.enum_value?string == 'RegRulesResult_SFTR_Data_Masking_ERROR')>selected="selected"</#if> value="RegRulesResult_SFTR_Data_Masking_ERROR">RegRulesResult_SFTR_Data_Masking_ERROR</option>
+                                                                                                <option <#if (trade.enum_value?string == 'RegRulesResult_SFTR_Transaction_Reporting_Eligibility')>selected="selected"</#if> value="RegRulesResult_SFTR_Transaction_Reporting_Eligibility">RegRulesResult_SFTR_Transaction_Reporting_Eligibility</option>
+                                                                                                <option <#if (trade.enum_value?string == 'RegRulesResult_SFTR_Transaction_Reporting_Eligibility_ERROR')>selected="selected"</#if> value="RegRulesResult_SFTR_Transaction_Reporting_Eligibility_ERROR">RegRulesResult_SFTR_Transaction_Reporting_Eligibility_ERROR</option>
+                                                                                                <option <#if (trade.enum_value?string == 'RegRulesResult_SFTR_Valuation_Reporting_Eligibility')>selected="selected"</#if> value="RegRulesResult_SFTR_Valuation_Reporting_Eligibility">RegRulesResult_SFTR_Valuation_Reporting_Eligibility</option>
+                                                                                                <option <#if (trade.enum_value?string == 'TDS3Exception')>selected="selected"</#if> value="TDS3Exception">TDS3Exception</option>
+                                                                                                <option <#if (trade.enum_value?string == 'TRADEWEBResponse')>selected="selected"</#if> value="TRADEWEBResponse">TRADEWEBResponse</option>
+                                                                                                <option <#if (trade.enum_value?string == 'UnavistaRTS23Response')>selected="selected"</#if> value="UnavistaRTS23Response">UnavistaRTS23Response</option>
+                                                                                                <option <#if (trade.enum_value?string == 'UnavistaResponse')>selected="selected"</#if> value="UnavistaResponse">UnavistaResponse</option>
+                                                                                                <option <#if (trade.enum_value?string == 'UnavistaSFTRResponse')>selected="selected"</#if> value="UnavistaSFTRResponse">UnavistaSFTRResponse</option>
+                                                                                                <option <#if (trade.enum_value?string == 'WISEResult')>selected="selected"</#if> value="WISEResult">WISEResult</option>
+                                                                                                <option <#if (trade.enum_value?string == 'Warning')>selected="selected"</#if> value="Warning">Warning</option>
+                                                                                                <option <#if (trade.enum_value?string == 'errorReason_APA')>selected="selected"</#if> value="errorReason_APA">errorReason_APA</option>
+                                                                                                <option <#if (trade.enum_value?string == 'errorReason_ARM')>selected="selected"</#if> value="errorReason_ARM">errorReason_ARM</option>
+                                                                                                <option <#if (trade.enum_value?string == 'errorReason_CPR')>selected="selected"</#if> value="errorReason_CPR">errorReason_CPR</option>
+                                                                                                <option <#if (trade.enum_value?string == 'errorReason_GEN')>selected="selected"</#if> value="errorReason_GEN">errorReason_GEN</option>
+                                                                                                <option <#if (trade.enum_value?string == 'errorReason_RTS23')>selected="selected"</#if> value="errorReason_RTS23">errorReason_RTS23</option>
+                                                                                                <option <#if (trade.enum_value?string == 'errorReason_SFTR')>selected="selected"</#if> value="errorReason_SFTR">errorReason_SFTR</option>
+                                                                                                <option <#if (trade.enum_value?string == 'notReportedReason')>selected="selected"</#if> value="notReportedReason">notReportedReason</option>
+                                                                                                <option <#if (trade.enum_value?string == 'notReportedReason_SFTR')>selected="selected"</#if> value="notReportedReason_SFTR">notReportedReason_SFTR</option>
+                                                                                                <option <#if (trade.enum_value?string == 'notRequired_APA')>selected="selected"</#if> value="notRequired_APA">notRequired_APA</option>
+                                                                                                <option <#if (trade.enum_value?string == 'notRequired_ARM')>selected="selected"</#if> value="notRequired_ARM">notRequired_ARM</option>
+                                                                                                <option <#if (trade.enum_value?string == 'notRequired_CPR')>selected="selected"</#if> value="notRequired_CPR">notRequired_CPR</option>
+                                                                                                <option <#if (trade.enum_value?string == 'notRequired_GEN')>selected="selected"</#if> value="notRequired_GEN">notRequired_GEN</option>
+                                                                                                <option <#if (trade.enum_value?string == 'notRequired_PCR')>selected="selected"</#if> value="notRequired_PCR">notRequired_PCR</option>
+                                                                                                <option <#if (trade.enum_value?string == 'notRequired_RTS23')>selected="selected"</#if> value="notRequired_RTS23">notRequired_RTS23</option>
+                                                                                                <option <#if (trade.enum_value?string == 'notRequired_SFTR')>selected="selected"</#if> value="notRequired_SFTR">notRequired_SFTR</option>
+                                                                                            </select>
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="mb-3 row">
                                                                                         <label class="col-lg-4 col-form-label">Wm Flag</label>
                                                                                         <div class="col-lg-6">
-                                                                                            <input type="text" class="form-control" value="${trade.wm_flag}" disabled>
+                                                                                            <select class="default-select wide form-control" id="trade_info_38" name = "wm_flag">
+                                                                                                <option <#if (trade.wm_flag?string == '')>selected="selected"</#if> value="NA">NA</option>
+                                                                                                <option <#if (trade.wm_flag?string == 'YES')>selected="selected"</#if> value="YES">YES</option>
+                                                                                                <option <#if (trade.wm_flag?string == 'NO')>selected="selected"</#if> value="NO">NO</option>
+                                                                                            </select>
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="mb-3 row">
                                                                                         <label class="col-lg-4 col-form-label">Reg Rules Response</label>
                                                                                         <div class="col-lg-6">
-                                                                                            <input type="text" class="form-control" value="${trade.reg_rules_response}" disabled>
+                                                                                            <select class="default-select wide form-control" id="trade_info_39" name = "reg_rules_response">
+                                                                                                <option <#if (trade.reg_rules_response?string == '')>selected="selected"</#if> value="NA">NA</option>
+                                                                                                <option <#if (trade.reg_rules_response?string == 'YES')>selected="selected"</#if> value="YES">YES</option>
+                                                                                                <option <#if (trade.reg_rules_response?string == 'NO')>selected="selected"</#if> value="NO">NO</option>
+                                                                                            </select>
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="mb-3 row">
                                                                                         <label class="col-lg-4 col-form-label">Arm Eligible Flag</label>
                                                                                         <div class="col-lg-6">
-                                                                                            <input type="text" class="form-control" value="${trade.arm_eligible_flag}" disabled>
+                                                                                            <select class="default-select wide form-control" id="trade_info_40" name = "arm_eligible_flag">
+                                                                                                <option <#if (trade.arm_eligible_flag?string == '')>selected="selected"</#if> value="NA">NA</option>
+                                                                                                <option <#if (trade.arm_eligible_flag?string == 'YES')>selected="selected"</#if> value="YES">YES</option>
+                                                                                                <option <#if (trade.arm_eligible_flag?string == 'NO')>selected="selected"</#if> value="NO">NO</option>
+                                                                                            </select>
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="mb-3 row">
                                                                                         <label class="col-lg-4 col-form-label">Arm Eligibility Reg Rules</label>
                                                                                         <div class="col-lg-6">
-                                                                                            <input type="text" class="form-control" value="${trade.arm_eligibility_reg_rules}" disabled>
+                                                                                            <select class="default-select wide form-control" id="trade_info_41" name = "arm_eligibility_reg_rules">
+                                                                                                <option <#if (trade.arm_eligibility_reg_rules?string == '')>selected="selected"</#if> value="NA">NA</option>
+                                                                                                <option <#if (trade.arm_eligibility_reg_rules?string == 'YES')>selected="selected"</#if> value="YES">YES</option>
+                                                                                                <option <#if (trade.arm_eligibility_reg_rules?string == 'NO')>selected="selected"</#if> value="NO">NO</option>
+                                                                                            </select>
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="mb-3 row">
                                                                                         <label class="col-lg-4 col-form-label">Apa Eligible Flag</label>
                                                                                         <div class="col-lg-6">
-                                                                                            <input type="text" class="form-control" value="${trade.apa_eligible_flag}" disabled>
+                                                                                            <select class="default-select wide form-control" id="trade_info_42" name = "apa_eligible_flag">
+                                                                                                <option <#if (trade.apa_eligible_flag?string == '')>selected="selected"</#if> value="NA">NA</option>
+                                                                                                <option <#if (trade.apa_eligible_flag?string == 'YES')>selected="selected"</#if> value="YES">YES</option>
+                                                                                                <option <#if (trade.apa_eligible_flag?string == 'NO')>selected="selected"</#if> value="NO">NO</option>
+                                                                                            </select>
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="mb-3 row">
                                                                                         <label class="col-lg-4 col-form-label">Apa Eligibility Reg Rules</label>
                                                                                         <div class="col-lg-6">
-                                                                                            <input type="text" class="form-control" value="${trade.apa_eligibility_reg_rules}" disabled>
+                                                                                            <select class="default-select wide form-control" id="trade_info_43" name = "apa_eligibility_reg_rules">
+                                                                                                <option <#if (trade.apa_eligibility_reg_rules?string == '')>selected="selected"</#if> value="NA">NA</option>
+                                                                                                <option <#if (trade.apa_eligibility_reg_rules?string == 'YES')>selected="selected"</#if> value="YES">YES</option>
+                                                                                                <option <#if (trade.apa_eligibility_reg_rules?string == 'NO')>selected="selected"</#if> value="NO">NO</option>
+                                                                                            </select>
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="mb-3 row">
                                                                                         <label class="col-lg-4 col-form-label">Rts23 Eligible Flag</label>
                                                                                         <div class="col-lg-6">
-                                                                                            <input type="text" class="form-control" value="${trade.rts23_eligible_flag}" disabled>
+                                                                                            <select class="default-select wide form-control" id="trade_info_44" name = "rts23_eligible_flag">
+                                                                                                <option <#if (trade.rts23_eligible_flag?string == '')>selected="selected"</#if> value="NA">NA</option>
+                                                                                                <option <#if (trade.rts23_eligible_flag?string == 'YES')>selected="selected"</#if> value="YES">YES</option>
+                                                                                                <option <#if (trade.rts23_eligible_flag?string == 'NO')>selected="selected"</#if> value="NO">NO</option>
+                                                                                            </select>
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="mb-3 row">
                                                                                         <label class="col-lg-4 col-form-label">Rts23 Eligibility Reg Rules</label>
                                                                                         <div class="col-lg-6">
-                                                                                            <input type="text" class="form-control" value="${trade.rts23_eligibility_reg_rules}" disabled>
+                                                                                            <select class="default-select wide form-control" id="trade_info_45" name = "rts23_eligibility_reg_rules">
+                                                                                                <option <#if (trade.rts23_eligibility_reg_rules?string == '')>selected="selected"</#if> value="NA">NA</option>
+                                                                                                <option <#if (trade.rts23_eligibility_reg_rules?string == 'YES')>selected="selected"</#if> value="YES">YES</option>
+                                                                                                <option <#if (trade.rts23_eligibility_reg_rules?string == 'NO')>selected="selected"</#if> value="NO">NO</option>
+                                                                                            </select>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
