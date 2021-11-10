@@ -47,9 +47,7 @@ public class Trade {
     String routing_to;
     String routing_to_purpose;
     String reason_code;
-    String reason_category;
     String enum_value;
-    String sequence;
     String wm_flag;
     String reg_rules_response;
     String arm_eligible_flag;

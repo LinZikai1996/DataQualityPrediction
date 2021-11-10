@@ -2,10 +2,7 @@ package com.dqp.mapper;
 
 
 import com.dqp.pojo.Trade;
-import org.apache.ibatis.annotations.Delete;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Param;
-import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.*;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -20,7 +17,7 @@ public interface TradeMapper {
             "net_amount,price,option_type,strike_price,option_exercise_style,delivery_type,deriv_notional_change," +
             "upfront_payment,upfront_payment_currency,price_multiplier,sftr_ind,waiver_ind,short_selling_ind," +
             "otc_post_trade_ind,commodity_deriv_ind,excuting_entity,manual_replay_status," +
-            "routing_to,routing_to_purpose,reason_code,reason_category,enum_value,sequence,wm_flag," +
+            "routing_to,routing_to_purpose,reason_code,enum_value,wm_flag," +
             "reg_rules_response,arm_eligible_flag,arm_eligibility_reg_rules," +
             "apa_eligible_flag,apa_eligibility_reg_rules,rts23_eligible_flag,rts23_eligibility_reg_rules,trade_date " +
             "from trade")
@@ -33,7 +30,7 @@ public interface TradeMapper {
             "net_amount,price,option_type,strike_price,option_exercise_style,delivery_type,deriv_notional_change," +
             "upfront_payment,upfront_payment_currency,price_multiplier,sftr_ind,waiver_ind,short_selling_ind," +
             "otc_post_trade_ind,commodity_deriv_ind,excuting_entity,manual_replay_status," +
-            "routing_to,routing_to_purpose,reason_code,reason_category,enum_value,sequence,wm_flag," +
+            "routing_to,routing_to_purpose,reason_code,enum_value,wm_flag," +
             "reg_rules_response,arm_eligible_flag,arm_eligibility_reg_rules," +
             "apa_eligible_flag,apa_eligibility_reg_rules,rts23_eligible_flag,rts23_eligibility_reg_rules,trade_date " +
             "from trade " +
@@ -46,7 +43,7 @@ public interface TradeMapper {
                                 "net_amount,price,option_type,strike_price,option_exercise_style,delivery_type,deriv_notional_change," +
                                 "upfront_payment,upfront_payment_currency,price_multiplier,sftr_ind,waiver_ind,short_selling_ind," +
                                 "otc_post_trade_ind,commodity_deriv_ind,excuting_entity,manual_replay_status," +
-                                "routing_to,routing_to_purpose,reason_code,reason_category,enum_value,sequence,wm_flag," +
+                                "routing_to,routing_to_purpose,reason_code,enum_value,wm_flag," +
                                 "reg_rules_response,arm_eligible_flag,arm_eligibility_reg_rules," +
                                 "apa_eligible_flag,apa_eligibility_reg_rules,rts23_eligible_flag,rts23_eligibility_reg_rules,trade_date) " +
             "value (#{trade.trade_id},#{trade.primary_asset_class},#{trade.product},#{trade.originating_event}," +
@@ -58,7 +55,7 @@ public interface TradeMapper {
                     "#{trade.upfront_payment_currency},#{trade.price_multiplier},#{trade.sftr_ind},#{trade.waiver_ind}," +
                     "#{trade.short_selling_ind},#{trade.otc_post_trade_ind},#{trade.commodity_deriv_ind}," +
                     "#{trade.excuting_entity},#{trade.manual_replay_status},#{trade.routing_to},#{trade.routing_to_purpose}," +
-                    "#{trade.reason_code},#{trade.reason_category},#{trade.enum_value},#{trade.sequence},#{trade.wm_flag}," +
+                    "#{trade.reason_code},#{trade.enum_value},#{trade.wm_flag}," +
                     "#{trade.reg_rules_response},#{trade.arm_eligible_flag},#{trade.arm_eligibility_reg_rules},#{trade.apa_eligible_flag}," +
                     "#{trade.apa_eligibility_reg_rules},#{trade.rts23_eligible_flag},#{trade.rts23_eligibility_reg_rules},#{trade.trade_date})")
     int addTrade(@Param("trade") Trade trade);
