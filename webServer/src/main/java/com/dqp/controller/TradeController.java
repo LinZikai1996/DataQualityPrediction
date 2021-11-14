@@ -73,7 +73,8 @@ public class TradeController {
                            @RequestParam(name="apa_eligible_flag") String apa_eligible_flag,
                            @RequestParam(name="apa_eligibility_reg_rules") String apa_eligibility_reg_rules,
                            @RequestParam(name="rts23_eligible_flag") String rts23_eligible_flag,
-                           @RequestParam(name="rts23_eligibility_reg_rules") String rts23_eligibility_reg_rules){
+                           @RequestParam(name="rts23_eligibility_reg_rules") String rts23_eligibility_reg_rules,
+                           @RequestParam(name="trade_owner") String trade_owner){
         ModelAndView modelAndView = new ModelAndView();
         SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         String trade_id = CreateTradeId.getTradeId();
@@ -81,7 +82,7 @@ public class TradeController {
         Trade trade = new Trade(trade_id,
                                 getValue(primary_asset_class),getValue(product),getValue(originating_event),
                                 getValue(reporting_regime),getValue(usi_issuer),
-                                getValue(usi_value.equals("NA") || usi_value.equals("Please select") ? usi_value : usi_value + trade_id),
+                                getValue(usi_value.equals("NA") ? usi_value : usi_value + trade_id),
                                 getValue(uti_originator),
                                 getValue(outgoing),getValue(has_ack_nack),getValue(tr_determined_rep_role),
                                 getValue(intent_to_clear),getValue(execution_venue),getValue(system_trade_source),
@@ -95,7 +96,7 @@ public class TradeController {
                                 getValue(wm_flag),getValue(reg_rules_response),getValue(arm_eligible_flag),
                                 getValue(arm_eligibility_reg_rules),getValue(apa_eligible_flag),getValue(apa_eligibility_reg_rules),
                                 getValue(rts23_eligible_flag),getValue(rts23_eligibility_reg_rules),
-                                formatter.format(new Date(System.currentTimeMillis())));
+                                formatter.format(new Date(System.currentTimeMillis())),getValue(trade_owner));
 
         boolean result = tradeService.submitTrade(trade);
         if(result){
@@ -110,7 +111,7 @@ public class TradeController {
 
     @RequestMapping(value ="/showAllTradeData.do")
     public ModelAndView showAllTradeData(){
-        log.info("Get All Trade Data");
+        log.info("Show All Trade Data");
         ModelAndView modelAndView = new ModelAndView();
         List<Trade> tradeList = tradeService.showAllTradeData();
         modelAndView.addObject("tradeList", tradeList);
@@ -143,8 +144,9 @@ public class TradeController {
     }
 
     @RequestMapping(value = "/updateTrade.do")
-    public void updateTrade(
+    public ModelAndView updateTrade(
                             @RequestParam(name="trade_id") String trade_id,
+                            @RequestParam(name="trade_date") String trade_date,
                             @RequestParam(name="primary_asset_class") String primary_asset_class,
                             @RequestParam(name="product") String product,
                             @RequestParam(name="originating_event") String originating_event,
@@ -189,7 +191,8 @@ public class TradeController {
                             @RequestParam(name="apa_eligible_flag") String apa_eligible_flag,
                             @RequestParam(name="apa_eligibility_reg_rules") String apa_eligibility_reg_rules,
                             @RequestParam(name="rts23_eligible_flag") String rts23_eligible_flag,
-                            @RequestParam(name="rts23_eligibility_reg_rules") String rts23_eligibility_reg_rules){
+                            @RequestParam(name="rts23_eligibility_reg_rules") String rts23_eligibility_reg_rules,
+                            @RequestParam(name="trade_owner") String trade_owner){
         log.info("=====> Update Trade : {}", trade_id);
         SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         Trade trade = new Trade(getValue(trade_id),
@@ -208,7 +211,12 @@ public class TradeController {
                 getValue(reason_code),getValue(enum_value),getValue(wm_flag),getValue(reg_rules_response),getValue(arm_eligible_flag),
                 getValue(arm_eligibility_reg_rules),getValue(apa_eligible_flag),getValue(apa_eligibility_reg_rules),
                 getValue(rts23_eligible_flag),getValue(rts23_eligibility_reg_rules),
-                formatter.format(new Date(System.currentTimeMillis())));
+                formatter.format(new Date(System.currentTimeMillis())),trade_owner);
         tradeService.submitTrade(trade);
+        ModelAndView modelAndView = new ModelAndView();
+        List<Trade> tradeList = tradeService.showAllTradeData();
+        modelAndView.addObject("tradeList", tradeList);
+        modelAndView.setViewName("show_data");
+        return modelAndView;
     }
 }

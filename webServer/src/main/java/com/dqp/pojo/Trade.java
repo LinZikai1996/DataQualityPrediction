@@ -4,8 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.sql.Date;
-
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
@@ -57,4 +55,5 @@ public class Trade {
     String rts23_eligible_flag;
     String rts23_eligibility_reg_rules;
     String trade_date;
+    String trade_owner;
 }

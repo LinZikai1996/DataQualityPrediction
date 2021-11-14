@@ -11,12 +11,10 @@
                         <img src="images/pic.png" alt=""/>
                         <div class="d-flex align-items-center sidebar-info">
                             <div>
-                                <span class="font-w700 d-block mb-2">Eren Yeager</span>
+                                <span class="font-w700 d-block mb-2">${user}</span>
                                 <small class="text-end font-w400">Super Admin</small>
                             </div>
-                            <i class="fas fa-sort-down ms-4"></i>
                         </div>
-
                     </div>
                 </a>
             </div>
@@ -28,7 +26,8 @@
                     <ul aria-expanded="false">
                         <li><a href="/toIndex.do">Trade</a></li>
                         <li><a href="/showAllTradeData.do">Show Data</a></li>
-                        <li><a href="/toReportPage.do">Report</a></li>
+                        <li><a href="/toReportPage.do">Trade Report</a></li>
+                        <li><a href="#">Personal Report</a></li>
                     </ul>
                 </li>
             </ul>

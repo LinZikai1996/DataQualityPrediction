@@ -73,6 +73,12 @@
                           <div class="row">
                             <div class="col-lg-6 mt-3">
                               <div class="mb-3 row">
+                                <label class="col-lg-4 col-form-label" for="trade_info_00">Trade Owner</label>
+                                <div class="col-lg-6">
+                                  <input type="text" name="trade_owner" class="form-control" id="trade_info_00" value="${user}" readonly>
+                                </div>
+                              </div>
+                              <div class="mb-3 row">
                                 <label class="col-lg-4 col-form-label" for="trade_info_01">Primary Asset Class</label>
                                 <div class="col-lg-6">
                                   <select class="default-select wide form-control" id="trade_info_01" name = "primary_asset_class">
@@ -386,6 +392,8 @@
                                   </select>
                                 </div>
                               </div>
+                            </div>
+                            <div class="col-lg-6 mt-3">
                               <div class="mb-3 row">
                                 <label class="col-lg-4 col-form-label" for="trade_info_07">UTI Originator</label>
                                 <div class="col-lg-6">
@@ -402,8 +410,6 @@
                                   </select>
                                 </div>
                               </div>
-                            </div>
-                            <div class="col-lg-6 mt-3">
                               <div class="mb-3 row">
                                 <label class="col-lg-4 col-form-label" for="trade_info_08">Outgoing</label>
                                 <div class="col-lg-6">

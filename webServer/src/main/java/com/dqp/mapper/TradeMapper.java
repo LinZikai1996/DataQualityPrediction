@@ -19,7 +19,7 @@ public interface TradeMapper {
             "otc_post_trade_ind,commodity_deriv_ind,excuting_entity,manual_replay_status," +
             "routing_to,routing_to_purpose,reason_code,enum_value,wm_flag," +
             "reg_rules_response,arm_eligible_flag,arm_eligibility_reg_rules," +
-            "apa_eligible_flag,apa_eligibility_reg_rules,rts23_eligible_flag,rts23_eligibility_reg_rules,trade_date " +
+            "apa_eligible_flag,apa_eligibility_reg_rules,rts23_eligible_flag,rts23_eligibility_reg_rules,trade_date,trade_owner " +
             "from trade")
     List<Trade> selectAll();
 
@@ -32,7 +32,7 @@ public interface TradeMapper {
             "otc_post_trade_ind,commodity_deriv_ind,excuting_entity,manual_replay_status," +
             "routing_to,routing_to_purpose,reason_code,enum_value,wm_flag," +
             "reg_rules_response,arm_eligible_flag,arm_eligibility_reg_rules," +
-            "apa_eligible_flag,apa_eligibility_reg_rules,rts23_eligible_flag,rts23_eligibility_reg_rules,trade_date " +
+            "apa_eligible_flag,apa_eligibility_reg_rules,rts23_eligible_flag,rts23_eligibility_reg_rules,trade_date,trade_owner " +
             "from trade " +
             "where trade_Id = #{tradeId}")
     Trade selectTrade(@Param("tradeId") String tradeId);
@@ -45,7 +45,7 @@ public interface TradeMapper {
                                 "otc_post_trade_ind,commodity_deriv_ind,excuting_entity,manual_replay_status," +
                                 "routing_to,routing_to_purpose,reason_code,enum_value,wm_flag," +
                                 "reg_rules_response,arm_eligible_flag,arm_eligibility_reg_rules," +
-                                "apa_eligible_flag,apa_eligibility_reg_rules,rts23_eligible_flag,rts23_eligibility_reg_rules,trade_date) " +
+                                "apa_eligible_flag,apa_eligibility_reg_rules,rts23_eligible_flag,rts23_eligibility_reg_rules,trade_date,trade_owner) " +
             "value (#{trade.trade_id},#{trade.primary_asset_class},#{trade.product},#{trade.originating_event}," +
                     "#{trade.reporting_regime},#{trade.usi_issuer},#{trade.usi_value},#{trade.uti_originator},#{trade.outgoing}," +
                     "#{trade.has_ack_nack},#{trade.tr_determined_rep_role},#{trade.intent_to_clear},#{trade.execution_venue}," +
@@ -57,7 +57,7 @@ public interface TradeMapper {
                     "#{trade.excuting_entity},#{trade.manual_replay_status},#{trade.routing_to},#{trade.routing_to_purpose}," +
                     "#{trade.reason_code},#{trade.enum_value},#{trade.wm_flag}," +
                     "#{trade.reg_rules_response},#{trade.arm_eligible_flag},#{trade.arm_eligibility_reg_rules},#{trade.apa_eligible_flag}," +
-                    "#{trade.apa_eligibility_reg_rules},#{trade.rts23_eligible_flag},#{trade.rts23_eligibility_reg_rules},#{trade.trade_date})")
+                    "#{trade.apa_eligibility_reg_rules},#{trade.rts23_eligible_flag},#{trade.rts23_eligibility_reg_rules},#{trade.trade_date},#{trade.trade_owner})")
     int addTrade(@Param("trade") Trade trade);
 
     @Delete("delete from trade where trade_Id = #{tradeId}")

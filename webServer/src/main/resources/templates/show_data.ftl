@@ -65,6 +65,7 @@
                                         <tr>
                                             <th>Trade Id</th>
                                             <th>Trade Date</th>
+                                            <th>Trade Owner</th>
                                             <th>Primary Asset Class</th>
                                             <th>Action</th>
                                         </tr>
@@ -74,6 +75,7 @@
                                             <tr>
                                                 <td>${trade.trade_id}</td>
                                                 <td>${trade.trade_date}</td>
+                                                <td>${trade.trade_owner}</td>
                                                 <td>${trade.primary_asset_class}</td>
                                                 <td>
                                                     <div class="d-flex">
@@ -88,20 +90,26 @@
                                                                         <button type="button" class="btn-close" data-bs-dismiss="modal">
                                                                         </button>
                                                                     </div>
-                                                                    <form class="needs-validation tab-content" action="/tradeSubmit.do">
+                                                                    <form class="needs-validation tab-content" action="/updateTrade.do">
                                                                         <div class="modal-body">
                                                                             <div class="row">
                                                                                 <div class="col-lg-12 mt-3">
                                                                                     <div class="mb-3 row">
                                                                                         <label class="col-lg-4 col-form-label">Trade Id</label>
                                                                                         <div class="col-lg-6">
-                                                                                            <input type="text" class="form-control" value="${trade.trade_id}" disabled>
+                                                                                            <input type="text" class="form-control" name="trade_id" value="${trade.trade_id}" readonly>
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="mb-3 row">
                                                                                         <label class="col-lg-4 col-form-label">Trade Date</label>
                                                                                         <div class="col-lg-6">
-                                                                                            <input type="text" class="form-control" value="${trade.trade_date}" disabled>
+                                                                                            <input type="text" class="form-control" name="trade_date" value="${trade.trade_date}" readonly>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="mb-3 row">
+                                                                                        <label class="col-lg-4 col-form-label">Trade Owner</label>
+                                                                                        <div class="col-lg-6">
+                                                                                            <input type="text" class="form-control" name="trade_owner" value="${trade.trade_owner}" readonly>
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="mb-3 row">
@@ -1494,7 +1502,7 @@
                                                                         </div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-danger light" data-bs-dismiss="modal">Close</button>
-                                                                            <button type="button" class="btn btn-primary" >Save changes</button>
+                                                                            <button type="submit" class="btn btn-primary" >Save changes</button>
                                                                         </div>
                                                                     </form>
                                                                 </div>
@@ -1521,6 +1529,12 @@
                                                                                     <label class="col-lg-4 col-form-label">Trade Date</label>
                                                                                     <div class="col-lg-6">
                                                                                         <input type="text" class="form-control" value="${trade.trade_date}" disabled>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="mb-3 row">
+                                                                                    <label class="col-lg-4 col-form-label">Trade Owner</label>
+                                                                                    <div class="col-lg-6">
+                                                                                        <input type="text" class="form-control" value="${trade.trade_owner}" disabled>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="mb-3 row">

@@ -35,7 +35,7 @@
                   <a href="/index.do"><img src="images/SystemLogo.png" alt=""></a>
                 </div>
                 <h4 class="text-center mb-4">Sign in your account</h4>
-                <form action="/findUserById.do">
+                <form action="/login.do">
                   <div class="mb-3">
                     <label class="mb-1"><strong>User Id</strong></label>
                     <input name="userId" type="text" class="form-control">
