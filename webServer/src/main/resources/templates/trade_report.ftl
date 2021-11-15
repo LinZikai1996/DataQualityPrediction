@@ -7,7 +7,7 @@
     <title>Data Quality Predict</title>
 
     <!-- FAVICONS ICON -->
-    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <link href="images/SystemLogo.png" rel="icon">
 
     <link href="./vendor/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
     <!-- Clockpicker -->

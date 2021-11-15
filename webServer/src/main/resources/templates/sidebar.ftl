@@ -26,8 +26,8 @@
                     <ul aria-expanded="false">
                         <li><a href="/toIndex.do">Trade</a></li>
                         <li><a href="/showAllTradeData.do">Show Data</a></li>
-                        <li><a href="/toReportPage.do">Trade Report</a></li>
-                        <li><a href="#">Personal Report</a></li>
+                        <li><a href="/toTradeReportPage.do">Trade Report</a></li>
+                        <li><a href="/toPersonalReport.do">Personal Report</a></li>
                     </ul>
                 </li>
             </ul>

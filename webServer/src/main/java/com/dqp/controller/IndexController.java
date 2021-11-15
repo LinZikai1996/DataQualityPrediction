@@ -10,7 +10,6 @@ public class IndexController {
 
     @RequestMapping(value = {"/","/index.do"})
     public String index(){
-        log.info("========== Server Start ==========");
         return "login";
     }
 

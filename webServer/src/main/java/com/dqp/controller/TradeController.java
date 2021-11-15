@@ -4,9 +4,6 @@ import com.dqp.pojo.Trade;
 import com.dqp.service.TradeService;
 import com.dqp.util.CreateTradeId;
 import lombok.extern.slf4j.Slf4j;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -146,7 +143,6 @@ public class TradeController {
     @RequestMapping(value = "/updateTrade.do")
     public ModelAndView updateTrade(
                             @RequestParam(name="trade_id") String trade_id,
-                            @RequestParam(name="trade_date") String trade_date,
                             @RequestParam(name="primary_asset_class") String primary_asset_class,
                             @RequestParam(name="product") String product,
                             @RequestParam(name="originating_event") String originating_event,
