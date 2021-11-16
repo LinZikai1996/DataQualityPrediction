@@ -1,4 +1,4 @@
-function dayDashboard(total){
+function dayDashboard(total, exception){
     Morris.Donut({
         element: 'day_dashboard',
         data: [{
@@ -6,30 +6,18 @@ function dayDashboard(total){
             value: total,
         }, {
             label: "\xa0 \xa0 Trade Exception \xa0 \xa0",
-            value: 10
+            value: exception
         }],
         resize: true,
         redraw: true,
         colors: ['#44814e', 'rgb(255, 92, 0)'],
     });
 }
-function showData(totalList, exceptionList){
-    let dataList = [];
-
-    for(var k in totalList){
-        console.log(totalList[k].name + " " + exceptionList[k].number);
-        console.log(totalList[k].name + " " + exceptionList[k].number);
-        dataList[k] = {y: totalList[k].name, total: totalList[k].number, exception: exceptionList[k].number}
-    }
-}
-
 
 function weekDashboard(totalList, exceptionList){
     let dataList = [];
 
     for(var k in totalList){
-        console.log(totalList[k].name + " " + exceptionList[k].number);
-        console.log(totalList[k].name + " " + exceptionList[k].number);
         dataList[k] = {y: totalList[k].name, total: totalList[k].number, exception: exceptionList[k].number}
     }
 

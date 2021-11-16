@@ -3,6 +3,7 @@ package com.dqp.service.impi;
 import com.dqp.mapper.ReportMapper;
 import com.dqp.pojo.Report;
 import com.dqp.service.ReportService;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 
 import java.math.BigInteger;
@@ -18,13 +19,13 @@ public class ReportServiceImpl implements ReportService {
     }
 
     @Override
-    public BigInteger getTotalDaily() {
-        return reportMapper.getTotalDaily();
+    public BigInteger getPersonalTotalDaily(String userId) {
+        return reportMapper.getPersonalTotalDaily(userId);
     }
 
     @Override
-    public BigInteger getExceptionDaily() {
-        return null;
+    public BigInteger getPersonalExceptionDaily(String userId) {
+        return reportMapper.getPersonalExceptionDaily(userId);
     }
 
     @Override
@@ -54,7 +55,7 @@ public class ReportServiceImpl implements ReportService {
                     count = r.getNumber();
                 }
             }
-            weekDayData.add(new Report(week[day], count));
+            weekDayData.add(new Report(week[day].substring(0, 3), count));
         }
         return weekDayData;
     }

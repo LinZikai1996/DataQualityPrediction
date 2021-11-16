@@ -1,17 +1,12 @@
 package com.dqp.controller;
 
-import com.dqp.pojo.Report;
+import com.alibaba.fastjson.JSON;
 import com.dqp.service.ReportService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
-
-import java.math.BigInteger;
-import java.util.List;
-import java.util.Map;
-
-import com.alibaba.fastjson.JSON;
 
 @Controller
 @Slf4j
@@ -30,16 +25,19 @@ public class ReportController {
     }
 
     @RequestMapping("/toPersonalReport.do")
-    public ModelAndView toPersonalReport(){
+    public ModelAndView toPersonalReport(@RequestParam(name="user") String userId){
         log.info("To Personal Report");
         ModelAndView modelAndView = new ModelAndView();
-        BigInteger trade_total = reportService.getTotalDaily();
 
-        List<Report> getPersonalTradeWeeklyList = reportService.getPersonalTradeWeekly();
-        List<Report> getPersonalTradeExceptionWeeklyList = reportService.getPersonalTradeExceptionWeekly();
-        modelAndView.addObject("personalTradeWeeklyList", JSON.toJSONString(getPersonalTradeWeeklyList));
-        modelAndView.addObject("personalTradeExceptionWeeklyList", JSON.toJSONString(getPersonalTradeExceptionWeeklyList));
-        modelAndView.addObject("tradeTotal", trade_total.toString());
+        // Daily report
+        modelAndView.addObject("personalTradeTotalDaily", reportService.getPersonalTotalDaily(userId).toString());
+        modelAndView.addObject("personalTradeExceptionDaily", reportService.getPersonalExceptionDaily(userId).toString());
+
+        // Weekly report
+        modelAndView.addObject("personalTradeTotalWeeklyList", JSON.toJSONString(reportService.getPersonalTradeWeekly()));
+        modelAndView.addObject("personalTradeExceptionWeeklyList", JSON.toJSONString(reportService.getPersonalTradeExceptionWeekly()));
+
+
         modelAndView.setViewName("personal_report");
         return modelAndView;
     }

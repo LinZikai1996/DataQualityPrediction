@@ -27,7 +27,7 @@
                         <li><a href="/toIndex.do">Trade</a></li>
                         <li><a href="/showAllTradeData.do">Show Data</a></li>
                         <li><a href="/toTradeReportPage.do">Trade Report</a></li>
-                        <li><a href="/toPersonalReport.do">Personal Report</a></li>
+                        <li><a href="/toPersonalReport.do?user=${user}">Personal Report</a></li>
                     </ul>
                 </li>
             </ul>

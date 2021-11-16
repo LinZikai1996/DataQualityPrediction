@@ -7,9 +7,9 @@ import java.util.List;
 
 public interface ReportService {
 
-    BigInteger getTotalDaily();
+    BigInteger getPersonalTotalDaily(String userId);
 
-    BigInteger getExceptionDaily();
+    BigInteger getPersonalExceptionDaily(String userId);
 
     List<Report> getPersonalTradeWeekly();
 
