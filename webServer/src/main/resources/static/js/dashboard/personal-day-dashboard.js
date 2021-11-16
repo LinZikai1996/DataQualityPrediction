@@ -13,41 +13,32 @@ function dayDashboard(total){
         colors: ['#44814e', 'rgb(255, 92, 0)'],
     });
 }
-function weekDashboard(){
+function showData(totalList, exceptionList){
+    let dataList = [];
+
+    for(var k in totalList){
+        console.log(totalList[k].name + " " + exceptionList[k].number);
+        console.log(totalList[k].name + " " + exceptionList[k].number);
+        dataList[k] = {y: totalList[k].name, total: totalList[k].number, exception: exceptionList[k].number}
+    }
+}
+
+
+function weekDashboard(totalList, exceptionList){
+    let dataList = [];
+
+    for(var k in totalList){
+        console.log(totalList[k].name + " " + exceptionList[k].number);
+        console.log(totalList[k].name + " " + exceptionList[k].number);
+        dataList[k] = {y: totalList[k].name, total: totalList[k].number, exception: exceptionList[k].number}
+    }
+
     Morris.Bar({
         element: 'morris_bar_stalked',
-        data: [{
-            y: 'Sun',
-            a: 66,
-            b: 34
-        }, {
-            y: 'Mon',
-            a: 75,
-            b: 25
-        }, {
-            y: 'Tue',
-            a: 50,
-            b: 50
-        }, {
-            y: 'Wed',
-            a: 75,
-            b: 25
-        }, {
-            y: 'Thur',
-            a: 50,
-            b: 50
-        }, {
-            y: 'Fri',
-            a: 16,
-            b: 84
-        }, {
-            y: 'Sat',
-            a: 70,
-            b: 30
-        }],
+        data: dataList,
         xkey: 'y',
-        ykeys: ['a', 'b'],
-        labels: ['A', 'B'],
+        ykeys: ['total', 'exception'],
+        labels: ['Total', 'Exception'],
         barColors: ['#44814e', 'rgb(255, 92, 0)'],
         hideHover: 'auto',
         gridLineColor: 'transparent',
@@ -55,9 +46,6 @@ function weekDashboard(){
         barSizeRatio: 0.25,
         stacked: true,
         behaveLikeLine: true,
-        //redraw: true
-
-        // barRadius: [6, 6, 0, 0]
     });
 
 }

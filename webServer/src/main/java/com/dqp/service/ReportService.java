@@ -4,7 +4,6 @@ import com.dqp.pojo.Report;
 
 import java.math.BigInteger;
 import java.util.List;
-import java.util.Map;
 
 public interface ReportService {
 
@@ -12,7 +11,7 @@ public interface ReportService {
 
     BigInteger getExceptionDaily();
 
-    Map<String, BigInteger> getPersonalTradeWeekly();
+    List<Report> getPersonalTradeWeekly();
 
-    Map<String, BigInteger> getPersonalTradeExceptionWeekly();
+    List<Report> getPersonalTradeExceptionWeekly();
 }

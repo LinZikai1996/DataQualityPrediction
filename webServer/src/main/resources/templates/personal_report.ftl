@@ -105,13 +105,12 @@
 <script src="./vendor/raphael/raphael.min.js"></script>
 <script src="./vendor/morris/morris.min.js"></script>
 <script src="./js/dashboard/personal-day-dashboard.js"></script>
-<script type="text/javascript">
-    dayDashboard(${trade_total})
-    weekDashboard()
-</script>
-
 <script src="./js/custom.min.js"></script>
 <script src="./js/dlabnav-init.js"></script>
+<script type="text/javascript">
+    dayDashboard(${tradeTotal})
+    weekDashboard(${personalTradeWeeklyList}, ${personalTradeExceptionWeeklyList})
+</script>
 
 </body>
 </html>

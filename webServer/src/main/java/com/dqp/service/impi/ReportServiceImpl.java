@@ -28,18 +28,18 @@ public class ReportServiceImpl implements ReportService {
     }
 
     @Override
-    public Map<String, BigInteger> getPersonalTradeWeekly() {
+    public List<Report> getPersonalTradeWeekly() {
         return processWeekData(reportMapper.getPersonalTradeWeekly());
     }
 
     @Override
-    public Map<String, BigInteger> getPersonalTradeExceptionWeekly() {
+    public List<Report> getPersonalTradeExceptionWeekly() {
         return processWeekData(reportMapper.getPersonalTradeExceptionWeekly());
     }
 
-    private Map<String, BigInteger> processWeekData(List<Report> reportList){
+    private List<Report> processWeekData(List<Report> reportList){
         String[] week = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
-        Map<String, BigInteger> weekDayData = new HashMap<>();
+        List<Report> weekDayData = new ArrayList<>();
         Calendar cal = Calendar.getInstance();
         cal.setTime(new Date(System.currentTimeMillis()));
 
@@ -54,7 +54,7 @@ public class ReportServiceImpl implements ReportService {
                     count = r.getNumber();
                 }
             }
-            weekDayData.put(week[day], count);
+            weekDayData.add(new Report(week[day], count));
         }
         return weekDayData;
     }
