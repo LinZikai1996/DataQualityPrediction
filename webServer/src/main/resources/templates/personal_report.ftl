@@ -23,7 +23,6 @@
     Main wrapper start
 ***********************************-->
     <div id="main-wrapper">
-
         <div class="header border-bottom">
             <div class="header-content">
                 <nav class="navbar navbar-expand">
@@ -72,7 +71,7 @@
                                         <h4 class="card-title">Week Report</h4>
                                     </div>
                                     <div class="card-body">
-                                        <div id="morris_bar_stalked"></div>
+                                        <div id="week_dashboard"></div>
                                         <div class="d-flex justify-content-between flex-wrap">
                                         <span class="fs-16 font-w600">
                                             <svg class="me-2" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -84,6 +83,18 @@
                                                 <rect x="0.344925" width="18.9471" height="19" rx="9.47357" fill="rgb(255, 92, 0)"/></svg>
                                             Trade Exception
                                         </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Month Report</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="ico-sparkline">
+                                            <div id="month_dashboard"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -104,12 +115,14 @@
 <!-- Chart Morris plugin files -->
 <script src="./vendor/raphael/raphael.min.js"></script>
 <script src="./vendor/morris/morris.min.js"></script>
+<script src="./vendor/jquery-sparkline/jquery.sparkline.min.js"></script>
 <script src="./js/dashboard/personal-report.js"></script>
 <script src="./js/custom.min.js"></script>
 <script src="./js/dlabnav-init.js"></script>
 <script type="text/javascript">
     dayDashboard(${personalTradeTotalDaily}, ${personalTradeExceptionDaily})
     weekDashboard(${personalTradeTotalWeeklyList}, ${personalTradeExceptionWeeklyList})
+    monthDashboard(${personalTradeTotalMonthlyList}, ${personalTradeExceptionMonthlyList})
 </script>
 
 </body>

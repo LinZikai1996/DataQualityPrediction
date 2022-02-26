@@ -37,6 +37,10 @@ public class ReportController {
         modelAndView.addObject("personalTradeTotalWeeklyList", JSON.toJSONString(reportService.getPersonalTradeWeekly()));
         modelAndView.addObject("personalTradeExceptionWeeklyList", JSON.toJSONString(reportService.getPersonalTradeExceptionWeekly()));
 
+        // Monthly report
+        modelAndView.addObject("personalTradeTotalMonthlyList", JSON.toJSONString(reportService.getPersonalTotalMonthly()));
+        modelAndView.addObject("personalTradeExceptionMonthlyList", JSON.toJSONString(reportService.getPersonalTradeExceptionMonthly()));
+
 
         modelAndView.setViewName("personal_report");
         return modelAndView;

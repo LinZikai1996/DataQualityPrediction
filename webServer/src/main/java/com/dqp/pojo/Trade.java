@@ -48,6 +48,7 @@ public class Trade {
     String enum_value;
     String wm_flag;
     String reg_rules_response;
+    String sequence;
     String arm_eligible_flag;
     String arm_eligibility_reg_rules;
     String apa_eligible_flag;

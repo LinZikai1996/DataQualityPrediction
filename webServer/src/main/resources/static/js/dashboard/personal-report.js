@@ -17,12 +17,12 @@ function dayDashboard(total, exception){
 function weekDashboard(totalList, exceptionList){
     let dataList = [];
 
-    for(var k in totalList){
+    for(const k in totalList){
         dataList[k] = {y: totalList[k].name, total: totalList[k].number, exception: exceptionList[k].number}
     }
 
     Morris.Bar({
-        element: 'morris_bar_stalked',
+        element: 'week_dashboard',
         data: dataList,
         xkey: 'y',
         ykeys: ['total', 'exception'],
@@ -35,5 +35,25 @@ function weekDashboard(totalList, exceptionList){
         stacked: true,
         behaveLikeLine: true,
     });
+
+}
+
+function monthDashboard(totalList, exceptionList){
+    let dataList = [];
+
+    for(const k in totalList){
+        dataList[k] = [totalList[k].number, exceptionList[k].number]
+    }
+
+    if(jQuery('#month_dashboard').length > 0 ){
+        $('#month_dashboard').sparkline(
+            dataList, {
+            type: "bar",
+            height: "200",
+            barWidth: 10,
+            barSpacing: 7,
+            stackedBarColor: ['#44814e', '#ff5c00']
+        });
+    }
 
 }

@@ -1438,13 +1438,19 @@
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="mb-3 row">
-                                                                                        <label class="col-lg-4 col-form-label">Arm Eligible Flag</label>
+                                                                                        <label class="col-lg-4 col-form-label">Reg Rules Response</label>
                                                                                         <div class="col-lg-6">
-                                                                                            <select class="default-select wide form-control" id="trade_info_40" name = "arm_eligible_flag">
-                                                                                                <option <#if (trade.arm_eligible_flag?string == '')>selected="selected"</#if> value="NA">NA</option>
-                                                                                                <option <#if (trade.arm_eligible_flag?string == 'YES')>selected="selected"</#if> value="YES">YES</option>
-                                                                                                <option <#if (trade.arm_eligible_flag?string == 'NO')>selected="selected"</#if> value="NO">NO</option>
+                                                                                            <select class="default-select wide form-control" id="trade_info_39" name = "reg_rules_response">
+                                                                                                <option <#if (trade.reg_rules_response?string == '')>selected="selected"</#if> value="NA">NA</option>
+                                                                                                <option <#if (trade.reg_rules_response?string == 'YES')>selected="selected"</#if> value="YES">YES</option>
+                                                                                                <option <#if (trade.reg_rules_response?string == 'NO')>selected="selected"</#if> value="NO">NO</option>
                                                                                             </select>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="mb-3 row">
+                                                                                        <label class="col-lg-4 col-form-label">Sequence</label>
+                                                                                        <div class="col-lg-6">
+                                                                                            <input type="text" class="form-control" id="trade_info_46" name = "sequence" value="${trade.sequence}">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="mb-3 row">
@@ -1769,6 +1775,12 @@
                                                                                     <label class="col-lg-4 col-form-label">Reg Rules Response</label>
                                                                                     <div class="col-lg-6">
                                                                                         <input type="text" class="form-control" value="${trade.reg_rules_response}" disabled>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="mb-3 row">
+                                                                                    <label class="col-lg-4 col-form-label">Sequence</label>
+                                                                                    <div class="col-lg-6">
+                                                                                        <input type="text" class="form-control" value="${trade.sequence}" disabled>
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="mb-3 row">

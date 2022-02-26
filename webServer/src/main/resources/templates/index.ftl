@@ -1483,6 +1483,12 @@
                                   </select>
                                 </div>
                               </div>
+                              <div class="mb-3 row">
+                                <label class="col-lg-4 col-form-label" for="trade_info_46">Sequence</label>
+                                <div class="col-lg-6">
+                                  <input type="text" name = "sequence" class="form-control" id="trade_info_46" placeholder="NA">
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>

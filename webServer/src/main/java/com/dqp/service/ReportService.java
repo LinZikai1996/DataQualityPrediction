@@ -14,4 +14,8 @@ public interface ReportService {
     List<Report> getPersonalTradeWeekly();
 
     List<Report> getPersonalTradeExceptionWeekly();
+
+    List<Report> getPersonalTotalMonthly();
+
+    List<Report> getPersonalTradeExceptionMonthly();
 }

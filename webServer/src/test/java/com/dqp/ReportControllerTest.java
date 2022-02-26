@@ -1,8 +1,7 @@
 package com.dqp;
 
-import com.dqp.mapper.ReportMapper;
+import com.dqp.mapper.PersonReportMapper;
 import com.dqp.pojo.Report;
-import com.dqp.service.ReportService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,11 +18,11 @@ import java.util.*;
 public class ReportControllerTest {
 
     @Autowired
-    ReportMapper reportMapper;
+    PersonReportMapper reportMapper;
 
     @Test
     public void getPersonalReport(){
-        List<Report> reportList = reportMapper.getPersonalTradeWeekly();
+        List<Report> reportList = reportMapper.getTotalWeekly();
         Map<String, BigInteger> weekdayData = new HashMap<>();
         String[] weekDays = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
         Calendar cal = Calendar.getInstance();

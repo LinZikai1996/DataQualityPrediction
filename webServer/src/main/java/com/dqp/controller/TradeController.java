@@ -61,6 +61,7 @@ public class TradeController {
                            @RequestParam(name="manual_replay_status") String manual_replay_status,
                            @RequestParam(name="routing_to") String routing_to,
                            @RequestParam(name="routing_to_purpose") String routing_to_purpose,
+                           @RequestParam(name="sequence") String sequence,
                            @RequestParam(name="reason_code") String reason_code,
                            @RequestParam(name="enum_value") String enum_value,
                            @RequestParam(name="wm_flag") String wm_flag,
@@ -90,7 +91,7 @@ public class TradeController {
                                 getValue(waiver_ind),getValue(short_selling_ind),getValue(otc_post_trade_ind),
                                 getValue(commodity_deriv_ind),getValue(excuting_entity),getValue(manual_replay_status),getValue(routing_to),getValue(routing_to_purpose),
                                 getValue(reason_code),getValue(enum_value),
-                                getValue(wm_flag),getValue(reg_rules_response),getValue(arm_eligible_flag),
+                                getValue(wm_flag),getValue(reg_rules_response),getValue(sequence),getValue(arm_eligible_flag),
                                 getValue(arm_eligibility_reg_rules),getValue(apa_eligible_flag),getValue(apa_eligibility_reg_rules),
                                 getValue(rts23_eligible_flag),getValue(rts23_eligibility_reg_rules),
                                 formatter.format(new Date(System.currentTimeMillis())),getValue(trade_owner));
@@ -182,6 +183,7 @@ public class TradeController {
                             @RequestParam(name="enum_value") String enum_value,
                             @RequestParam(name="wm_flag") String wm_flag,
                             @RequestParam(name="reg_rules_response") String reg_rules_response,
+                            @RequestParam(name="sequence") String sequence,
                             @RequestParam(name="arm_eligible_flag") String arm_eligible_flag,
                             @RequestParam(name="arm_eligibility_reg_rules") String arm_eligibility_reg_rules,
                             @RequestParam(name="apa_eligible_flag") String apa_eligible_flag,
@@ -204,7 +206,7 @@ public class TradeController {
                 getValue(upfront_payment_currency),getValue(price_multiplier),getValue(sftr_ind),
                 getValue(waiver_ind),getValue(short_selling_ind),getValue(otc_post_trade_ind),
                 getValue(commodity_deriv_ind),getValue(excuting_entity),getValue(manual_replay_status),getValue(routing_to),getValue(routing_to_purpose),
-                getValue(reason_code),getValue(enum_value),getValue(wm_flag),getValue(reg_rules_response),getValue(arm_eligible_flag),
+                getValue(reason_code),getValue(enum_value),getValue(wm_flag),getValue(reg_rules_response),getValue(sequence),getValue(arm_eligible_flag),
                 getValue(arm_eligibility_reg_rules),getValue(apa_eligible_flag),getValue(apa_eligibility_reg_rules),
                 getValue(rts23_eligible_flag),getValue(rts23_eligibility_reg_rules),
                 formatter.format(new Date(System.currentTimeMillis())),trade_owner);

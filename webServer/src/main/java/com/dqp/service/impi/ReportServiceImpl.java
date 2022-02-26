@@ -1,41 +1,53 @@
 package com.dqp.service.impi;
 
-import com.dqp.mapper.ReportMapper;
+import com.dqp.mapper.PersonReportMapper;
 import com.dqp.pojo.Report;
 import com.dqp.service.ReportService;
-import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 
 import java.math.BigInteger;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.List;
 
 @Service
 public class ReportServiceImpl implements ReportService {
 
-    final ReportMapper reportMapper;
+    final PersonReportMapper reportMapper;
 
-    public ReportServiceImpl(ReportMapper reportMapper) {
+    public ReportServiceImpl(PersonReportMapper reportMapper) {
         this.reportMapper = reportMapper;
     }
 
     @Override
     public BigInteger getPersonalTotalDaily(String userId) {
-        return reportMapper.getPersonalTotalDaily(userId);
+        return reportMapper.getTotalDaily(userId);
     }
 
     @Override
     public BigInteger getPersonalExceptionDaily(String userId) {
-        return reportMapper.getPersonalExceptionDaily(userId);
+        return reportMapper.getExceptionDaily(userId);
     }
 
     @Override
     public List<Report> getPersonalTradeWeekly() {
-        return processWeekData(reportMapper.getPersonalTradeWeekly());
+        return processWeekData(reportMapper.getTotalWeekly());
     }
 
     @Override
     public List<Report> getPersonalTradeExceptionWeekly() {
-        return processWeekData(reportMapper.getPersonalTradeExceptionWeekly());
+        return processWeekData(reportMapper.getExceptionWeekly());
+    }
+
+    @Override
+    public List<Report> getPersonalTotalMonthly() {
+        return reportMapper.getTotalMonthly();
+    }
+
+    @Override
+    public List<Report> getPersonalTradeExceptionMonthly() {
+        return reportMapper.getExceptionMonthly();
     }
 
     private List<Report> processWeekData(List<Report> reportList){
