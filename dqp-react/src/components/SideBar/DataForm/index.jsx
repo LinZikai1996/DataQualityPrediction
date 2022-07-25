@@ -33,8 +33,8 @@ export default class DataForm extends Component {
                       Equity: 'Equity',
                       Credit: 'Credit',
                     }}
-                    placeholder="Please select source system"
-                    rules={[{ required: true, message: 'Please select source system!' }]}
+                    placeholder="Please select primary asset class"
+                    rules={[{ required: true, message: 'Please select primary asset class!' }]}
                   />
                   <ProFormSelect
                     name="source_system"
