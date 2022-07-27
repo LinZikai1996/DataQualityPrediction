@@ -5,7 +5,7 @@ import {
 
 export default class ProduceSelect extends Component {
   render() {
-    const {assetClass, assetClassName, assetClassLabel, } = this.props
+    const {assetClass, assetClassName, assetClassLabel, updateProduceSelectValue} = this.props
     return (
         <ProFormSelect
             name={assetClassName}
@@ -83,7 +83,9 @@ export default class ProduceSelect extends Component {
                       Other: 'Other',
                     }
                   default:
-                    break;
+                    return {
+                      TBA: 'TBA',
+                    }
                 }
               }
             }
@@ -93,7 +95,7 @@ export default class ProduceSelect extends Component {
             // 这里使用了select的onChange方法
             // 必须使用这样的写法来进行调用onChange方法
             onChange:(value) => {
-                this.setState({primaryAssetClass: value})
+              updateProduceSelectValue({[assetClassName]: value})
             },
             }}
         />

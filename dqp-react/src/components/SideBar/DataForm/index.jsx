@@ -1,22 +1,37 @@
 import React, { Component } from 'react'
 import {
     ProForm,
-    ProFormCheckbox,
-    ProFormDigit,
-    ProFormDigitRange,
     ProFormGroup,
-    ProFormRadio,
-    ProFormRate,
     ProFormSelect,
-    ProFormSwitch,
     ProFormText,
-    ProFormDependency,
   } from '@ant-design/pro-components';
+
+import ProduceSelect from './ProduceSelect';
 
 export default class DataForm extends Component {
 
   state = {
     tradeEventId: new Date().getTime()
+  }
+
+  updateProduceSelectValue = (stateObj) => {
+    this.setState(stateObj)
+  }
+
+  getComponentProduceValue = (assetClass, assetClassName, assetClassLabel) => {
+    console.log("assetClass is " + assetClass)
+    if (assetClass !== undefined && assetClass !== 'TBA'){
+      return (
+        <ProduceSelect 
+          assetClass={assetClass}
+          assetClassName={assetClassName}
+          assetClassLabel={assetClassLabel}
+          updateProduceSelectValue={this.updateProduceSelectValue}
+        />
+      )
+    } else {
+      return null
+    }
   }
 
   render() {
@@ -59,39 +74,10 @@ export default class DataForm extends Component {
                   },
                 }}
               />
-              <ProFormSelect
-                name="produce_value_1"
-                label="Select produce value 1"
-                valueEnum={
-                  () => {
-                    const primaryAssetClass = this.state.primaryAssetClass
-                    switch (primaryAssetClass) {
-                      case 'Commodity':
-                        return {
-                          Agricultural: 'Agricultural',
-                          Energy: 'Energy',
-                          Metals: 'Metals',
-                        }
-                      case 'Credit':
-                        return {
-                          Exotic: 'Exotic',
-                          SingleName: 'SingleName',
-                        }  
-                      default:
-                        break;
-                    }
-                  }
-                }
-                placeholder="Please select produce value 1"
-                rules={[{ required: true, message: 'Please select produce value 1!' }]}
-                fieldProps={{
-                  // 这里使用了select的onChange方法
-                  // 必须使用这样的写法来进行调用onChange方法
-                  onChange:(value) => {
-                    this.setState({primaryAssetClass: value})
-                  },
-                }}
-              />
+              {this.getComponentProduceValue(this.state.primaryAssetClass, 'produce_value_1', 'produce value 1')}
+              {this.getComponentProduceValue(this.state.produce_value_1, 'produce_value_2', 'produce value 2')}
+              {this.getComponentProduceValue(this.state.produce_value_2, 'produce_value_3', 'produce value 3')}
+              
             </ProFormGroup>
         </ProForm>
       </div>
