@@ -9,7 +9,7 @@ export default class ProduceSelect extends Component {
     return (
         <ProFormSelect
             name={assetClassName}
-            label={"Select " + assetClassLabel}
+            label={assetClassLabel}
             valueEnum={
               () => {
                 switch (assetClass) {
@@ -67,7 +67,7 @@ export default class ProduceSelect extends Component {
                     }
                   case 'Agricultural':
                     return {
-                      Agricultural: 'Agricultural',
+                      Softs: 'Softs',
                     }
                   case 'Energy':
                     return {
@@ -82,6 +82,58 @@ export default class ProduceSelect extends Component {
                     return {
                       Other: 'Other',
                     }
+                  case 'SingleName':
+                    return {
+                      Corporate: 'Corporate',
+                      Sovereign: 'Sovereign',
+                    }
+                  case 'Option':
+                    return {
+                      PriceReturnBasicPerformance: 'PriceReturnBasicPerformance',
+                      Commodity: 'Commodity',
+                      InterestRate: 'InterestRate',
+                      Physical: 'Physical',
+                      DebtOption: 'DebtOption',
+                      Swaption: 'Swaption',
+                    }
+                  case 'Swap':
+                    return {
+                      PriceReturnBasicPerformance: 'PriceReturnBasicPerformance',
+                      Cash: 'Cash',
+                    }
+                  case 'Future':
+                    return {
+                      Commodity: 'Commodity',
+                      FX: 'FX',
+                      InterestRate: 'InterestRate',
+                    }
+                  case 'SimpleExotic':
+                    return {
+                      Barrier: 'Barrier',
+                      Digital: 'Digital',
+                    }
+                  case 'CrossCurrency':
+                    return {
+                      Basis: 'Basis',
+                      FixedFixed: 'FixedFixed',
+                      FixedFloat: 'FixedFloat',
+                    }
+                  case 'IRSwap':
+                    return {
+                      Basis: 'Basis',
+                      FixedFixed: 'FixedFixed',
+                      FixedFloat: 'FixedFloat',
+                      OIS: 'OIS',
+                    }
+                  case 'SpotFwd':
+                    return {
+                      Cash: 'Cash',
+                      Physical: 'Physical',
+                    }
+                  case 'Softs':
+                    return {
+                      SpotFwd: 'SpotFwd',
+                    }
                   default:
                     return {
                       TBA: 'TBA',
@@ -90,7 +142,7 @@ export default class ProduceSelect extends Component {
               }
             }
             placeholder={"Please select " + assetClassLabel}
-            rules={[{ required: true, message: "Please select " + assetClassLabel + " !" }]}
+            rules={[{ message: "Please select " + assetClassLabel + " !" }]}
             fieldProps={{
             // 这里使用了select的onChange方法
             // 必须使用这样的写法来进行调用onChange方法
