@@ -5,11 +5,12 @@ import {
 
 export default class ProduceSelect extends Component {
   render() {
-    const {assetClass, assetClassName, assetClassLabel, updateProduceSelectValue} = this.props
+    const {assetClass, assetClassName, assetClassLabel, updateProduceSelectValue, getAllProduceValue} = this.props
     return (
         <ProFormSelect
-            name={assetClassName}
-            label={assetClassLabel}
+            width='md'
+            name= {assetClassName}
+            label={"Please select " + assetClassLabel}
             valueEnum={
               () => {
                 switch (assetClass) {
@@ -149,6 +150,9 @@ export default class ProduceSelect extends Component {
             onChange:(value) => {
               updateProduceSelectValue({[assetClassName]: value})
             },
+            onBlur:() =>{
+              getAllProduceValue()
+            }
             }}
         />
     )
