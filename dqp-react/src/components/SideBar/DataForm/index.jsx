@@ -42,7 +42,8 @@ export default class DataForm extends Component {
   state = {
     tradeEventId: new Date().getTime(),
     createDate: formatDate(new Date().getTime()),
-    primaryAssetClass: 'Commodity'
+    primaryAssetClass: 'Commodity',
+    originating_event_value_1: 'New'
   }
 
   updateProduceSelectValue = (stateObj) => {
@@ -75,6 +76,17 @@ export default class DataForm extends Component {
       }
     }
     this.setState({produce_value: produce_value.substring(0, produce_value.length - 1)})
+  }
+
+  getAllOriginatingEventValue = () => {
+    const stateObj = this.state
+    let originating_event_value = stateObj.originating_event_value_1 + ":"
+    for (let key of Object.keys(stateObj)) {
+      if (key.startsWith("originating_event_value") && stateObj[key] !== ''){
+        originating_event_value = originating_event_value + stateObj[key] + ":"
+      }
+    }
+    this.setState({originating_event_value: originating_event_value.substring(0, originating_event_value.length - 1)})
   }
 
   render() {
@@ -157,6 +169,115 @@ export default class DataForm extends Component {
                   {this.getComponentProduceValue(this.state.produce_value_5, 'produce_value_6', 'produce value 6')}
                   {this.getComponentProduceValue(this.state.produce_value_6, 'produce_value_7', 'produce value 7')}
                   {this.getComponentProduceValue(this.state.produce_value_7, 'produce_value_8', 'produce value 8')}
+                </ModalForm>
+              </Col>
+              <Col span={8}>
+                <ProFormText
+                  name="originating_event_value"
+                  label="Originating event value"
+                  value={this.state.originating_event_value}
+                  placeholder="originating event value"
+                  disabled
+                />
+                <ModalForm
+                  title="Originating event value"
+                  trigger={
+                    <Button type="primary">
+                      <PlusOutlined />
+                        Originating event value
+                    </Button>
+                  }
+                  autoFocusFirstInput
+                  submitTimeout={2000}
+                  onFinish={async (values) => {
+                    await waitTime(2000);
+                    message.success('ok');
+                    return true;
+                  }}
+                >
+                  <ProFormSelect
+                    name="originating_event_value_1"
+                    label="Originating event value 1"
+                    valueEnum={
+                      {
+                        New: 'New',
+                        Cancel: 'Cancel',
+                      }
+                    }
+                    initialValue="New"
+                    placeholder="Please select Originating event value 1"
+                    fieldProps={{
+                      onChange:(value) => {
+                        this.setState({originating_event_value_1: value})
+                        this.getAllOriginatingEventValue()
+                      },
+                    }}
+                  />
+                  <ProFormSelect
+                    name="originating_event_value_2"
+                    label="Originating event value 2"
+                    valueEnum={
+                      {
+                        Amendment: 'Amendment',
+                        Trade: 'Trade',
+                        Termination: 'Termination',
+                        Exercise: 'Exercise',
+                        OptionEvent: 'OptionEvent',
+                        Expiry: 'Expiry',
+                      }
+                    }
+                    placeholder="Please select Originating event value 2"
+                    fieldProps={{
+                      onChange:(value) => {
+                        this.setState({originating_event_value_2: value})
+                        this.getAllOriginatingEventValue()
+                      },
+                    }}
+                  />
+                  <ProFormSelect
+                    name="originating_event_value_3"
+                    label="Originating event value 3"
+                    valueEnum={
+                      {
+                        TradeAffirmed: 'TradeAffirmed',
+                        'TradeAffirmed|CLIENT': 'TradeAffirmed|CLIENT',
+                        'TradeAffirmed|MARKET_MULTIPLE_CLIENT': 'TradeAffirmed|MARKET_MULTIPLE_CLIENT',
+                        'TradeAffirmed|MARKET_SINGLE_CLIENT': 'TradeAffirmed|MARKET_SINGLE_CLIENT',
+                        ValuationReference: 'ValuationReference',
+                        CollateralPosting: 'CollateralPosting',
+                        ClearingCompletedNotification: 'ClearingCompletedNotification',
+                        Retracted: 'Retracted',
+                        Expiry: 'Expiry',
+                      }
+                    }
+                    placeholder="Please select Originating event value 3"
+                    fieldProps={{
+                      onChange:(value) => {
+                        this.setState({originating_event_value_3: value})
+                        this.getAllOriginatingEventValue()
+                      },
+                    }}
+                  />
+                  <ProFormSelect
+                    name="originating_event_value_4"
+                    label="Originating event value 4"
+                    valueEnum={
+                      {
+                        Validated: 'Validated',
+                        BOCheck: 'BOCheck',
+                        InitialState: 'InitialState',
+                        BORejected: 'BORejected',
+                        'Validated|CLIENT': 'Validated|CLIENT',
+                      }
+                    }
+                    placeholder="Please select Originating event value 4"
+                    fieldProps={{
+                      onChange:(value) => {
+                        this.setState({originating_event_value_4: value})
+                        this.getAllOriginatingEventValue()
+                      },
+                    }}
+                  />
                 </ModalForm>
               </Col>
             </Row>
